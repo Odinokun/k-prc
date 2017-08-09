@@ -1,0 +1,23 @@
+// ***** main colors *******
+$brand: #00407a;
+$brand-hov: #013a6e;
+
+$highlight: #751540;
+$highlight-hov: #59233b;
+
+// ***** text colors *******
+$text-color: #646464;
+$title-color: #141414;
+
+$link-color: $brand;
+$link-color-hov: $highlight;
+
+// ===== fonts =====
+$font:            'Roboto-Regular', sans-serif;
+$font-medium:     'Roboto-Medium', sans-serif;
+$font-thin:       'Roboto-Thin', sans-serif;
+$font-light:      'Roboto-Light', sans-serif;
+
+// ===== sizes =====
+$radius-button: 5px;
+$radius-tab: 5px;
