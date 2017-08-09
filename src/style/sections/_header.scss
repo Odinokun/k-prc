@@ -1,0 +1,76 @@
+.header {
+  .container-lg {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 80px;
+
+    @include max(1360) {
+      padding-top: 20px;
+    }
+    @include max(750) {
+      padding-top: 0;
+    }
+  }
+}
+.header-logo {
+  display: block;
+  flex: none;
+  width: 140px;
+  height: 26px;
+  margin-right: 35px;
+
+  @include max(750) {
+    margin-right: 20px;
+  }
+}
+.geolocation {
+  flex: none;
+  margin-left: auto;
+
+  @include max(750) {
+    display: none;
+  }
+}
+.geolocation-phone__link {
+  font-family: $font-medium;
+  font-size: 23px;
+  line-height: 1;
+  margin: 0;
+  text-decoration: none;
+  color: $title;
+}
+.header-callback {
+  flex: none;
+  margin-left: 40px;
+
+  @include max(750) {
+    margin-left: auto;
+  }
+  @include max(480) {
+    .btn-wr {
+      position: relative;
+      width: 80px;
+      min-height: 80px;
+      margin-right: -20px;
+      padding: 0;
+      color: transparent;
+      background-color: $highlight;
+      svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        fill: #fff;
+        max-width: 60%;
+        max-height: 60%;
+        margin: auto;
+      }
+    }
+  }
+  svg {
+    display: none;
+  }
+}

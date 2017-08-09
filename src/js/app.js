@@ -36,7 +36,13 @@ $(function() {
   // require('./modules/fancybox')();
   // end   Fancybox3
 
+
   /////
   // ***** END Standarts scripts *****
   /////
+
+
+  // begin mobile menu
+  require('./modules/mobileMenu')();
+  // end   mobile menu
 });

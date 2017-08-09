@@ -1,4 +1,42 @@
 // begin header
 header.header
-  h1 header
+  .container-lg
+    a(href="#").header-logo
+      img(src="assets/img/logo.png", alt="company logo")
+
+    // begin menu
+    nav.header-nav
+      include ../elements/burger
+
+      ul.header-nav__list
+        li.header-nav__item
+          a(href="#").header-nav__link О компании
+        li.header-nav__item
+          a(href="#").header-nav__link Услуги
+        li.header-nav__item
+          a(href="#").header-nav__link.active Наши клиенты
+        li.header-nav__item
+          a(href="#").header-nav__link Вакансии
+        li.header-nav__item
+          a(href="#").header-nav__link Пятничный менеджер
+        li.header-nav__item
+          a(href="#").header-nav__link Контакты
+    // end menu
+
+    //begin geolocation
+    .geolocation
+      .geolocation-phone
+        a(href="tel:8 800 350 50 49").geolocation-phone__link 8 (800) 350-50-49
+      .geolocation-region
+        span Ваш регион:
+        =" "
+        a(href="#").geolocation-region__city Москва
+    //end geolocation
+
+    .header-callback
+      button.btn.btn-wr Заказать звонок
+        svg
+          use(xlink:href="assets/img/sprite.svg#header-phone")
+
+        
 // end   header

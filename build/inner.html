@@ -16,12 +16,80 @@
   <body>
     <!-- begin header-->
     <header class="header">
-      <h1>header</h1>
+      <div class="container-lg">
+        <a class="header-logo" href="#">
+          <img src="assets/img/logo.png" alt="company logo">
+        </a>
+        <!-- begin menu-->
+        <nav class="header-nav">
+          <!--begin burger-->
+          <div class="burger" id="burger">
+            <input id="burger__input" name="exit" type="checkbox">
+            <label for="burger__input">
+              <span class="burger__icon"></span>
+            </label>
+          </div>
+          <!--end   burger-->
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">О компании</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">Услуги</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link active" href="#">Наши клиенты</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">Вакансии</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">Пятничный менеджер</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end menu-->
+        <!--begin geolocation-->
+        <div class="geolocation">
+          <div class="geolocation-phone">
+            <a class="geolocation-phone__link" href="tel:8 800 350 50 49">8 (800) 350-50-49</a>
+          </div>
+          <div class="geolocation-region">
+            <span>Ваш регион:</span>
+            <a class="geolocation-region__city" href="#">Москва</a>
+          </div>
+        </div>
+        <!--end geolocation-->
+        <div class="header-callback">
+          <button class="btn btn-wr">Заказать звонок
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#header-phone"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </header>
     <!-- end   header-->
     <!--begin content-->
     <section class="main">
       <div class="container">
+        <button class="btn btn-wr">Обратный звонок</button>
+        <a class="btn btn-wr" href="#">Обратный звонок</a>
+        <br>
+        <br>
+        <button class="btn btn-wb">Обратный звонок</button>
+        <a class="btn btn-wb" href="#">Обратный звонок</a>
+        <br>
+        <br>
+        <button class="btn btn-rr">Обратный звонок</button>
+        <a class="btn btn-rr" href="#">Обратный звонок</a>
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="test-mixins" style="display:flex; justify-content: space-between;">
           <div class="services__item" style="height: 100px; border: 1px solid #693;text-align:center;">
             <div class="services__pic" style="background-image:url(assets/img/favicon.png); width:49px; height: 49px;display:inline-block;"></div>
