@@ -11,7 +11,7 @@ body {
 }
 html {
   font-family: $font;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.38;
   color: $text;
 }
@@ -42,11 +42,11 @@ p {
 }
 h1 {
   font-family: $font-medium;
-  font-size: 36px;
+  font-size: 40px;
 }
 h2 {
   font-family: $font-medium;
-  font-size: 32px;
+  font-size: 35px;
 }
 h3 {
   font-family: $font-medium;
@@ -54,18 +54,18 @@ h3 {
 }
 h4 {
   font-family: $font-medium;
-  font-size: 24px;
+  font-size: 20px;
 }
 h5 {
   font-family: $font-medium;
-  font-size: 22px;
+  font-size: 18px;
 }
 h6 {
   font-family: $font-medium;
-  font-size: 20px;
+  font-size: 16px;
 }
 p {
-  font-size: 16px;
+  font-size: 15px;
   strong {
     font-family: $font-medium;
   }

@@ -2,6 +2,9 @@
 .slick-loading .slick-list {
   background: #fff url('../img/slick/slick-ajax-loader.gif') center center no-repeat;
 }
+.slick-slider {
+  user-select: auto;
+}
 
 /* Arrows */
 .slick-prev,

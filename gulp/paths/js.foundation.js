@@ -6,7 +6,7 @@ module.exports = [
   './src/vendors/smothScroll/smoothScroll.min.js',
 
   // include Slick slider
-  // './node_modules/slick-carousel/slick/slick.min.js',
+  './node_modules/slick-carousel/slick/slick.min.js',
 
   // include fancybox3
   // './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
