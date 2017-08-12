@@ -1,0 +1,81 @@
+.friday-sec__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.friday-sec__item {
+  position: relative;
+  width: 25%;
+  min-height: 600px;
+
+  @include max(1360) {
+    width: 50%;
+  }
+  @include max(600) {
+    width: 100%;
+  }
+}
+.friday-sec__item-lg,
+.friday-sec__subitem {
+  padding: 45px 50px;
+  background-color: $brand;
+  p {
+    font-size: 15px;
+    line-height: 1.66;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  &:hover {
+    .friday-sec__cover {
+      pointer-events: none;
+      opacity: 0;
+    }
+  }
+}
+.friday-sec__subitem {
+  position: relative;
+  min-height: 50%;
+  background-color: $brand;
+}
+.friday-sec__cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 55px;
+  transition: all .5s;
+  pointer-events: auto;
+  opacity: 1;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.friday-sec__cover-title {
+  font-family: $font-medium;
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 0;
+  color: #fff;
+}
+.friday-sec__title {
+  font-family: $font-medium;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.friday-sec__date {
+  font-family: $font;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  opacity: .5;
+  color: #fff;
+  background-image: url('../img/clock.png');
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
