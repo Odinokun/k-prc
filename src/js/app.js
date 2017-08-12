@@ -45,4 +45,8 @@ $(function() {
   // begin mobile menu
   require('./modules/mobileMenu')();
   // end   mobile menu
+
+  // begin map in index.html
+  require('./modules/map')();
+  // end   map in index.html
 });

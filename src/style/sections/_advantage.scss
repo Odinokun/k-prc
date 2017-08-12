@@ -1,0 +1,86 @@
+.advantage {
+  position: absolute;
+  top: -240px;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  margin: auto;
+  background-color: transparent;
+  .container {
+    padding-top: 30px;
+  }
+}
+.advantage-slider {
+  .slick-list {
+    overflow: visible;
+  }
+  .slick-prev {
+    display: none !important;
+  }
+  .slick-next {
+    right: -130px;
+    width: 80px;
+    height: 80px;
+    transition: background-color .5s;
+    background-color: $brand;
+    background-image: none;
+
+    @include max(1460) {
+      right: -25px;
+    }
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      background-color: #fff;
+    }
+    &::before {
+      top: 30px;
+      left: 39px;
+      width: 2px;
+      height: 20px;
+    }
+    &::after {
+      top: 39px;
+      left: 30px;
+      width: 20px;
+      height: 2px;
+    }
+    &:hover {
+      background-color: $brand-hov;
+    }
+  }
+}
+.advantage-slider__list {
+  margin: 0;
+  padding: 0;
+}
+.advantage-slider__item {
+  position: relative;
+  display: flex !important;
+  align-items: flex-end;
+  min-height: 245px;
+  margin-right: 30px;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  padding: 25px;
+  span {
+    font-size: 18px;
+    color: #fff;
+    font-family: $font-medium;
+  }
+}
+.advantage-slider__item[aria-hidden='true'] {
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    opacity: .5;
+    background-color: #f4f4f6;
+  }
+}

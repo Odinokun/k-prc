@@ -1,0 +1,82 @@
+.podbor {
+  background-image: linear-gradient(to right,#f4f4f6, #f4f4f6 30%, #fff 30%, #fff);
+
+  @include max(1000) {
+    background-color: #f4f4f6;
+    background-image: none;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.podbor__left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 105px 105px 240px 0;
+  background-color: #f4f4f6;
+
+  @include max(1000) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 50px 0 50px;
+  }
+  @include max(840) {
+    padding: 50px 0 0 0;
+  }
+  @include max(520) {
+  flex-direction: column;
+
+  }
+}
+.podbor__left-item {
+  @include max(1000) {
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+.podbor__numb {
+  font-family: $font-medium;
+  font-size: 100px;
+  line-height: 90px;
+  display: inline-block;
+  margin: 0;
+  @include max(660) {
+    font-size: 80px;
+  }
+}
+.podbor__text {
+  font-family: $font-light;
+  font-size: 23px;
+  display: block;
+  margin-bottom: 30px;
+  color: $title;
+  @include max(660) {
+    font-size: 18px;
+  }
+}
+.podbor__right {
+  width: 60%;
+  padding: 105px 20px 240px 105px;
+
+  @include max(1000) {
+    width: 100%;
+    padding: 10px 0 240px 0;
+  }
+  p {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+.podbor__title {
+  font-size: 35px;
+  margin-bottom: 45px;
+  color: $title;
+  @include max(840) {
+    font-size: 30px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+}

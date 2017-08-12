@@ -161,6 +161,16 @@ svg {
 .footer {
   flex: 0 0 auto;
 }
+.section-title {
+  font-family: $font-medium;
+  font-size: 35px;
+  display: block;
+  margin-bottom: 40px;
+  color: $title;
+  @include max(840) {
+    font-size: 30px;
+  }
+}
 .btn {
   font-family: $font-medium;
   font-size: 14px;
@@ -199,4 +209,9 @@ svg {
     color: #fff;
     background-color: $brand;
   }
+}
+.color-text {
+  color: transparent;
+  background-image: linear-gradient(145deg, #00407a, #751540 80%, #751540 100%);
+  -webkit-background-clip: text;
 }
