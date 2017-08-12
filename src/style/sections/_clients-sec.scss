@@ -1,0 +1,143 @@
+.clients-sec {
+  .section-title {
+    margin-top: 40px;
+  }
+}
+.clients-sec__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.clients-sec__item {
+  position: relative;
+  width: 25%;
+  min-height: 300px;
+
+  @include max(1360) {
+    width: 33.3333%;
+    &:last-child,
+    &:nth-child(8n-1) {
+      width: 50%;
+    }
+  }
+  @include max(1024) {
+    width: 50%;
+  }
+  @include max(600) {
+    width: 100% !important;
+  }
+}
+.clients-sec__item {
+  position: relative;
+  min-height: 300px;
+  padding: 50px;
+  background-color: $brand;
+  &:hover {
+    .clients-sec__cover {
+      pointer-events: none;
+      opacity: 0;
+    }
+  }
+}
+.clients-sec__cover {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 55px;
+  transition: all .5s;
+  pointer-events: auto;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.clients-sec__cover-temp {
+  pointer-events: none;
+  opacity: 0;
+}
+.clients-sec__cover-title {
+  font-family: $font-medium;
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 0;
+  color: #fff;
+}
+.clients-sec__title {
+  font-family: $font-medium;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.clients-sec__item-adantage {
+  font-family: $font;
+  font-size: 15px;
+  display: flex;
+  margin-bottom: 5px;
+  color: #fff;
+  svg {
+    fill: #fff;
+    max-width: 16px;
+    max-height: 16px;
+    margin-top: 2px;
+    margin-right: 10px;
+    opacity: .5;
+  }
+}
+.clients-sec__breadcrumbs {
+  margin: 20px 0;
+  span {
+    font-family: $font;
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+    opacity: .5;
+    color: #fff;
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+    &::after {
+      content: ' /';
+    }
+  }
+}
+.clients-sec__review {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  svg {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    opacity: .5;
+  }
+  a {
+    font-family: $font;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.clients-sec__item-last {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  .clients-sec__title {
+    font-family: $font-medium;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: $title;
+  }
+  .btn-wr {
+    padding: 0 60px;
+  }
+}
