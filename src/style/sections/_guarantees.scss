@@ -1,0 +1,99 @@
+.guarantees {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    max-width: 44%;
+    content: '';
+    background-image: url('../img/gendir.jpg');
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: cover;
+
+    @include max(1000) {
+      background-position: 75% 50%;
+    }
+    @include max(768) {
+      display: none;
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include max(768) {
+      padding: 0;
+    }
+  }
+}
+.guarantees__left {
+  display: flex;
+  align-items: flex-end;
+  width: 40%;
+
+  @include max(768) {
+    justify-content: flex-end;
+    width: 100%;
+    min-height: 600px;
+    padding: 50px 20px;
+    background-image: url('../img/gendir.jpg');
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: cover;
+  }
+  @include max(425) {
+    background-position: 75% 50%;
+  }
+}
+.guarantees__left-item {
+  margin-bottom: 130px;
+  padding-left: 20px;
+  border-left: 2px solid #fff;
+
+  @include max(768) {
+    margin-bottom: 0;
+  }
+}
+.guarantees__dir-name {
+  font-family: $font-medium;
+  font-size: 25px;
+  line-height: 1;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.guarantees__dir-position {
+  font-family: $font;
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+}
+.guarantees__right {
+  width: 60%;
+  padding: 105px 20px 150px 105px;
+  background-image: url('../img/signature.png');
+  background-repeat: no-repeat;
+  background-position: 90% 100%;
+
+  @include max(768) {
+    width: 100%;
+    padding: 50px 20px 150px 20px;
+  }
+  p {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+.guarantees__title {
+  font-size: 35px;
+  margin-bottom: 40px;
+  color: $title;
+
+  @include max(840) {
+    font-size: 30px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+}
