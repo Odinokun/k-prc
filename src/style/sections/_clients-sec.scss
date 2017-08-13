@@ -10,7 +10,7 @@
   @include max(1360) {
     width: 33.3333%;
     &:last-child,
-    &:nth-child(8n-1) {
+    &:nth-last-child(-2n+2){
       width: 50%;
     }
   }
