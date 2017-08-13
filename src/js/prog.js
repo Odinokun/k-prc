@@ -3,6 +3,7 @@
 // закоментить перед prodaction
 $(document).ready(function ($) {
   pageWidget([
+    'agree',
     'index',
     'clients',
     'one-client',
