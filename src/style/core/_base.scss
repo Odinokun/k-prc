@@ -151,10 +151,6 @@ svg {
   max-width: 1840px;
   margin: 0 auto;
   padding: 0 20px;
-
-  @include max(425) {
-    // padding: 10px;
-  }
 }
 .header,
 .page-header,
@@ -165,8 +161,10 @@ svg {
   font-family: $font-medium;
   font-size: 35px;
   display: block;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   color: $title;
+
   @include max(840) {
     font-size: 30px;
   }
@@ -215,8 +213,8 @@ svg {
   border: 2px solid #fff;
   background-color: transparent;
   &:hover {
-    background-color: #fff;
     color: $brand;
+    background-color: #fff;
   }
 }
 .color-text {

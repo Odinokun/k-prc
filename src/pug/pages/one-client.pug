@@ -1,0 +1,18 @@
+extends ../_template
+
+block variables
+  - var title = 'Lets Go'
+  - var pageHeaderTitle = 'Отзыв компании "Чайная ложка'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main
+    .one-client__top
+      .container
+        include ../sections/page-header
+
+    include ../sections/clients-sec
+  //end   content
+  include ../sections/footer
