@@ -6,4 +6,8 @@
   font-size: 35px;
   margin: 0;
   color: $title;
+
+  @include max(840) {
+    font-size: 30px;
+  }
 }
