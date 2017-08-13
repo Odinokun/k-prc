@@ -1,0 +1,183 @@
+extends ../_template
+
+block variables
+  - var title = 'PRC'
+  - var pageHeaderTitle = 'Название статьи'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.article
+    header.article-header(style="background-image:url('assets/img/article-header.jpg')")
+      .container
+        include ../sections/page-header
+        .article-header__date
+          svg
+            use(xlink:href="assets/img/sprite.svg#clock")
+          span 12.07.2017
+        .article-header__text
+          span Аутсорсинг (дословно «использование внешнего ресурса») – это услуга, направленная на подбор и оформление рабочего персонала, когда у организации отсутствует возможность содержать постоянный штат сотрудников для своей компании и руководить их деятельностью.
+        .article-header__pluso
+          script(type='text/javascript').
+            (function() {
+            if (window.pluso)if (typeof window.pluso.start == "function") return;
+            if (window.ifpluso==undefined) { window.ifpluso = 1;
+            var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+            s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+            s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+            var h=d[g]('body')[0];
+            h.appendChild(s);
+            }})();
+          .pluso(data-background='transparent', data-options='big,square,line,horizontal,nocounter,theme=04', data-services='vkontakte,odnoklassniki,facebook,twitter,google,moimir')
+
+    section.article-sec
+      .container
+        h3.article-sec__title Основная информация о профессиональном аутсорсинге
+        p На сегодняшний день аутсорсинг, распространенный на Западе, является одним из новых эффективных методов найма персонала в России. Данная услуга обладает существенными преимуществами: позволяет оптимизировать ресурсные процессы и направить Вашу компанию к благополучию и успеху. Ведь Вы получаете долговременную профессиональную поддержку работоспособности отдельных звеньев бизнеса. В свою очередь, это позволяет уменьшить Ваши организационные и финансовые затраты, направить освободившиеся ресурсы на развитие предприятия.
+        p Кадровый аутсорсинг предполагает непосредственную работу с персоналом: подбор, расстановка; оформление и контроль сроков действия разрешительных документов; обучение, аттестация; расчет и уплата налогов; обслуживание зарплатного договора; правовое сопровождение; формирование норм поведения в коллективе и многое другое.
+        ul.article-sec__list
+          li.article-sec__item Складская логистика
+          li.article-sec__item ПроизводствоLorem ipsum dolor sit amet
+          li.article-sec__item Строительство lorem ipsum dolor sit amet, consectetur adipiscing elit
+          li.article-sec__item Ресторанная розница и др.
+
+      .container
+        h3.article-sec__title Название таблицы
+        .article-sec__table
+          .article-sec__table-row
+            .article-sec__table-td
+              span Наименование услуги
+            .article-sec__table-td
+              span Стоимость
+            .article-sec__table-td
+              span Срок изготовления
+
+          .article-sec__table-row
+            .article-sec__table-td
+              span ДМС
+            .article-sec__table-td
+              span 2 500
+              span.rouble у
+            .article-sec__table-td
+              span 2 рабочих дня
+
+          .article-sec__table-row
+            .article-sec__table-td
+              span Оформление 3-месячной регистрации (ЕАЭС, СНГ)
+            .article-sec__table-td
+              span 1 500
+              span.rouble у
+            .article-sec__table-td
+              span 2 рабочих дня
+
+          .article-sec__table-row
+            .article-sec__table-td
+              span Первичная постановка на миграционный учет граждан ЕАЭС*
+            .article-sec__table-td
+              span 1 200
+              span.rouble у
+            .article-sec__table-td
+              span 3-5 рабочих дней
+
+          .article-sec__table-row
+            .article-sec__table-td
+              span Первичная постановка на миграционный учет граждан СНГ**
+            .article-sec__table-td
+              span 300
+              span.rouble у
+            .article-sec__table-td
+              span 3-5 рабочих дней
+
+          .article-sec__table-row
+            .article-sec__table-td
+              span Продление миграционного учета граждан СНГ
+            .article-sec__table-td
+              span 300
+              span.rouble у
+            .article-sec__table-td
+              span 3-5 рабочих дней
+
+          .article-sec__table-row
+            .article-sec__table-td
+              span Уведомление органов ФМС о приеме и об увольнении ТД
+            .article-sec__table-td
+              span 300
+              span.rouble у
+            .article-sec__table-td
+              span 3 рабочих дня
+
+          .article-sec__table-row
+            .article-sec__table-td
+              span Перевод паспорта
+            .article-sec__table-td
+              span 500
+              span.rouble у
+            .article-sec__table-td
+              span 3 рабочих дня
+
+          .article-sec__table-row
+            .article-sec__table-td
+              span Оформление патента (при наличии сертификата)
+            .article-sec__table-td
+              span 24 000
+              span.rouble у
+            .article-sec__table-td
+              span 4 недели
+
+          .article-sec__table-row
+            .article-sec__table-td
+              span Оформление патента (при отсутствии сертификата)
+            .article-sec__table-td
+              span 28 000
+              span.rouble у
+            .article-sec__table-td
+              span 4 недели
+
+          .article-sec__table-row
+            .article-sec__table-td
+              span Оформление патента (при отсутствии сертификата) + 100% сдача экзамена
+            .article-sec__table-td
+              span 33 000
+              span.rouble у
+            .article-sec__table-td
+              span 4 недели
+
+      .container.article-sec__video-sec
+        .article-sec__left
+          h3.article-sec__subtitle Подзаголовок
+          p На сегодняшний день аутсорсинг, распространенный на Западе, является одним из новых эффективных методов найма персонала в России. Данная услуга обладает существенными преимуществами: позволяет оптимизировать ресурсные процессы и направить Вашу компанию к благополучию и успеху. Ведь Вы получаете долговременную профессиональную поддержку работоспособности отдельных звеньев бизнеса. В свою очередь, это позволяет уменьшить Ваши организационные и финансовые затраты, направить освободившиеся ресурсы на развитие предприятия. Кадровый аутсорсинг предполагает непосредственную работу с персоналом: подбор, расстановка; оформление и контроль сроков действия разрешительных документов; обучение, аттестация; расчет и уплата налогов; обслуживание зарплатного договора; правовое сопровождение.
+
+        .article-sec__right
+          .article-sec__video
+            iframe(src='https://www.youtube.com/embed/O2etBQYLcpg?rel=0', frameborder='0', allowfullscreen='')
+            .article-sec__video-cover(style="background-image:url('assets/img/article-video.jpg')")
+              svg
+                use(xlink:href="assets/img/sprite.svg#youtube-btn")
+
+    section.article-sec__news
+      .container
+        .article-sec__news-left
+          h3.article-sec__news-title Предыдущая новость
+          .article-sec__news-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-wr Посмотреть
+        .article-sec__news-right
+          h3.article-sec__news-title Следующая новость
+          .article-sec__news-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-wr Посмотреть
+
+
+        
+
+
+
+  //end   content
+  include ../sections/footer

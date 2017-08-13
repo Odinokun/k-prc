@@ -4,6 +4,7 @@
 $(document).ready(function ($) {
   pageWidget([
     'agree',
+    'article',
     'index',
     'clients',
     'one-client',
@@ -29,3 +30,9 @@ function pageWidget(pages) {
 
 
 //====== Begin Programmer code ======
+
+// begin popup open
+$('.article-sec__video-cover').on('click', function() {
+  $(this).addClass('hidden');
+});
+// end   popup open

@@ -125,6 +125,9 @@ svg {
   display: block;
   overflow: visible;
 }
+span.rouble {
+  font-family: $rouble;
+}
 //изменяем цвет выделения текста мышью
 ::selection {
   // background-color: $brand;
