@@ -294,28 +294,28 @@ block content
           span ** СНГ: Таджикистан, Узбекистан, Молдова, Украина, Азейрбаджан
     //end migration-sec__table-tab
 
-    //begin migration-sec__callback
-    .migration-sec__callback
+    //begin callback-section
+    .callback-sec(style="background-image: url('assets/img/migration-callback.jpg');")
       .container
-        h3.migration-sec__callback-title Оставьте заявку
-        span.migration-sec__callback-subtitle
+        h3.callback-sec__title Оставьте заявку
+        span.callback-sec__subtitle
           |Каждая ситуация особенная.
           br
           |Оставьте ваше имя и способ связи с вами — наш менеджер свяжется с вами, чтобы обсудить все детали.
-        form.migration-sec__callback-form
-          .migration-sec__callback-form-inn
+        form.callback-sec__form
+          .callback-sec__form-inn
             .left
               input(type="text" name="name" placeholder="Ваше имя")
               input(type="text" name="phone" placeholder="Номер телефона")
             .right
               textarea(name="message" placeholder="Комментарий")
-          .migration-sec__callback-checkbox
+          .callback-sec__checkbox
             input(type="checkbox" id="agree")
             label(for="agree")
               |Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия 
               a(href="#") Пользовательского соглашения
           input(type="submit" value="Заказать звонок").btn.btn-rr
-    //end migration-sec__callback
+    //end callback-section
 
   //end   content
   include ../sections/footer

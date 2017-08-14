@@ -5,6 +5,7 @@ $(document).ready(function ($) {
   pageWidget([
     'agree',
     'article',
+    'autstaffing',
     'index',
     'clients',
     'contacts',
@@ -49,3 +50,16 @@ $('.migration-sec__btn-wrap .btn').on('click', function() {
   $('.migration-sec__table-' + tab).fadeIn();
 });
 // end   tab in family page
+
+
+// $(function() {
+//     $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+//     $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+//     var a = $("#tabs > div > a");
+//     a.click(function(event) {
+//     event.preventDefault();
+//     var i = a.index(this);
+//        i = ++i % a.length
+//     $( "#tabs" ).tabs( "option", "active", i );
+// })
+//   });

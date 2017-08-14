@@ -20,7 +20,6 @@ module.exports = function() {
     // var image = "https://www.richter-massage.ru/img/map-marker.png";
   }
   google.maps.event.addDomListener(window, "load", initialize);
-
   // end   google map in index.html
 
 };

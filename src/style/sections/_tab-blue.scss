@@ -146,7 +146,8 @@
 
 
 // begin small version
-.migration {
+.migration,
+.autstaffing {
 .tab-blue__item {
   @include max(425) {
     width: 100%;
