@@ -1,0 +1,322 @@
+extends ../_template
+
+block variables
+  - var title = 'PRC'
+  - var pageHeaderTitle = 'Миграционный учет'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.migration
+    include ../sections/tab-blue
+
+    header.migration-header(style="background-image:url('assets/img/migration-header.jpg')")
+      .container
+        include ../sections/page-header
+        .migration-header__text
+          p Сотрудничество с PRC избавит Вас от возможных санкций со стороны проверяющих органов и обеспечит эффективную работу Вашего бизнеса.
+          p Работаем в рамках законов РФ, оперативно информируем клиентов об изменениях.
+    
+    //begin migration-sec__about
+    section.migration-sec__about
+      .container
+        .migration-sec__about-item
+          .migration-sec__about-number.color-text 1
+          p Оказываем полный комплекс услуг по сопровождению миграционного учета иностранных граждан (визовых и безвизовых с РФ стран, а так же граждан из ЕАЭС).
+        .migration-sec__about-item
+          .migration-sec__about-number.color-text 2
+          p В нашей компании работают квалифицированные специалисты в сфере миграционного, трудового и налогового законодательства. Подобный тандем позволяет оказывать помощь в оформлении документов и регистрации персонала из других государств, а также консультировать и проводить обучение по всем вопросам, связанным с привлечением трудовых ресурсов граждан других стран.
+        .migration-sec__about-item
+          .migration-sec__about-number.color-text 3
+          p Мы являемся аккредитованной организацией при УФМС.
+          p У нас есть ресурсы и возможности работать с большим объемом подлежащих регистрации документов.
+    //end migration-sec__about
+
+    //begin migration-sec__include
+    section.migration-sec__include(style="background-image:url('assets/img/migration-include.jpg')")
+      .container
+        h3.migration-sec__include-title Что включает в себя услуга по миграционному учету
+
+        ul.migration-sec__include-list
+          li.migration-sec__include-item Тщательная проверка документов каждого кандидата
+          li.migration-sec__include-item Формирование пакета документов для постановки на миграционный учет в УФМС
+          li.migration-sec__include-item Оказание содействия при оформлении / продлении патента / разрешения на работу
+          li.migration-sec__include-item Уведомление УФНС о приеме / увольнении сотрудника
+          li.migration-sec__include-item Оформление полиса медицинского страхования
+          li.migration-sec__include-item Регистрация работников на юридический адрес Заказчика / продление регистрации (представительство в УФМС)
+    //end migration-sec__include
+
+
+    //begin migration-sec__bonus
+    section.migration-sec__bonus
+      .migration-sec__bonus-item
+        h4.migration-sec__bonus-title 
+          |Дополнительно
+          br
+          |для Вас мы можем:
+
+      .migration-sec__bonus-item
+        svg
+          use(xlink:href="assets/img/sprite.svg#tab-06")
+        span Получить ИНН для каждого сотрудника
+
+      .migration-sec__bonus-item
+        svg
+          use(xlink:href="assets/img/sprite.svg#tab-07")
+        span 
+          |Провести комплексный аудит миграционного
+          br
+          |учета на предмет соответствия 
+          br
+          |действующему законодательства
+
+      .migration-sec__bonus-item
+        svg
+          use(xlink:href="assets/img/sprite.svg#tab-08")
+        span 
+          |Обучить либо провести индивидуальные
+          br
+          |тренинги по миграционному учету
+    //end migration-sec__bonus
+
+    //begin migration-sec__table-tab
+    section.migration-sec__table-wrap
+      .container
+        h3.migration-sec__tab-title Стоимость услуг
+        .migration-sec__btn-wrap
+          button.btn.btn-rr.active(data-tab="piter") Санкт-Петербург
+          button.btn.btn-rr(data-tab="moscow") Москва
+        //begin table Piter
+        .migration-sec__table.migration-sec__table-piter
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Наименование услуги
+            .migration-sec__table-td
+              span Стоимость
+            .migration-sec__table-td
+              span Срок изготовления
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span ДМС Piter
+            .migration-sec__table-td
+              span 2 500
+              span.rouble у
+            .migration-sec__table-td
+              span 2 рабочих дня
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Оформление 3-месячной регистрации (ЕАЭС, СНГ)
+            .migration-sec__table-td
+              span 1 500
+              span.rouble у
+            .migration-sec__table-td
+              span 2 рабочих дня
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Первичная постановка на миграционный учет граждан ЕАЭС*
+            .migration-sec__table-td
+              span 1 200
+              span.rouble у
+            .migration-sec__table-td
+              span 3-5 рабочих дней
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Первичная постановка на миграционный учет граждан СНГ**
+            .migration-sec__table-td
+              span 300
+              span.rouble у
+            .migration-sec__table-td
+              span 3-5 рабочих дней
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Продление миграционного учета граждан СНГ
+            .migration-sec__table-td
+              span 300
+              span.rouble у
+            .migration-sec__table-td
+              span 3-5 рабочих дней
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Уведомление органов ФМС о приеме и об увольнении ТД
+            .migration-sec__table-td
+              span 300
+              span.rouble у
+            .migration-sec__table-td
+              span 3 рабочих дня
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Перевод паспорта
+            .migration-sec__table-td
+              span 500
+              span.rouble у
+            .migration-sec__table-td
+              span 3 рабочих дня
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Оформление патента (при наличии сертификата)
+            .migration-sec__table-td
+              span 24 000
+              span.rouble у
+            .migration-sec__table-td
+              span 4 недели
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Оформление патента (при отсутствии сертификата)
+            .migration-sec__table-td
+              span 28 000
+              span.rouble у
+            .migration-sec__table-td
+              span 4 недели
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Оформление патента (при отсутствии сертификата) + 100% сдача экзамена
+            .migration-sec__table-td
+              span 33 000
+              span.rouble у
+            .migration-sec__table-td
+              span 4 недели
+        //end table Piter
+        
+        //begin table Moscow
+        .migration-sec__table.migration-sec__table-moscow
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Наименование услуги
+            .migration-sec__table-td
+              span Стоимость
+            .migration-sec__table-td
+              span Срок изготовления
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span ДМС Moscow
+            .migration-sec__table-td
+              span 2 500
+              span.rouble у
+            .migration-sec__table-td
+              span 2 рабочих дня
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Оформление 3-месячной регистрации (ЕАЭС, СНГ)
+            .migration-sec__table-td
+              span 1 500
+              span.rouble у
+            .migration-sec__table-td
+              span 2 рабочих дня
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Первичная постановка на миграционный учет граждан ЕАЭС*
+            .migration-sec__table-td
+              span 1 200
+              span.rouble у
+            .migration-sec__table-td
+              span 3-5 рабочих дней
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Первичная постановка на миграционный учет граждан СНГ**
+            .migration-sec__table-td
+              span 300
+              span.rouble у
+            .migration-sec__table-td
+              span 3-5 рабочих дней
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Продление миграционного учета граждан СНГ
+            .migration-sec__table-td
+              span 300
+              span.rouble у
+            .migration-sec__table-td
+              span 3-5 рабочих дней
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Уведомление органов ФМС о приеме и об увольнении ТД
+            .migration-sec__table-td
+              span 300
+              span.rouble у
+            .migration-sec__table-td
+              span 3 рабочих дня
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Перевод паспорта
+            .migration-sec__table-td
+              span 500
+              span.rouble у
+            .migration-sec__table-td
+              span 3 рабочих дня
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Оформление патента (при наличии сертификата)
+            .migration-sec__table-td
+              span 24 000
+              span.rouble у
+            .migration-sec__table-td
+              span 4 недели
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Оформление патента (при отсутствии сертификата)
+            .migration-sec__table-td
+              span 28 000
+              span.rouble у
+            .migration-sec__table-td
+              span 4 недели
+
+          .migration-sec__table-row
+            .migration-sec__table-td
+              span Оформление патента (при отсутствии сертификата) + 100% сдача экзамена
+            .migration-sec__table-td
+              span 33 000
+              span.rouble у
+            .migration-sec__table-td
+              span 4 недели
+        //end table Moscow
+
+        .migration-sec__table-note
+          span * ЕАЭС: Киргизия, Беларусь, Армения, Казахстан
+          span ** СНГ: Таджикистан, Узбекистан, Молдова, Украина, Азейрбаджан
+    //end migration-sec__table-tab
+
+    //begin migration-sec__callback
+    .migration-sec__callback
+      .container
+        h3.migration-sec__callback-title Оставьте заявку
+        span.migration-sec__callback-subtitle
+          |Каждая ситуация особенная.
+          br
+          |Оставьте ваше имя и способ связи с вами — наш менеджер свяжется с вами, чтобы обсудить все детали.
+        form.migration-sec__callback-form
+          .migration-sec__callback-form-inn
+            .left
+              input(type="text" name="name" placeholder="Ваше имя")
+              input(type="text" name="phone" placeholder="Номер телефона")
+            .right
+              textarea(name="message" placeholder="Комментарий")
+          .migration-sec__callback-checkbox
+            input(type="checkbox" id="agree")
+            label(for="agree")
+              |Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия 
+              a(href="#") Пользовательского соглашения
+          input(type="submit" value="Заказать звонок").btn.btn-rr
+
+    //end migration-sec__callback
+
+  //end   content
+  include ../sections/footer

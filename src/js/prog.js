@@ -7,6 +7,7 @@ $(document).ready(function ($) {
     'article',
     'index',
     'clients',
+    'migration',
     'one-client',
     ]);
 });
@@ -31,8 +32,19 @@ function pageWidget(pages) {
 
 //====== Begin Programmer code ======
 
-// begin popup open
+// begin start video in article
 $('.article-sec__video-cover').on('click', function() {
   $(this).addClass('hidden');
 });
-// end   popup open
+// end   start video in article
+
+
+// begin tab in family page
+$('.migration-sec__btn-wrap .btn').on('click', function() {
+  var tab = $(this).data('tab');
+  $('.btn').removeClass('active');
+  $(this).addClass('active');
+  $('.migration-sec__table').fadeOut(0);
+  $('.migration-sec__table-' + tab).fadeIn();
+});
+// end   tab in family page
