@@ -45,4 +45,16 @@ module.exports = function() {
   });
   // end   slider in advantage section
 
+  // begin slider in contacts.html
+  $('.contacts-slider__list').slick({
+    dots: false,
+    infinite: false,
+    arrows: true,
+    speed: 1000,
+    fade: true,
+    autoplay: false,
+    cssEase: 'linear'
+  });
+  // end   slider in contacts.html
+
 };

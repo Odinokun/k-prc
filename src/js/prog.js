@@ -7,6 +7,7 @@ $(document).ready(function ($) {
     'article',
     'index',
     'clients',
+    'contacts',
     'migration',
     'one-client',
     ]);

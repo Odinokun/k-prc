@@ -1,0 +1,73 @@
+extends ../_template
+
+block variables
+  - var title = 'PRC'
+  - var pageHeaderTitle = 'Контакты'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.contacts
+    //begin contacts-map
+    section.contacts-map#map
+    //end contacts-map
+    header.contacts-header
+      .container
+        include ../sections/page-header
+        .contacts-header__text
+    
+    //begin contacts-info
+    .contacts-info
+      .container
+        .contacts-info__left
+          h3.contacts-info__title Санкт-Петербург
+          .contacts-info__row
+            span Телефоны:
+            span
+              a(href="tel:8 812 490 70 36").contacts-info__phone 8 (812) 490-70-36
+              br
+              a(href="tel:8 812 409 36 30").contacts-info__phone 8 (812) 409-36-30
+              br
+              a(href="tel:8 812 409 36 75").contacts-info__phone 8 (812) 409-36-75
+          .contacts-info__row
+            span Эл. почта:
+            span
+              a(href="mailto:info@prc-personal.ru").contacts-info__mail info@prc-personal.ru
+          .contacts-info__row
+            span Адрес:
+            span
+              a(href="https://goo.gl/maps/uzYo8ZDRyot" target="_blank" rel="nofollow noopener noreferrer").contacts-info__adress 197007, Лиговский пр. 200 лит. А, пом. 8-Н
+          a(href="#").btn.btn-wr Как проехать
+
+          ul.contacts-slider__list
+            li.contacts-slider__item(style="background-image:url('assets/img/contacts-slider/piter-01.jpg')")
+            li.contacts-slider__item(style="background-image:url('assets/img/contacts-slider/piter-02.jpg')")
+            li.contacts-slider__item(style="background-image:url('assets/img/contacts-slider/piter-03.jpg')")
+            li.contacts-slider__item(style="background-image:url('assets/img/contacts-slider/piter-04.jpg')")
+
+        .contacts-info__right
+          h3.contacts-info__title Москва
+          .contacts-info__row
+            span Телефоны:
+            span
+              a(href="tel:+7 495 987 17 86").contacts-info__phone +7 (495) 987-17-86
+          .contacts-info__row
+            span Эл. почта:
+            span
+              a(href="mailto:msk@prc-personal.ru").contacts-info__mail msk@prc-personal.ru
+          .contacts-info__row
+            span Адрес:
+            span
+              a(href="https://goo.gl/maps/uuAVEZ9XZHH2" target="_blank" rel="nofollow noopener noreferrer").contacts-info__adress 127287, Петровско-Разумовский проезд, д. 29, стр.1
+          a(href="#").btn.btn-wr Как проехать
+
+          ul.contacts-slider__list
+            li.contacts-slider__item(style="background-image:url('assets/img/contacts-slider/moscow-01.jpg')")
+            li.contacts-slider__item(style="background-image:url('assets/img/contacts-slider/moscow-02.jpg')")
+            li.contacts-slider__item(style="background-image:url('assets/img/contacts-slider/moscow-03.jpg')")
+            li.contacts-slider__item(style="background-image:url('assets/img/contacts-slider/moscow-04.jpg')")
+    //end contacts-info
+
+  //end   content
+  include ../sections/footer
