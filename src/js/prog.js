@@ -12,6 +12,7 @@ $(document).ready(function ($) {
     'contacts',
     'migration',
     'one-client',
+    'service',
     ]);
 });
 
@@ -51,3 +52,14 @@ $('.migration-sec__btn-wrap .btn').on('click', function() {
   $('.migration-sec__table-' + tab).fadeIn();
 });
 // end   tab in family page
+
+
+// begin tab in service page
+$('.service-sec__tab-item').on('click', function() {
+  var tab = $(this).data('tab');
+  $('.service-sec__tab-item').removeClass('active');
+  $(this).addClass('active');
+  $('.service-header__cover').fadeOut(0);
+  $('.service-header__cover-' + tab).fadeIn();
+});
+// end   tab in service page

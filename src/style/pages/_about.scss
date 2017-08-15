@@ -317,6 +317,7 @@
 }
 .about-conformity__pdf {
   position: relative;
+  display: block;
   flex: none;
   width: 47%;
   max-width: 280px;
@@ -331,7 +332,7 @@
     svg {
       opacity: 1;
     }
-    a::before {
+    &::before {
       opacity: .5;
     }
   }
@@ -339,19 +340,16 @@
     display: block;
     width: 100%;
   }
-  a {
-    display: block;
-    &::before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      content: '';
-      transition: opacity .5s;
-      opacity: 0;
-      background-color: $brand;
-    }
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    transition: opacity .5s;
+    opacity: 0;
+    background-color: $brand;
   }
   svg {
     position: absolute;
@@ -448,6 +446,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
   @include max(768) {
     justify-content: space-around;
   }
@@ -457,9 +456,10 @@
   justify-content: center;
   align-items: center;
   width: 12%;
-  border: 1px solid #e6e6e6;
-  padding: 10px 5px;
   margin-bottom: 30px;
+  padding: 10px 5px;
+  border: 1px solid #e6e6e6;
+
   @include max(768) {
     width: 23%;
   }

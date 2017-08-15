@@ -1,0 +1,347 @@
+.service-header {
+  position: relative;
+  min-height: 570px;
+  padding-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  @include max(1024) {
+    background-position: 70% 50%;
+    min-height: 450px;
+  }
+  .page-header__title {
+    color: #fff;
+  }
+  .breadcrumbs__list {
+    margin-bottom: 10px;
+    .breadcrumbs__link {
+      &:hover {
+        color: #fff;
+      }
+    }
+    .breadcrumbs__item:last-child {
+      .breadcrumbs__link {
+        color: #fff;
+      }
+    }
+  }
+}
+.service-header__cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  @include max(1024) {
+    display: none !important;
+  }
+}
+.service-header__cover-03 {
+  display: block;
+}
+.service-header__text {
+  max-width: 400px;
+  margin-bottom: 30px;
+  @include max(1024) {
+    max-width: 600px;
+  }
+  p {
+    font-size: 17px;
+    line-height: 1.58;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+}
+// end service header
+
+//begin service-sec__tab
+.service-sec__tab {
+  margin-top: -40px;
+  z-index: 10;
+  position: relative;
+  margin-bottom: -40px;
+  @include max(1024) {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.service-sec__tab-item {
+  width: 18%;
+  transition: all .5s;
+  cursor: pointer;
+  padding: 0 20px;box-shadow: 0 0 30px rgba(26, 26, 27, 0.1);
+  white-space: nowrap;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: $title;
+  background-color: #fff;
+  &:hover,
+  &.active {
+    color: #fff;
+    background-color: $highlight;
+  }
+}
+//end service-sec__tab
+
+
+// begin service about
+.service-about {
+  background-image: linear-gradient(to right,#f4f4f6, #f4f4f6 30%, #fff 30%, #fff);
+
+  @include max(1000) {
+    background-color: #f4f4f6;
+    background-image: none;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.service-about__left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 140px 105px 100px 0;
+  background-color: #f4f4f6;
+
+  @include max(1000) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 100px 50px 20px 50px;
+  }
+  @include max(840) {
+    padding: 50px 0 0 0;
+  }
+  @include max(520) {
+  flex-direction: column;
+
+  }
+}
+.service-about__left-item {
+  @include max(1000) {
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+.service-about__numb {
+  font-family: $font-medium;
+  font-size: 100px;
+  line-height: 90px;
+  display: inline-block;
+  margin: 0;
+  @include max(660) {
+    font-size: 80px;
+  }
+}
+.service-about__text {
+  font-family: $font-light;
+  font-size: 23px;
+  display: block;
+  margin-bottom: 30px;
+  color: $title;
+  @include max(660) {
+    font-size: 18px;
+  }
+}
+.service-about__right {
+  width: 60%;
+  padding: 140px 20px 100px 105px;
+
+  @include max(1000) {
+    width: 100%;
+    padding: 10px 0 100px 0;
+  }
+  p {
+    display: inline-block;
+    margin-bottom: 20px;
+    strong {
+      color:$title;
+    }
+  }
+}
+.service-about__title {
+  font-size: 35px;
+  margin-bottom: 40px;
+  color: $title;
+  @include max(840) {
+    font-size: 30px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+}
+// end service about
+
+
+// begin service tab blue
+.service-tab-blue {
+  background-image: linear-gradient(to right,#185fa0, #185fa0 50%, #013a6e 50%, #013a6e);
+
+  @include max(1024) {
+    background-image: none;
+    .container-lg {
+      padding: 0;
+    }
+  }
+}
+.service-tab-blue__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  @include max(1024) {
+    flex-wrap: wrap;
+  }
+}
+.service-tab-blue__item {
+  width: 20%;
+  margin: 0;
+  text-align: center;
+  padding:0 20px 20px 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .btn-bw {
+    margin-top: auto;
+  }
+  &:nth-child(1) {
+    background-color: #185fa0;
+
+    @include max(1024) {
+      width: 33.3333%;
+    }
+    @include max(600) {
+      width: 50%;
+    }
+  }
+  &:nth-child(2) {
+    background-color: #125592;
+
+    @include max(1024) {
+      width: 33.3333%;
+    }
+    @include max(600) {
+      width: 50%;
+    }
+  }
+  &:nth-child(3) {
+    background-color: #084b87;
+
+    @include max(1024) {
+      width: 33.3333%;
+    }
+    @include max(600) {
+      width: 50%;
+    }
+  }
+  &:nth-child(4) {
+    background-color: #00407a;
+
+    @include max(1024) {
+      width: 50%;
+    }
+  }
+  &:nth-child(5) {
+    background-color: #013a6e;
+
+    @include max(1024) {
+      width: 50%;
+    }
+    @include max(600) {
+      width: 100%;
+    }
+  }
+}
+.service-tab-blue__link {
+  font-family: $font-light;
+  position: relative;
+  min-height: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 65px 10px 50px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  span {
+  font-size: 23px;
+  display: inline-block;
+  margin-bottom: 50px;
+    
+  }
+  p {
+    line-height: 1.66;
+  }
+
+  @include max(1220) {
+    font-size: 20px;
+    padding: 50px 10px 50px 10px;
+  }
+  @include max(480) {
+    font-size: 16px;
+    padding: 30px 10px 30px 10px;
+  }
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    transition: opacity .5s;
+    opacity: 0;
+    background-color: #fff;
+  }
+  &::before {
+    top: 39px;
+    right: 30px;
+    width: 20px;
+    height: 2px;
+
+    @include max(480) {
+      top: 19px;
+      right: 10px;
+    }
+  }
+  &::after {
+    top: 30px;
+    right: 39px;
+    width: 2px;
+    height: 20px;
+
+    @include max(480) {
+      top: 10px;
+      right: 19px;
+    }
+  }
+  &:hover {
+    color: #fff;
+    &::before,
+    &::after {
+      opacity: .5;
+    }
+  }
+  svg {
+    fill: #fff;
+    max-width: 50px;
+    max-height: 50px;
+    margin-bottom: 30px;
+
+    @include max(480) {
+      max-width: 40px;
+      max-height: 40px;
+      margin-bottom: 15px;
+    }
+  }
+}
+// end service tab blue
