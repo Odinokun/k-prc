@@ -1,0 +1,470 @@
+.about-header {
+  padding-bottom: 250px;
+  background-color: #f4f4f6;
+}
+.about-header__text {
+  p {
+    font-size: 15px;
+    line-height: 1.66;
+    color: $text;
+  }
+}
+
+// begin about-adventage slider
+.about-advantage {
+  overflow: hidden;
+  margin: -220px auto -210px;
+  background-color: transparent;
+  .container {
+    padding-top: 30px;
+  }
+}
+.about-advantage__title {
+  font-family: $font-medium;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: $title;
+}
+
+.about-advantage-slider {
+  .slick-list {
+    overflow: visible;
+  }
+  .slick-prev {
+    display: none !important;
+  }
+  .slick-next {
+    right: -130px;
+    width: 80px;
+    height: 80px;
+    transition: background-color .5s;
+    background-color: $brand;
+    background-image: none;
+
+    @include max(1460) {
+      right: -25px;
+    }
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      background-color: #fff;
+    }
+    &::before {
+      top: 30px;
+      left: 39px;
+      width: 2px;
+      height: 20px;
+    }
+    &::after {
+      top: 39px;
+      left: 30px;
+      width: 20px;
+      height: 2px;
+    }
+    &:hover {
+      background-color: $brand-hov;
+    }
+  }
+}
+.about-advantage-slider__list {
+  margin: 0;
+  padding: 0;
+}
+.about-advantage-slider__item {
+  position: relative;
+  display: flex !important;
+  align-items: flex-end;
+  min-height: 245px;
+  margin-right: 30px;
+  padding: 0;
+  padding: 25px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  box-shadow: 0 0 30px rgba(26, 26, 27, .1);
+  span {
+    font-family: $font-medium;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+.about-advantage-slider__item[aria-hidden='true'] {
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    opacity: .5;
+    background-color: #f4f4f6;
+  }
+}
+.about-advantage-slider__slogan {
+  font-family: $font-medium;
+  font-size: 15px;
+  max-width: 400px;
+  margin-top: 30px;
+  padding-left: 25px;
+  color: $title;
+  border-left: 2px solid $highlight;
+}
+// end about-adventage slider
+
+
+// begin about history
+.about-history {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 270px;
+
+  @include max(1024) {
+    display: block;
+  }
+}
+.about-history__left {
+  width: 43%;
+  min-height: 670px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+
+  @include max(1024) {
+    width: 100%;
+    min-height: 500px;
+  }
+}
+.about-history__right {
+  width: 57%;
+  padding: 0 20px 70px 100px;
+
+  @include max(1024) {
+    width: 100%;
+    padding: 50px 20px;
+  }
+}
+.about-history__right-inn {
+  max-width: 600px;
+
+  @include max(1024) {
+    max-width: 100%;
+  }
+  p {
+    font-family: $font;
+    font-size: 15px;
+    line-height: 1.66;
+    display: inline-block;
+    margin-bottom: 30px;
+    color: $text;
+  }
+}
+.about-history__title {
+  font-family: $font-medium;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: $title;
+}
+.about-history__subtitle {
+  font-family: $font-light;
+  font-size: 18px;
+  line-height: 1.4;
+  display: inline-block;
+  margin-bottom: 30px;
+  color: $text;
+}
+.about-history__slogan {
+  display: flex;
+  margin-bottom: 30px;
+  svg {
+    flex: none;
+    fill: $brand;
+    width: 37px;
+    height: 37px;
+    margin-right: 15px;
+  }
+  span {
+    font-family: $font-medium;
+    font-size: 15px;
+    color: $title;
+  }
+}
+.about-history__footer {
+  font-family: $font-light;
+  font-size: 12px;
+  color: #969696;
+}
+// end   about history
+
+.about-map {
+  position: relative;
+}
+.about-map__inn {
+  height: 710px;
+}
+.about-map__header {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  left: 0;
+}
+.about-map__title {
+  font-family: $font-medium;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: $title;
+}
+
+.about {
+  .guarantees::before {
+    bottom: 0;
+  }
+  .guarantees__left-item {
+    margin-bottom: 90px;
+  }
+  .guarantees__right {
+    background-position: 90% 98%;
+
+    @include max(375) {
+      background-position: 90% 99%;
+    }
+  }
+  .btn {
+    padding: 0 20px;
+    white-space: nowrap;
+    background-color: transparent;
+
+    @include max(375) {
+      font-size: 13px;
+      padding: 0 10px;
+    }
+  }
+}
+
+// begin about-personal
+.about-personal {
+  padding: 110px 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.about-personal__item {
+  max-width: 460px;
+  p {
+    line-height: 1.66;
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+}
+.about-personal__title {
+  font-family: $font-medium;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+// end   about-personal
+
+
+// begin about-conformity
+.about-conformity {
+  padding: 100px 0 80px 0;
+  background-color: #f4f4f6;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.about-conformity__left,
+.about-conformity__right {
+  width: 50%;
+
+  @include max(1000) {
+    width: 100%;
+  }
+}
+.about-conformity__left {
+  padding-right: 15px;
+
+  @include max(1000) {
+    margin-bottom: 30px;
+    padding-right: 0;
+  }
+  p {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+}
+.about-conformity__right {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 15px;
+
+  @include max(1000) {
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+  @include max(660) {
+    justify-content: space-between;
+  }
+}
+.about-conformity__title {
+  font-family: $font-medium;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: $title;
+}
+.about-conformity__pdf {
+  position: relative;
+  flex: none;
+  width: 47%;
+  max-width: 280px;
+
+  @include max(1000) {
+    margin-right: 30px;
+  }
+  @include max(660) {
+    margin-right: 0;
+  }
+  &:hover {
+    svg {
+      opacity: 1;
+    }
+    a::before {
+      opacity: .5;
+    }
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+  a {
+    display: block;
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: '';
+      transition: opacity .5s;
+      opacity: 0;
+      background-color: $brand;
+    }
+  }
+  svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    fill: #fff;
+    width: 50px;
+    height: 60px;
+    margin: auto;
+    transition: opacity .5s;
+    opacity: 0;
+  }
+}
+// end   about-conformity
+
+
+// begin about-process
+.about-process {
+  background-color: #f4f4f6;
+}
+.about-process__title {
+  font-family: $font-medium;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: $title;
+}
+.about-process__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-process__item {
+  position: relative;
+  width: 33.3333%;
+  min-height: 300px;
+  padding: 50px;
+  background-color: $brand;
+
+  @include max(1100) {
+    width: 50%;
+  }
+  @include max(660) {
+    width: 100%;
+  }
+  &:hover {
+    .about-process__cover {
+      opacity: 0;
+    }
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.66;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+}
+.about-process__cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px 50px ;
+  transition: opacity .5s;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.about-process__item-title {
+  font-family: $font-medium;
+  font-size: 25px;
+  margin-bottom: 0;
+  color: #fff;
+}
+// end   about-process
+
+
+// begin about-banks
+.about-banks {
+  padding: 100px 0 70px 0;
+}
+.about-banks__title {
+  font-family: $font-medium;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: $title;
+}
+.about-banks__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include max(768) {
+    justify-content: space-around;
+  }
+}
+.about-banks__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+  border: 1px solid #e6e6e6;
+  padding: 10px 5px;
+  margin-bottom: 30px;
+  @include max(768) {
+    width: 23%;
+  }
+  img {
+    max-width: 99%;
+  }
+}
+// end   about-banks

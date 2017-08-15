@@ -130,4 +130,39 @@ module.exports = function() {
   });
   // end   slider in advantage section
 
+
+
+  // begin slider in about.html
+  $('.about-advantage-slider__list').slick({
+    speed: 1000,
+    dots: false,
+    infinite: false,
+    speed: 600,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1250,
+        settings: {
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          infinite: true,
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          infinite: true,
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+  // end   slider in about.html
+
 };

@@ -1,0 +1,205 @@
+extends ../_template
+
+block variables
+  - var title = 'PRC'
+  - var pageHeaderTitle = 'Название статьи'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.about
+    header.about-header
+      .container
+        include ../sections/page-header
+        .about-header__text
+          p Аутсорсинг (дословно «использование внешнего ресурса») – это услуга, направленная на подбор и оформление рабочего персонала, когда у организации отсутствует возможность содержать постоянный штат сотрудников для своей компании и руководить их деятельностью.
+
+    // begin about advantage slider
+    section.about-advantage
+      .container
+        .about-advantage__title Преимущества нашей компании
+
+        .about-advantage-slider
+          ul.about-advantage-slider__list
+            li.about-advantage-slider__item(style="background-image:url('assets/img/advantage-slider/advantage-09.jpg')")
+              span
+                |Финансовая
+                br
+                |устойчивость
+            li.about-advantage-slider__item(style="background-image:url('assets/img/advantage-slider/advantage-10.jpg')")
+              span
+                |Проверка легальности
+                br
+                |документов
+            li.about-advantage-slider__item(style="background-image:url('assets/img/advantage-slider/advantage-11.jpg')")
+              span
+                |Массовый
+                br
+                |и точечный подбор
+            li.about-advantage-slider__item(style="background-image:url('assets/img/advantage-slider/advantage-04-1.jpg')")
+            li.about-advantage-slider__item(style="background-image:url('assets/img/advantage-slider/advantage-12.jpg')")
+              span
+                |Квалифицированная
+                br
+                |команда
+            li.about-advantage-slider__item(style="background-image:url('assets/img/advantage-slider/advantage-13.jpg')")
+              span
+                |Низкая текучесть
+                br
+                |кадров
+            li.about-advantage-slider__item(style="background-image:url('assets/img/advantage-slider/advantage-14.jpg')")
+              span
+                |Собственная
+                br
+                |Служба безопасности
+            li.about-advantage-slider__item(style="background-image:url('assets/img/advantage-slider/advantage-15.jpg')")
+              span
+                |Персонал рядом
+                br
+                |с работой
+          .about-advantage-slider__slogan
+            span Стабильность и высокий потенциал компании обеспечена масштабами крупного российского холдинга
+    // end   about advantage slider
+
+    // begin about history
+    .about-history
+      .about-history__left(style="background-image:url('assets/img/about-history.jpg')")
+      .about-history__right
+        .about-history__right-inn
+          h3.about-history__title История компании
+          h4.about-history__subtitle PRC является дочерней организацией одного из ведущих хэд-хантинговых агентств по подбору персонала ТОП-уровня*
+          p Идея создания компании отвечала запросам постоянных Клиентов, лидеров российского бизнеса, желающих передать надежным и качественным провайдерам все свои остальные вопросы в сфере персонала. Учитывая специфику работы в направлении массового рекрутинга, аутсорсинга и аутстаффинга, было принято решение разделить бизнес-процессы и создать в рамках HR-компании отдельную структуру, сосредоточенную только на линейных работниках.
+          p Со времени сотрудничества с постоянными Заказчиками клиентская база стремительно расширялась. Опыт работы с руководителями ТОП-уровня позволил открыть новую страницу в сфере аутсорсинга. За несколько лет из небольшого дочернего предприятия компания выросла до масштабов крупного холдинга, работающего в Москве, Санкт-Петербурге и других регионах России.
+          .about-history__slogan
+            svg
+              use(xlink:href="assets/img/sprite.svg#tab-14")
+            span Мы ценим каждого Клиента и стремимся обеспечить для Вас максимальный комфорт и экономическую и юридическую безопасность.
+          span.about-history__footer *Информация носит конфиденциальный характер и будет разглашена при подписании контракта.
+    // end   about history
+
+    // begin about map
+    section.about-map
+      .about-map__inn#map
+      header.about-map__header
+        .container
+          h3.about-map__title Города присутствия
+    // end   about map
+
+    // begin guarantees
+    section.guarantees
+      .container
+        .guarantees__left
+          .guarantees__left-item
+            h4.guarantees__dir-name Максимов Сергей Юрьевич
+            span.guarantees__dir-position управляющий директор
+          
+
+        .guarantees__right
+          h3.guarantees__title Гарантии управляющего директора
+          p Любые работы ведутся намного быстрее, качественнее и без лишних хлопот, если доверить подбор линейного персонала профессионалам. Данный принцип лежит в основе деятельности компании PRC. Высокая эффективность и юридическая безопасность достигается за счет стабильного развития нашей компании. Мы фокусируемся на юридической чистоте соискателей и работе с проверяющими органами, что снимает основную проблему современного рынка линейного персонала – сложности с легальным статусом иностранных рабочих.
+          p На протяжении 10 лет мы сотрудничаем только с надежными банками, имеем собственный резервный фонд и гарантируем абсолютную прозрачность движения финансовых средств. Тщательное оформление документов и ведение клиентских баз данных позволяет Вам моментально получить необходимую отчетность за предыдущие годы для проверяющих структур.
+          a(href="#").btn.btn-wr Задать вопрос управляющему директору
+    // end   guarantees
+
+    // begin about-personal
+    section.about-personal(style="background-image:url('assets/img/about-personal.jpg')")
+      .container
+        .about-personal__item
+          h4.about-personal__title Наши сотрудники
+          p Команда PRC – коллектив профессиональных специалистов в сфере менеджмента персонала. Мы осуществляем индивидуальный подход к каждому Клиенту, поэтому выделяем штатных сотрудников для решения конкретных задач, с учетом их опыта и навыков.
+          p Основной состав нашей команды не менялся со времен основания компании. Это HR-профессионалы, которые предлагают по-настоящему уникальные решения, эффективные исключительно для вашей ситуации. Вместе с последними кадровыми технологиями и высокой автоматизацией бизнес-процессов, мы готовы оперативно решить любой вопрос, связанный с линейным персоналом.
+    // end   about-personal
+
+    // begin about-conformity
+    section.about-conformity
+      .container
+        .about-conformity__left
+          h4.about-conformity__title Наши сотрудники
+          p
+            |Финансовая, техническая и кадровая оснащенность PRC соответствует всем необходимым требованиям.
+            br
+            |Мы готовы участвовать в тендере на оказание услуг Вашей компании.
+          ul.custom-ul.about-conformity__list
+            li На рынке с 2012 года
+            li Тщательный подбор партнеров и контрагентов
+            li Отсутствие задолженности по налогам и сборам
+            li Экономически обоснованная политика ценообразования услуг
+            li Подбор и наем персонала, расчет и выплата заработной платы
+            li Обеспечение безопасности труда
+            li Собственная Служба безопасности
+
+        .about-conformity__right
+          a(href="#").about-conformity__pdf
+            img(src="assets/img/about-conformity-pdf.jpg", alt="pdf")
+            svg
+              use(xlink:href="assets/img/sprite.svg#pdf")
+
+          a(href="#").about-conformity__pdf
+            img(src="assets/img/about-conformity-pdf.jpg", alt="pdf")
+            svg
+              use(xlink:href="assets/img/sprite.svg#pdf")
+    // end   about-conformity
+
+    // begin about-process
+    section.about-process
+      .container
+        h4.about-process__title Наши сотрудники
+      .about-process__list
+        .about-process__item
+          .about-process__cover(style="background-image:url('assets/img/about-process-01.jpg')")
+            .about-process__item-title Массовый подбор
+          p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений; осуществляем оформление медицинского страхования.
+          p Контроль ОМС и ДМС. Контроль легальности работы сотрудников – своевременное создание приказов и отстранение от работы при нарушении ими трудовой дисциплины.
+        .about-process__item
+          .about-process__cover(style="background-image:url('assets/img/about-process-02.jpg')")
+            .about-process__item-title Делопроизводство
+          p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений; осуществляем оформление медицинского страхования.
+          p Контроль ОМС и ДМС. Контроль легальности работы сотрудников – своевременное создание приказов и отстранение от работы при нарушении ими трудовой дисциплины.
+        .about-process__item
+          .about-process__cover(style="background-image:url('assets/img/about-process-03.jpg')")
+            .about-process__item-title Медицина
+          p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений; осуществляем оформление медицинского страхования.
+          p Контроль ОМС и ДМС. Контроль легальности работы сотрудников – своевременное создание приказов и отстранение от работы при нарушении ими трудовой дисциплины.
+        .about-process__item
+          .about-process__cover(style="background-image:url('assets/img/about-process-04.jpg')")
+            .about-process__item-title Обучение
+          p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений; осуществляем оформление медицинского страхования.
+          p Контроль ОМС и ДМС. Контроль легальности работы сотрудников – своевременное создание приказов и отстранение от работы при нарушении ими трудовой дисциплины.
+        .about-process__item
+          .about-process__cover(style="background-image:url('assets/img/about-process-05.jpg')")
+            .about-process__item-title Средства индивидуальной защиты
+          p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений; осуществляем оформление медицинского страхования.
+          p Контроль ОМС и ДМС. Контроль легальности работы сотрудников – своевременное создание приказов и отстранение от работы при нарушении ими трудовой дисциплины.
+        .about-process__item
+          .about-process__cover(style="background-image:url('assets/img/about-process-06.jpg')")
+            .about-process__item-title Учет времени
+          p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений; осуществляем оформление медицинского страхования.
+          p Контроль ОМС и ДМС. Контроль легальности работы сотрудников – своевременное создание приказов и отстранение от работы при нарушении ими трудовой дисциплины.
+    // end   about-process
+
+    // begin about-banks
+    section.about-banks
+      .container
+        h4.about-banks__title Банки партнеры
+        .about-banks__list
+          .about-banks__item
+            img(src="assets/img/bank-01.jpg", alt="bank")
+          .about-banks__item
+            img(src="assets/img/bank-02.jpg", alt="bank")
+          .about-banks__item
+            img(src="assets/img/bank-03.jpg", alt="bank")
+          .about-banks__item
+            img(src="assets/img/bank-04.jpg", alt="bank")
+          .about-banks__item
+            img(src="assets/img/bank-05.jpg", alt="bank")
+          .about-banks__item
+            img(src="assets/img/bank-06.jpg", alt="bank")
+          .about-banks__item
+            img(src="assets/img/bank-07.jpg", alt="bank")
+    // end   about-banks
+
+    
+
+  //end   content
+  include ../sections/footer
