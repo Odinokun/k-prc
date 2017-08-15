@@ -12,7 +12,9 @@ $(document).ready(function ($) {
     'contacts',
     'migration',
     'one-client',
+    'safety',
     'service',
+    // 'vacancies',
     ]);
 });
 

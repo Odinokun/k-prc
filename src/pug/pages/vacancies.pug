@@ -1,0 +1,26 @@
+extends ../_template
+
+block variables
+  - var title = 'PRC'
+  - var pageHeaderTitle = 'Вакансии'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.vacancies
+    header.vacancies-header
+      .container
+        include ../sections/page-header
+        h4.vacancies-header__subtitle Уважаемый соискатель!
+        .vacancies-header__text
+          p Если Вы хотя бы раз сталкивались с необходимостью поиска работы, то знаете, как много времени и сил для этого требуется. Зачастую размещение резюме на интернет-порталах, в газетах не приносит результата либо Вам поступают сомнительные предложения о трудоустройстве.
+
+    // begin vacancies-search 
+    section.vacancies-search
+      .container
+        h3.vacancies-search__title Поиск вакансии
+        form.vacancies-search__form
+    // end vacancies-search 
+  //end   content
+  include ../sections/footer
