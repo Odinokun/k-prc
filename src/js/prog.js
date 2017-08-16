@@ -14,6 +14,7 @@ $(document).ready(function ($) {
     'one-client',
     'safety',
     'service',
+    'vacancies',
     // 'vacancies',
     ]);
 });
@@ -65,3 +66,14 @@ $('.service-sec__tab-item').on('click', function() {
   $('.service-header__cover-' + tab).fadeIn();
 });
 // end   tab in service page
+
+
+// begin tab in vacancies page
+$('.vacancies-item__tab-btn').on('click', function() {
+  var tab = $(this).data('tab');
+  $('.vacancies-item__tab-btn').removeClass('active');
+  $(this).addClass('active');
+  $('.vacancies-item__tab-text').removeClass('active');
+  $('.vacancies-item__tab-text-' + tab).addClass('active');
+});
+// end   tab in vacancies page
