@@ -1,0 +1,235 @@
+extends ../_template
+
+block variables
+  - var title = 'PRC'
+  - var pageHeaderTitle = 'Аутсорсинг'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.autsorsing
+    include ../sections/tab-blue
+
+    header.autsorsing-header(style="background-image:url('assets/img/autsorsing-header.jpg')")
+      .container
+        include ../sections/page-header
+        .autsorsing-header__text
+          p Аутсорсинг (дословно «использование внешнего ресурса») – это услуга, направленная на подбор и оформление рабочего персонала, когда у организации отсутствует возможность содержать постоянный штат сотрудников для своей компании и руководить их деятельностью.
+
+
+
+    // begin autsorsing-podbor
+    section.autsorsing-podbor
+      .container
+        .autsorsing-podbor__left
+          .autsorsing-podbor__left-item
+            span.autsorsing-podbor__numb.color-text 343993
+            span.autsorsing-podbor__text 
+              |работника выведено
+              br
+              |на объекты заказчиков
+
+        .autsorsing-podbor__right
+          h3.autsorsing-podbor__title 
+            |Основная информация
+            br
+            |о профессиональном аутсорсинге
+
+          p На сегодняшний день аутсорсинг, распространенный на Западе, является одним из новых эффективных методов найма персонала в России. Данная услуга обладает существенными преимуществами: позволяет оптимизировать ресурсные процессы и направить Вашу компанию к благополучию и успеху. Ведь Вы получаете долговременную профессиональную поддержку работоспособности отдельных звеньев бизнеса. В свою очередь, это позволяет уменьшить Ваши организационные и финансовые затраты, направить освободившиеся ресурсы на развитие предприятия.
+          p Кадровый аутсорсинг предполагает непосредственную работу с персоналом: подбор, расстановка; оформление и контроль сроков действия разрешительных документов; обучение, аттестация; расчет и уплата налогов; обслуживание зарплатного договора; правовое сопровождение; формирование норм поведения в коллективе и многое другое.
+    // end   autsorsing-podbor
+
+
+    // begin autsorsing advantage
+    section.autsorsing-advantage
+      .container
+        .autsorsing-advantage__title Наши преимущества
+
+        .autsorsing-advantage-slider
+          ul.autsorsing-advantage-slider__list
+            li.autsorsing-advantage-slider__item(style="background-image:url('assets/img/advantage-slider/advantage-21.jpg')")
+              span
+                |В считанные дни и на выгодных
+                br
+                |условиях для Вас будет подобран
+                br
+                |квалифицированный персонал
+            li.autsorsing-advantage-slider__item(style="background-image:url('assets/img/advantage-slider/advantage-22.jpg')")
+              span
+                |Вы можете
+                br
+                |оптимизировать затраты
+                br
+                |на налоги до 40%
+            li.autsorsing-advantage-slider__item(style="background-image:url('assets/img/advantage-slider/advantage-23.jpg')")
+              span
+                |Вы забудете о дополнительной
+                br
+                |кадровой и бухгалтерской
+                br
+                |нагрузке
+            li.autsorsing-advantage-slider__item(style="background-image:url('assets/img/advantage-slider/advantage-04-1.jpg')")
+            li.autsorsing-advantage-slider__item(style="background-image:url('assets/img/advantage-slider/advantage-24.jpg')")
+              span
+                |Вы спокойны за свой бизнес:
+                br
+                |персонал работает в соответствии с
+                br
+                |нормами трудового законодательства
+            li.autsorsing-advantage-slider__item(style="background-image:url('assets/img/advantage-slider/advantage-25.jpg')")
+              span
+                |Вы не беспокоитесь
+                br
+                |о возможных проблемах
+                br
+                |с УФМС
+        
+        .autsorsing-advantage__banner
+          svg
+            use(xlink:href="assets/img/sprite.svg#folder")
+          span От поиска и легализации до оформления и налоговых отчислений – все проблемы с персоналом компании PRC берет на себя, а Вы спокойно занимаетесь развитием бизнеса.
+    // end   autsorsing advantage
+
+    //begin autsorsing-tabs
+    section.autsorsing-tabs
+      .container
+        h3.autsorsing-tabs__title Особенности аутсорсинга от компании PRC
+
+      .container.autsorsing-tabs__counter-wrap
+        .autsorsing-tabs__counter
+          span.autsorsing-tabs__counter-tab#autsorsing-tabs__counter-tab 01
+          span /
+          span.autsorsing-tabs__counter-all#autsorsing-tabs__counter-all 
+
+        ul.autsorsing-tabs__list
+          li.autsorsing-tabs__item
+            h5.autsorsing-tabs__item-title Проверка соответствия сотрудников
+            p 01 При отборе персонала в Вашу компанию мы проверяем квалификацию персонала, проводим тестирование, аттестацию кандидатов. Также проверяем документы.
+            p Отбор осуществляется исходя из требований Заказчика и опыта кандидата. При комплектовании бригад нами учитываются национальные особенности персонала.
+          li.autsorsing-tabs__item
+            h5.autsorsing-tabs__item-title Проверка соответствия сотрудников
+            p 02 При отборе персонала в Вашу компанию мы проверяем квалификацию персонала, проводим тестирование, аттестацию кандидатов. Также проверяем документы.
+            p Отбор осуществляется исходя из требований Заказчика и опыта кандидата. При комплектовании бригад нами учитываются национальные особенности персонала.
+          li.autsorsing-tabs__item
+            h5.autsorsing-tabs__item-title Проверка соответствия сотрудников
+            p 03 При отборе персонала в Вашу компанию мы проверяем квалификацию персонала, проводим тестирование, аттестацию кандидатов. Также проверяем документы.
+            p Отбор осуществляется исходя из требований Заказчика и опыта кандидата. При комплектовании бригад нами учитываются национальные особенности персонала.
+          li.autsorsing-tabs__item
+            h5.autsorsing-tabs__item-title Проверка соответствия сотрудников
+            p 04 При отборе персонала в Вашу компанию мы проверяем квалификацию персонала, проводим тестирование, аттестацию кандидатов. Также проверяем документы.
+            p Отбор осуществляется исходя из требований Заказчика и опыта кандидата. При комплектовании бригад нами учитываются национальные особенности персонала.
+          li.autsorsing-tabs__item
+            h5.autsorsing-tabs__item-title Проверка соответствия сотрудников
+            p 05 При отборе персонала в Вашу компанию мы проверяем квалификацию персонала, проводим тестирование, аттестацию кандидатов. Также проверяем документы.
+            p Отбор осуществляется исходя из требований Заказчика и опыта кандидата. При комплектовании бригад нами учитываются национальные особенности персонала.
+    //end autsorsing-tabs
+
+
+    //begin vacancies-section
+    section.vacancies-section
+      .container
+        h3.vacancies-section__title Закрываем следующие вакансии
+
+      .vacancies-section__list
+        .vacancies-section__item
+          h3.vacancies-section__item-title Кассир
+          .vacancies-section__item-pay
+            span от 150
+            span.rouble у
+            span /час
+          button.btn.btn-bw Заказать
+          .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies-section-01.jpg')")
+            h3.vacancies-section__item-cover-title Кассир
+
+        .vacancies-section__item
+          h3.vacancies-section__item-title Работник торгового зала
+          .vacancies-section__item-pay
+            span от 150
+            span.rouble у
+            span /час
+          button.btn.btn-bw Заказать
+          .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies-section-02.jpg')")
+            h3.vacancies-section__item-cover-title Работник торгового зала
+
+        .vacancies-section__item
+          h3.vacancies-section__item-title Грузчик
+          .vacancies-section__item-pay
+            span от 150
+            span.rouble у
+            span /час
+          button.btn.btn-bw Заказать
+          .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies-section-03.jpg')")
+            h3.vacancies-section__item-cover-title Грузчик
+
+        .vacancies-section__item
+          h3.vacancies-section__item-title Грузчик
+          .vacancies-section__item-pay
+            span от 150
+            span.rouble у
+            span /час
+          button.btn.btn-bw Заказать
+          .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies-section-04.jpg')")
+            h3.vacancies-section__item-cover-title Грузчик
+
+        .vacancies-section__item
+          h3.vacancies-section__item-title Упаковщик
+          .vacancies-section__item-pay
+            span от 150
+            span.rouble у
+            span /час
+          button.btn.btn-bw Заказать
+          .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies-section-05.jpg')")
+            h3.vacancies-section__item-cover-title Упаковщик
+
+        .vacancies-section__item
+          h3.vacancies-section__item-title Разнорабочий
+          .vacancies-section__item-pay
+            span от 150
+            span.rouble у
+            span /час
+          button.btn.btn-bw Заказать
+          .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies-section-06.jpg')")
+            h3.vacancies-section__item-cover-title Разнорабочий
+
+        .vacancies-section__item
+          h3.vacancies-section__item-title Уборщик
+          .vacancies-section__item-pay
+            span от 150
+            span.rouble у
+            span /час
+          button.btn.btn-bw Заказать
+          .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies-section-07.jpg')")
+            h3.vacancies-section__item-cover-title Уборщик
+
+        .vacancies-section__item.vacancies-section__item-all
+          h3.vacancies-section__item-title Все специалисты
+          button.btn.btn-wr Показать
+
+    //end vacancies-section
+
+
+    //begin callback-section
+    .callback-sec(style="background-image: url('assets/img/autsorsing-callback.jpg');")
+      .container
+        h3.callback-sec__title Оставьте заявку
+        span.callback-sec__subtitle
+          |Каждая ситуация особенная.
+          br
+          |Оставьте ваше имя и способ связи с вами — наш менеджер свяжется с вами, чтобы обсудить все детали.
+        form.callback-sec__form
+          .callback-sec__form-inn
+            .left
+              input(type="text" name="name" placeholder="Ваше имя")
+              input(type="text" name="phone" placeholder="Номер телефона")
+            .right
+              textarea(name="message" placeholder="Комментарий")
+          .callback-sec__checkbox
+            input(type="checkbox" id="agree")
+            label(for="agree")
+              |Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия 
+              a(href="#") Пользовательского соглашения
+          input(type="submit" value="Заказать звонок").btn.btn-rr
+    //end callback-section
+  //end   content
+  include ../sections/footer

@@ -1,0 +1,134 @@
+.friday {
+  //   min-height: calc(100vh - 272px);
+  background-color: #f4f4f6;
+}
+.friday__filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  @include max(1100) {
+    flex-wrap: wrap;
+  }
+  .btn {
+    width: 23%;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    background-color: transparent;
+
+    @include max(1100) {
+      width: 48%;
+    }
+    @include max(480) {
+      width: 100%;
+    }
+  }
+}
+.friday__item {
+  position: relative;
+  padding: 50px;
+  background-color: $brand;
+  &:hover {
+    .friday__item-cover {
+      pointer-events: none;
+      opacity: 0;
+    }
+  }
+}
+.friday__item-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 50px;
+  transition: opacity .5s;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.grid-sizer,
+.friday__item-1-1 {
+  width: 25%;
+  min-height: 300px;
+
+  @include max(1100) {
+    width: 33.3333%;
+  }
+  @include max(750) {
+    width: 50%;
+  }  @include max(480) {
+    width: 100%;
+  }
+}
+.friday__item-1-2 {
+  width: 25%;
+  min-height: 600px;
+
+  @include max(1100) {
+    width: 33.3333%;
+  }
+  @include max(750) {
+    width: 50%;
+  }  @include max(480) {
+    width: 100%;
+  }
+}
+.friday__item-2-2 {
+  width: 50%;
+  min-height: 600px;
+
+  @include max(1100) {
+    width: 66.6667%;
+  }
+  @include max(750) {
+    width: 100%;
+  }
+  .friday__item-cover-title {
+    font-size: 45px;
+  }
+}
+.friday__item-2-1 {
+  width: 50%;
+  min-height: 300px;
+
+  @include max(1100) {
+    width: 66.6667%;
+  }
+  @include max(750) {
+    width: 100%;
+  }
+}
+.friday__item-title {
+  font-family: $font-medium;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.friday__item-date {
+  font-family: $font;
+  font-size: 15px;
+  display: flex;
+  margin-bottom: 10px;
+  opacity: .5;
+  color: #fff;
+  svg {
+    fill: #fff;
+    max-width: 16px;
+    max-height: 16px;
+    margin-top: 2px;
+    margin-right: 10px;
+  }
+}
+.friday__item-text {
+  margin-bottom: 30px;
+  color: #fff;
+}
+.friday__item-cover-title {
+  font-size: 25px;
+  margin-bottom: 0;
+  color: #fff;
+}

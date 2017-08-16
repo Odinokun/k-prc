@@ -1,0 +1,223 @@
+extends ../_template
+
+block variables
+  - var title = 'PRC'
+  - var pageHeaderTitle = 'Пятничный менеджер'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.friday
+    .friday__top
+      .container
+        include ../sections/page-header
+
+        .friday__filter
+          button.btn.btn-wr(data-tezis="all").active Все статьи
+          button.btn.btn-wr(data-tezis="company") Новости компании
+          button.btn.btn-wr(data-tezis="news") Новости сферы
+          button.btn.btn-wr(data-tezis="expert") Экспертное мнение
+
+    // begin friday__list
+    section.friday__list
+      .friday__masonry#friday__masonry
+        .grid-sizer
+        .friday__item.friday__item-1-1.friday__item--company
+          h3.friday__item-title Название статьи
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/article/article-01.jpg')")
+            h3.friday__item-cover-title Название статьи
+
+        .friday__item.friday__item-1-1.friday__item--news
+          h3.friday__item-title Название статьи
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/article/article-02.jpg')")
+            h3.friday__item-cover-title Название статьи
+
+        .friday__item.friday__item-1-1.friday__item--company
+          h3.friday__item-title Название статьи
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/article/article-03.jpg')")
+            h3.friday__item-cover-title Название статьи
+
+        .friday__item.friday__item-1-1.friday__item--news
+          h3.friday__item-title Название статьи
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/article/article-04.jpg')")
+            h3.friday__item-cover-title Название статьи длинное в две строки
+
+        .friday__item.friday__item-2-2.friday__item--expert
+          h3.friday__item-title Название статьи
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/article/article-05.jpg')")
+            h3.friday__item-cover-title 
+              |Название самой актуальной
+              br
+              | и важной статьи
+
+        .friday__item.friday__item-1-2.friday__item--expert
+          h3.friday__item-title Название статьи
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/article/article-06.jpg')")
+            h3.friday__item-cover-title Название статьи
+
+        .friday__item.friday__item-1-2.friday__item--expert
+          h3.friday__item-title Название статьи
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/article/article-07.jpg')")
+            h3.friday__item-cover-title Название статьи
+
+        .friday__item.friday__item-1-1.friday__item--company
+          h3.friday__item-title Название статьи
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/article/article-08.jpg')")
+            h3.friday__item-cover-title Название статьи
+
+        .friday__item.friday__item-1-1.friday__item--company
+          h3.friday__item-title Название статьи
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/article/article-09.jpg')")
+            h3.friday__item-cover-title Название статьи
+
+        .friday__item.friday__item-1-1.friday__item--news
+          h3.friday__item-title Название статьи
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/article/article-10.jpg')")
+            h3.friday__item-cover-title Название статьи
+
+        .friday__item.friday__item-1-1.friday__item--company
+          h3.friday__item-title Название статьи
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/article/article-11.jpg')")
+            h3.friday__item-cover-title Название статьи
+
+        .friday__item.friday__item-1-1.friday__item--news
+          h3.friday__item-title Название статьи
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/article/article-12.jpg')")
+            h3.friday__item-cover-title Название статьи
+
+        .friday__item.friday__item-2-1.friday__item--expert
+          h3.friday__item-title Название статьи
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/article/article-13.jpg')")
+            h3.friday__item-cover-title Название статьи может даже и длинное
+
+        .friday__item.friday__item-1-1.friday__item--company
+          h3.friday__item-title Название статьи
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/article/article-14.jpg')")
+            h3.friday__item-cover-title Название статьи
+
+        .friday__item.friday__item-1-1.friday__item--company
+          h3.friday__item-title Название статьи
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/article/article-15.jpg')")
+            h3.friday__item-cover-title Название статьи
+
+        .friday__item.friday__item-2-1.friday__item--expert
+          h3.friday__item-title Название статьи
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/article/article-16.jpg')")
+            h3.friday__item-cover-title Название статьи
+
+    // end   friday__list
+  //end   content
+  include ../sections/footer

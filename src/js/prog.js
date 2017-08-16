@@ -6,16 +6,17 @@ $(document).ready(function ($) {
     'about',
     'agree',
     'article',
+    'autsorsing',
     'autstaffing',
-    'index',
     'clients',
     'contacts',
+    'friday',
+    'index',
     'migration',
     'one-client',
     'safety',
     'service',
     'vacancies',
-    // 'vacancies',
     ]);
 });
 
@@ -77,3 +78,51 @@ $('.vacancies-item__tab-btn').on('click', function() {
   $('.vacancies-item__tab-text-' + tab).addClass('active');
 });
 // end   tab in vacancies page
+
+
+
+// begin MASONRY
+function masonryFunc(){
+  var $container = $('#friday__masonry');
+
+  $container.masonry({
+    columnWidth: '.grid-sizer',
+    itemSelector: '.friday__item',
+    gutter: 0,
+    percentPosition: true,
+    horizontalOrder: true
+  });
+} 
+masonryFunc()
+setTimeout(masonryFunc,300)
+
+//перестраивание сетки при клике на фильтр
+// AHTUNG  обязательно указать параметр 100 у fadeIn/fadeOut (в данном случае в файле tezisFilter.js)
+$('.friday__filter .btn').on('click', function() {
+  var $container = $('#friday__masonry');
+  $container.masonry();
+  masonryFunc()
+  setTimeout(masonryFunc,300)
+});
+
+// end   MASONRY
+
+
+// begin tezts filer
+$('.friday__filter .btn').on('click', function() {
+  $('.friday__filter .btn').removeClass('active');
+  $(this).addClass('active');
+});
+
+
+$('.friday__filter .btn').on('click', function() {
+  var vis = $(this).data('tezis');
+
+  if (vis == 'all') {
+    $('.friday__item').fadeIn(100);
+  }
+  else {
+    $('.friday__item').fadeOut(100);
+    $('.friday__item--' + vis).fadeIn(100);
+  }
+});
