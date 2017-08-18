@@ -21,7 +21,7 @@ body {
   min-width: 320px;
 }
 body.no-scroll {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 body.fix {
   position: fixed;
@@ -177,13 +177,14 @@ span.rouble {
 .btn {
   font-family: $font-medium;
   font-size: 14px;
-  line-height: 40px;
-  display: inline-block;
   height: 40px;
+  line-height: 38px;
+
+  display: inline-block;
   margin: 0;
-  padding: 0 40px;
   transition: .5s;
   text-decoration: none;
+  padding: 0 40px;
 }
 .btn-wr {
   color: $highlight;

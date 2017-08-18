@@ -130,7 +130,10 @@ module.exports = function() {
   // begin slider in about.html
   // показываем скрытые слайды при первой прокрутке карусели
   $('.about-advantage-slider__list').on('afterChange', function(event, slick, currentSlide, nextSlide){
-      $('.slick-cloned').css("visibility", "visible")
+      $('.slick-cloned').css("visibility", "visible");
+      var slideNumb = currentSlide + 1;
+      $('.about-advantage-slider__slogan').fadeOut(0);
+      $('.about-advantage-slider__slogan-' + slideNumb).fadeIn(100);
   });
   // инициализируем карусель
   $('.about-advantage-slider__list').slick({

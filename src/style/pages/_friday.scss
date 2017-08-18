@@ -25,7 +25,7 @@
 }
 .friday__item {
   position: relative;
-  padding: 50px;
+  padding: 50px 50px 20px 50px;
   background-color: $brand;
   &:hover {
     .friday__item-cover {
@@ -52,7 +52,7 @@
 .grid-sizer,
 .friday__item-1-1 {
   width: 25%;
-  min-height: 300px;
+  min-height: 320px;
 
   @include max(1100) {
     width: 33.3333%;
@@ -65,7 +65,7 @@
 }
 .friday__item-1-2 {
   width: 25%;
-  min-height: 600px;
+  min-height: 640px;
 
   @include max(1100) {
     width: 33.3333%;
@@ -78,7 +78,7 @@
 }
 .friday__item-2-2 {
   width: 50%;
-  min-height: 600px;
+  min-height: 640px;
 
   @include max(1100) {
     width: 66.6667%;
@@ -92,7 +92,7 @@
 }
 .friday__item-2-1 {
   width: 50%;
-  min-height: 300px;
+  min-height: 320px;
 
   @include max(1100) {
     width: 66.6667%;

@@ -62,13 +62,13 @@
     }
   }
   .btn-rr {
-    line-height: 60px;
+    line-height: 58px;
     height: 60px;
     margin-top: 30px;
     padding: 0 90px;
 
     @include max(480) {
-      line-height: 40px;
+      line-height: 38px;
       height: 40px;
       padding: 0 50px;
     }
@@ -77,8 +77,8 @@
 .top-slider__title {
   font-family: $font-medium;
   font-size: 45px;
-  margin-bottom: 50px;
   line-height: 1;
+  margin-bottom: 50px;
   color: #fff;
 
   @include max(480) {

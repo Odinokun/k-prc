@@ -9,17 +9,189 @@
   background-color: rgba(0, 0, 0, .8);
 }
 .popup {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   top: 50%;
   left: 50%;
   display: none;
-  width: 300px;
-  padding: 50px 30px;
+  overflow-y: auto;
+  width: 90%;
+  max-width: 1170px;
+  max-height: 95%;
+  padding: 80px 70px;
   transform: translate(-50%, -50%);
-  background-color: #369;
+  background-color: #fff;
+
+  @include max(660) {
+    padding: 45px 45px;
+  }
+  @include max(425) {
+    padding: 45px 20px;
+  }
 }
-.popup__form {
+.popup-close {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: $brand;
+
+  @include max(660) {
+    width: 40px;
+    height: 40px;
+  }
+  svg {
+    fill: #fff;
+    width: 18px;
+    height: 18px;
+  }
 }
+.popup__title {
+  font-family: $font-medium;
+  font-size: 35px;
+  line-height: 1;
+  margin-bottom: 50px;
+  color: $title;
+
+  @include max(660) {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  @include max(425) {
+    font-size: 24px;
+  }
+}
+//begin callback popup
+.popup-callback__form {
+  display: flex;
+  flex-wrap: wrap;
+  .left,
+  .right {
+    width: 50%;
+
+    @include max(1000) {
+      width: 100%;
+    }
+    input,
+    textarea {
+      font-size: 17px;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      color: $text;
+      border: 2px solid #e6e6e6;
+      background-color: transparent;
+
+      @include placeholder-color(#b4b4b4);
+    }
+    input {
+      height: 60px;
+
+      @include max(660) {
+        height: 40px;
+      }
+    }
+  }
+  .left {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 15px;
+
+    @include max(1000) {
+      padding-right: 0;
+    }
+    input {
+      margin-bottom: 30px;
+
+      @include max(425) {
+        margin-bottom: 15px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+
+        @include max(1000) {
+          margin-bottom: 30px;
+        }
+        @include max(425) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .right {
+    padding-left: 15px;
+
+    @include max(1000) {
+      padding-left: 0;
+    }
+    textarea {
+      height: 100%;
+    }
+  }
+  .btn {
+    font-family: $font-medium;
+    font-size: 17px;
+    line-height: 1;
+    height: 60px;
+    padding: 0 70px;
+    white-space: nowrap;
+
+    @include max(660) {
+      font-size: 15px;
+      line-height: 1;
+      height: 40px;
+    }
+  }
+}
+.popup-checkbox {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+
+  @include max(660) {
+    margin-top: 10px;
+  }
+  input {
+    position: absolute;
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  input:checked + label:before {
+    background-image: url('../img/ul.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  label {
+    font-family: $font-light;
+    font-size: 12px;
+    position: relative;
+    max-width: 920px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    color: #b4b4b4;
+
+    @include max(425) {
+      margin-bottom: 10px;
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      content: '';
+      border: 2px solid #e6e6e6;
+      background-color: transparent;
+    }
+    a {
+      color: #fff;
+    }
+  }
+}
+//end callback popup

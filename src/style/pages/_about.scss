@@ -123,11 +123,15 @@
 .about-advantage-slider__slogan {
   font-family: $font-medium;
   font-size: 15px;
-  max-width: 400px;
+  display: none;
+  max-width: 350px;
   margin-top: 30px;
   padding-left: 25px;
   color: $title;
   border-left: 2px solid $highlight;
+  &.active {
+    display: block;
+  }
 }
 // end about-adventage slider
 

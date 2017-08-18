@@ -128,7 +128,8 @@
   }
 }
 .one-client__director-right {
-  padding-left: 15px;
+  // padding-left: 15px;
+  width: 100%;
 
   @include max(750) {
     padding-left: 0;

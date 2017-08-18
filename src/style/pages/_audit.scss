@@ -80,8 +80,8 @@
   box-shadow: 0 0 30px rgba(26, 26, 27, .1);
 
   @include max(1000) {
+  line-height: 60px;
     font-size: 20px;
-    line-height: 60px;
     width: 45%;
     height: 60px;
     margin-bottom: 20px;
@@ -367,7 +367,7 @@
 span.audit-tab-02__numb {
   font-family: $font-medium;
   font-size: 100px;
-  line-height: 90px;
+  line-height: 1;
   display: inline-block;
   flex: none;
   margin: 0;
@@ -498,7 +498,7 @@ span.audit-tab-02__numb {
 span.audit-tab-03__numb {
   font-family: $font-medium;
   font-size: 100px;
-  line-height: 90px;
+  line-height: 1;
   display: inline-block;
   flex: none;
   margin: 0;

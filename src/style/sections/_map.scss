@@ -4,3 +4,81 @@
 .map-advantage {
   position: relative;
 }
+.map__header {
+  position: absolute;
+  top: 210px;
+  right: 0;
+  left: 0;
+}
+.map__title {
+  font-family: $font-medium;
+  font-size: 35px;
+  margin-bottom: 30px;
+  color: $title;
+}
+.map-select__wrap {
+  position: relative;
+  display: inline-block;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 60px;
+    content: '';
+    pointer-events: none;
+    background-color: #fff;
+    background-image: url('../img/select-arr-2.png');
+    background-repeat: no-repeat;
+    background-position: 0 54%;
+  }
+}
+.map-select {
+    cursor: pointer;
+  font-family: $font-medium;
+  font-size: 17px;
+  min-width: 400px;
+  height: 60px;
+  padding: 0 20px;
+  border: none;
+  background-color: #fff;
+  @include max(480) {
+    min-width: 280px;
+  }
+}
+.map__footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.map-banner {
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(26, 26, 27, 0.1);
+}
+.map-banner__title {
+  font-family: $font-medium;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: $title;
+}
+.map-banner__adress,
+.map-banner__phone {
+  display: flex;
+  margin-bottom: 10px;
+  svg {
+    flex: none;
+    fill: $text;
+    width: 18px;
+    height: 18px;
+    margin-right: 20px;
+  }
+  a {
+    font-family: $font;
+    font-size: 15px;
+    text-decoration: none;
+    color: $title;
+  }
+}

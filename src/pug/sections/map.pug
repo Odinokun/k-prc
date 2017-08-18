@@ -1,6 +1,31 @@
 // begin map
 section.map-advantage
   section.map#map
+  header.map__header
+    .container
+      h3.map__title Карта присутствия
+      .map-select__wrap
+        select.map-select
+          option(value="Города присутствия") Города присутствия
+          option(value="Санкт-Петербург" selected) Санкт-Петербург
+          option(value="Москва") Москва
+          option(value="Екатеринбург") Екатеринбург
+  footer.map__footer
+    .container
+      .map-banner
+        h4.map-banner__title Санкт Петербург
+        .map-banner__adress
+          svg
+            use(xlink:href="assets/img/sprite.svg#marker-2")
+          a(href="#" target="_blank" rel="nofollow noopener noreferrer") Лиговский проспект, д. 200, 2й-3й этаж (б/ц «Лиговский 200»)
+        .map-banner__phone
+          svg
+            use(xlink:href="assets/img/sprite.svg#phone")
+          a(href="tel:8 812 490 70 36 ") 8 (812) 490-70-36 
+
+
+
+
   include ../sections/advantage
 
 // end   map

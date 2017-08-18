@@ -1,10 +1,45 @@
-//begin popup
-button.popup-open popup open
+//begin popup section
 .popup__layer
-  .popup
-    h3.popup__title Popup title
-    form.popup__form
-      input.popup__input(type="text" placeholder="Ваше имя")
-      input.popup__input(type="text" placeholder="Ваше имя")
-      button.popup__btn Кнопуля
-//end   popup
+
+//begin callback popup
+.popup.popup-callback#popup-callback
+  .popup-close
+    svg
+      use(xlink:href="assets/img/sprite.svg#close")
+  h4.popup__title Заказать обратный звонок
+  form.popup-callback__form#popup-callback__form
+    .left
+      input(type="text" name="name" placeholder="Ваше имя")
+      input(type="text" name="phone" placeholder="Номер телефона")
+    .right
+      textarea(name="message" placeholder="Ваш Комментарий")
+    .popup-checkbox
+      input(type="checkbox" id="agree-callback")
+      label(for="agree-callback")
+        |Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия 
+        a(href="/agree.html") Пользовательского соглашения
+    input(type="submit" value="Заказать звонок").btn.btn-rr
+//end callback popup
+
+//begin director popup
+.popup.popup-callback#popup-director
+  .popup-close
+    svg
+      use(xlink:href="assets/img/sprite.svg#close")
+  h4.popup__title Задать вопрос управляющему директору
+  form.popup-callback__form#popup-callback__form
+    .left
+      input(type="text" name="name"   placeholder="Как к вам обращаться")
+      input(type="text" name="mail"   placeholder="Электронная почта")
+      input(type="text" name="phone"  placeholder="Телефон")
+    .right
+      textarea(name="message" placeholder="Ваш вопрос")
+    .popup-checkbox
+      input(type="checkbox" id="agree-director")
+      label(for="agree-director")
+        |Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия 
+        a(href="/agree.html") Пользовательского соглашения
+    input(type="submit" value="Узнать больше").btn.btn-rr
+//end director popup
+
+//end   popup section
