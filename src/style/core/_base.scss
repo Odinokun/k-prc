@@ -69,6 +69,7 @@ p {
   strong {
     font-family: $font-medium;
     font-weight: 400;
+    color: $title;
   }
 }
 a {
@@ -187,10 +188,10 @@ span.rouble {
 .btn-wr {
   color: $highlight;
   border: 2px solid $highlight;
-  background-color: #fff;
+  background-color: transparent;
   &:hover {
     color: #fff;
-    background-color: $highlight;
+    background-color: $highlight !important;
   }
 }
 .btn-rr {
@@ -238,4 +239,10 @@ span.rouble {
     list-style-image: url('../img/ul.png');
     color: $title;
   }
+}
+// скрываем склонированные слайды в слайдере
+// показываем из при первой прокрутке карусели
+// через js
+.slick-cloned {
+  visibility: hidden;
 }

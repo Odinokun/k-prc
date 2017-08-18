@@ -6,6 +6,7 @@ $(document).ready(function ($) {
     'about',
     'agree',
     'article',
+    'audit',
     'autsorsing',
     'autstaffing',
     'clients',
@@ -126,3 +127,23 @@ $('.friday__filter .btn').on('click', function() {
     $('.friday__item--' + vis).fadeIn(100);
   }
 });
+
+
+// begin tab in audit page
+$('.audit__tab-btn').on('click', function() {
+  var tab = $(this).data('tab');
+  $('.audit__tab-btn').removeClass('active');
+  $(this).addClass('active');
+  $('.audit-tab').removeClass('active');
+  $('.audit-tab-' + tab).addClass('active');
+  //изменяем размер слайдера при клике на таб
+});
+// end   tab in audit page
+
+// BEGIN выбор активного элемента  !!!!!!!!! убрать при посадке на CMS
+$(window).on('load', function() {
+  var currentPage = $('.main').data('current');
+  $('#header-nav__list .header-nav__link-' + currentPage).addClass('active')
+  $('#tab-blue .tab-blue__link-' + currentPage).addClass('active')
+});
+// END выбор активного элемента  !!!!!!!!! убрать при посадке на CMS

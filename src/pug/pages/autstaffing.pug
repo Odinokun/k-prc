@@ -8,7 +8,7 @@ block content
   include ../sections/header
   
   //begin content
-  section.main.autstaffing
+  section.main.autstaffing(data-current="autstaffing")
     include ../sections/tab-blue
 
     header.autstaffing-header(style="background-image:url('assets/img/autstaffing-header.jpg')")
@@ -51,7 +51,7 @@ block content
               br
               |Аккредитованное Частное Агентство занятости (ЧАЗ).
           br
-          a(href="#") 116 фз о пройденной аккредитации
+          a(href="#" style="pointer-events:none;") 116 фз о пройденной аккредитации
           br
           span
             |Использование данной технологии может затрагивать

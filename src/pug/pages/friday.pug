@@ -8,7 +8,7 @@ block content
   include ../sections/header
   
   //begin content
-  section.main.friday
+  section.main.friday(data-current="friday")
     .friday__top
       .container
         include ../sections/page-header
@@ -23,200 +23,147 @@ block content
     section.friday__list
       .friday__masonry#friday__masonry
         .grid-sizer
-        .friday__item.friday__item-1-1.friday__item--company
-          h3.friday__item-title Название статьи
-          .friday__item-date
-            svg
-              use(xlink:href="assets/img/sprite.svg#clock")
-            span 12.07.2017
-          .friday__item-text
-            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
-          a(href="#").btn.btn-bw Посмотреть
-          .friday__item-cover(style="background-image:url('assets/img/article/article-01.jpg')")
-            h3.friday__item-cover-title Название статьи
-
-        .friday__item.friday__item-1-1.friday__item--news
-          h3.friday__item-title Название статьи
-          .friday__item-date
-            svg
-              use(xlink:href="assets/img/sprite.svg#clock")
-            span 12.07.2017
-          .friday__item-text
-            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
-          a(href="#").btn.btn-bw Посмотреть
-          .friday__item-cover(style="background-image:url('assets/img/article/article-02.jpg')")
-            h3.friday__item-cover-title Название статьи
-
-        .friday__item.friday__item-1-1.friday__item--company
-          h3.friday__item-title Название статьи
-          .friday__item-date
-            svg
-              use(xlink:href="assets/img/sprite.svg#clock")
-            span 12.07.2017
-          .friday__item-text
-            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
-          a(href="#").btn.btn-bw Посмотреть
-          .friday__item-cover(style="background-image:url('assets/img/article/article-03.jpg')")
-            h3.friday__item-cover-title Название статьи
-
-        .friday__item.friday__item-1-1.friday__item--news
-          h3.friday__item-title Название статьи
-          .friday__item-date
-            svg
-              use(xlink:href="assets/img/sprite.svg#clock")
-            span 12.07.2017
-          .friday__item-text
-            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
-          a(href="#").btn.btn-bw Посмотреть
-          .friday__item-cover(style="background-image:url('assets/img/article/article-04.jpg')")
-            h3.friday__item-cover-title Название статьи длинное в две строки
-
+        // begin article
         .friday__item.friday__item-2-2.friday__item--expert
-          h3.friday__item-title Название статьи
+          h3.friday__item-title Проверки организаций
           .friday__item-date
             svg
               use(xlink:href="assets/img/sprite.svg#clock")
             span 12.07.2017
           .friday__item-text
-            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
-          a(href="#").btn.btn-bw Посмотреть
-          .friday__item-cover(style="background-image:url('assets/img/article/article-05.jpg')")
+            p При выездной проверке должен присутствовать законный представитель вашей компании, который сможет письменно или устно дать ответы на вопросы инспектора. Сотрудник УВМ МВД уполномочен проверять документы у всех без исключения сотрудников, сверять сведения в разрешениях на работу с трудовыми документами компании, осуществлять фото и видео съемку...
+          a(href="/article-03.html").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/friday-sec/friday-sec-03.jpg')")
             h3.friday__item-cover-title 
-              |Название самой актуальной
-              br
-              | и важной статьи
-
+              |Проверки организаций
+        // end article
+          
+        // begin article
         .friday__item.friday__item-1-2.friday__item--expert
-          h3.friday__item-title Название статьи
+          h3.friday__item-title Временный персонал
           .friday__item-date
             svg
               use(xlink:href="assets/img/sprite.svg#clock")
             span 12.07.2017
           .friday__item-text
-            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
-          a(href="#").btn.btn-bw Посмотреть
-          .friday__item-cover(style="background-image:url('assets/img/article/article-06.jpg')")
-            h3.friday__item-cover-title Название статьи
+            p Термин «временный персонал» на российском рынке появился сравнительно недавно. Его применяют для обозначения услуги использования сторонних трудовых ресурсов...
+          a(href="/article-01.html").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/friday-sec/friday-sec-01.jpg')")
+            h3.friday__item-cover-title Временный персонал
+        // end article
 
-        .friday__item.friday__item-1-2.friday__item--expert
-          h3.friday__item-title Название статьи
+        // begin article
+        .friday__item.friday__item-1-2.friday__item--news
+          h3.friday__item-title Аутсорсинг и аутстаффинг
           .friday__item-date
             svg
               use(xlink:href="assets/img/sprite.svg#clock")
             span 12.07.2017
           .friday__item-text
-            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
-          a(href="#").btn.btn-bw Посмотреть
-          .friday__item-cover(style="background-image:url('assets/img/article/article-07.jpg')")
-            h3.friday__item-cover-title Название статьи
+            p Услуги аутсорсинга и аутстаффинга пришли на рынок России еще в конце XX века, однако многие до сих пор путают эти термины....
+          a(href="/article-02.html").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/friday-sec/friday-sec-02.jpg')")
+            h3.friday__item-cover-title Аутсорсинг и аутстаффинг
+        // end article
 
+        // begin article
         .friday__item.friday__item-1-1.friday__item--company
-          h3.friday__item-title Название статьи
+          h3.friday__item-title Аутстаффинг персонала
           .friday__item-date
             svg
               use(xlink:href="assets/img/sprite.svg#clock")
             span 12.07.2017
           .friday__item-text
-            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
-          a(href="#").btn.btn-bw Посмотреть
-          .friday__item-cover(style="background-image:url('assets/img/article/article-08.jpg')")
-            h3.friday__item-cover-title Название статьи
+            p В начале прошлого года федеральный закон №116 ввел в законодательное поле...
+          a(href="/article-04.html").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/friday-sec/friday-sec-04.jpg')")
+            h3.friday__item-cover-title Аутстаффинг персонала
+        // end article
 
+        // begin article
         .friday__item.friday__item-1-1.friday__item--company
-          h3.friday__item-title Название статьи
+          h3.friday__item-title Выгоден ли аутстаффинг?
           .friday__item-date
             svg
               use(xlink:href="assets/img/sprite.svg#clock")
             span 12.07.2017
           .friday__item-text
-            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
-          a(href="#").btn.btn-bw Посмотреть
-          .friday__item-cover(style="background-image:url('assets/img/article/article-09.jpg')")
-            h3.friday__item-cover-title Название статьи
+            p Аутстаффинг – эффективная кадровая технология вывода сотрудников за штат или привлечение штата извне...
+          a(href="/article-05.html").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/friday-sec/friday-sec-05.jpg')")
+            h3.friday__item-cover-title Выгоден ли аутстаффинг?
+        // end article
 
+        // begin article
+        .friday__item.friday__item-1-1.friday__item--expert
+          h3.friday__item-title Независимый аудит
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p Независимый кадровый аудит – это всесторонняя проверка процессов и документов кадрового отдела на соответствие...
+          a(href="/article-06.html").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/friday-sec/friday-sec-06.jpg')")
+            h3.friday__item-cover-title Независимый аудит
+        // end article
+
+        // begin article
         .friday__item.friday__item-1-1.friday__item--news
-          h3.friday__item-title Название статьи
+          h3.friday__item-title Миграционный аудит
           .friday__item-date
             svg
               use(xlink:href="assets/img/sprite.svg#clock")
             span 12.07.2017
           .friday__item-text
-            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
-          a(href="#").btn.btn-bw Посмотреть
-          .friday__item-cover(style="background-image:url('assets/img/article/article-10.jpg')")
-            h3.friday__item-cover-title Название статьи
+            p Персонал из других государств оформляется в штат с особым пакетом документов, куда входит...
+          a(href="/article-07.html").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/friday-sec/friday-sec-07.jpg')")
+            h3.friday__item-cover-title Миграционный аудит
+        // end article
 
+        // begin article
+        .friday__item.friday__item-1-1.friday__item--expert
+          h3.friday__item-title Применение аутсорсинга
+          .friday__item-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          .friday__item-text
+            p «Взросление» и стабилизация прибыльности бизнеса в сфере связи ставит перед компаниями новые задачи...
+          a(href="/article-08.html").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/friday-sec/friday-sec-08.jpg')")
+            h3.friday__item-cover-title Применение аутсорсинга
+        // end article
+
+        // begin article
         .friday__item.friday__item-1-1.friday__item--company
-          h3.friday__item-title Название статьи
+          h3.friday__item-title Защита предприятия
           .friday__item-date
             svg
               use(xlink:href="assets/img/sprite.svg#clock")
             span 12.07.2017
           .friday__item-text
-            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
-          a(href="#").btn.btn-bw Посмотреть
-          .friday__item-cover(style="background-image:url('assets/img/article/article-11.jpg')")
-            h3.friday__item-cover-title Название статьи
+            p Основной целью схемы работы с персоналом, которую принято называть «аутстаффингом», является сокращение...
+          a(href="/article-09.html").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/friday-sec/friday-sec-09.jpg')")
+            h3.friday__item-cover-title Защита предприятия
+        // end article
 
+        // begin article
         .friday__item.friday__item-1-1.friday__item--news
-          h3.friday__item-title Название статьи
+          h3.friday__item-title Как происходит подбор персонала?
           .friday__item-date
             svg
               use(xlink:href="assets/img/sprite.svg#clock")
             span 12.07.2017
           .friday__item-text
-            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
-          a(href="#").btn.btn-bw Посмотреть
-          .friday__item-cover(style="background-image:url('assets/img/article/article-12.jpg')")
-            h3.friday__item-cover-title Название статьи
+            p Подбор персонала – один их ключевых этапов создания команды единомышленников, от которой будет зависеть...
+          a(href="/article-10.html").btn.btn-bw Посмотреть
+          .friday__item-cover(style="background-image:url('assets/img/friday-sec/friday-sec-10.jpg')")
+            h3.friday__item-cover-title Как происходит подбор персонала?
+        // end article
 
-        .friday__item.friday__item-2-1.friday__item--expert
-          h3.friday__item-title Название статьи
-          .friday__item-date
-            svg
-              use(xlink:href="assets/img/sprite.svg#clock")
-            span 12.07.2017
-          .friday__item-text
-            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
-          a(href="#").btn.btn-bw Посмотреть
-          .friday__item-cover(style="background-image:url('assets/img/article/article-13.jpg')")
-            h3.friday__item-cover-title Название статьи может даже и длинное
-
-        .friday__item.friday__item-1-1.friday__item--company
-          h3.friday__item-title Название статьи
-          .friday__item-date
-            svg
-              use(xlink:href="assets/img/sprite.svg#clock")
-            span 12.07.2017
-          .friday__item-text
-            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
-          a(href="#").btn.btn-bw Посмотреть
-          .friday__item-cover(style="background-image:url('assets/img/article/article-14.jpg')")
-            h3.friday__item-cover-title Название статьи
-
-        .friday__item.friday__item-1-1.friday__item--company
-          h3.friday__item-title Название статьи
-          .friday__item-date
-            svg
-              use(xlink:href="assets/img/sprite.svg#clock")
-            span 12.07.2017
-          .friday__item-text
-            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
-          a(href="#").btn.btn-bw Посмотреть
-          .friday__item-cover(style="background-image:url('assets/img/article/article-15.jpg')")
-            h3.friday__item-cover-title Название статьи
-
-        .friday__item.friday__item-2-1.friday__item--expert
-          h3.friday__item-title Название статьи
-          .friday__item-date
-            svg
-              use(xlink:href="assets/img/sprite.svg#clock")
-            span 12.07.2017
-          .friday__item-text
-            p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
-          a(href="#").btn.btn-bw Посмотреть
-          .friday__item-cover(style="background-image:url('assets/img/article/article-16.jpg')")
-            h3.friday__item-cover-title Название статьи
 
     // end   friday__list
   //end   content

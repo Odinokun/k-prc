@@ -63,6 +63,7 @@
   margin-right: 30px;
   padding: 0;
   padding: 25px;
+  outline: none;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -85,3 +86,10 @@
     background-color: #f4f4f6;
   }
 }
+
+
+// .advantage-slider__item[data-slick-index='-1'],
+// .advantage-slider__item[data-slick-index='-2'],
+// .advantage-slider__item[data-slick-index='-3'] {
+//   visibility: hidden !important;
+// }

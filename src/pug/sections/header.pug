@@ -1,26 +1,26 @@
 // begin header
 header.header
   .container-lg
-    a(href="#").header-logo
+    a(href="/index.html").header-logo
       img(src="assets/img/logo.png", alt="company logo")
 
     // begin menu
     nav.header-nav
       include ../elements/burger
 
-      ul.header-nav__list
+      ul.header-nav__list#header-nav__list
         li.header-nav__item
-          a(href="#").header-nav__link О компании
+          a(href="/about.html").header-nav__link.header-nav__link-about О компании
         li.header-nav__item
-          a(href="#").header-nav__link Услуги
+          a(href="/service.html").header-nav__link.header-nav__link-service Услуги
         li.header-nav__item
-          a(href="#").header-nav__link.active Наши клиенты
+          a(href="/clients.html").header-nav__link.header-nav__link-clients Наши клиенты
         li.header-nav__item
-          a(href="#").header-nav__link Вакансии
+          a(href="/vacancies.html").header-nav__link.header-nav__link-vacancies Вакансии
         li.header-nav__item
-          a(href="#").header-nav__link Пятничный менеджер
+          a(href="/friday.html").header-nav__link.header-nav__link-friday Пятничный менеджер
         li.header-nav__item
-          a(href="#").header-nav__link Контакты
+          a(href="/contacts.html").header-nav__link.header-nav__link-contacts Контакты
     // end menu
 
     //begin geolocation
@@ -37,6 +37,4 @@ header.header
       button.btn.btn-wr Заказать звонок
         svg
           use(xlink:href="assets/img/sprite.svg#header-phone")
-
-        
 // end   header

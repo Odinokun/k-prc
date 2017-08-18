@@ -1,0 +1,79 @@
+extends ../_template
+
+block variables
+  - var title = 'PRC'
+  - var pageHeaderTitle = 'Защита предприятия'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.article
+    header.article-header(style="background-image:url('assets/img/article-header-09.jpg')")
+      .container
+        include ../sections/page-header
+        .article-header__date
+          svg
+            use(xlink:href="assets/img/sprite.svg#clock")
+          span 12.07.2017
+        .article-header__text
+          p Основной целью схемы работы с персоналом, которую принято называть «аутстаффингом», является сокращение рисков бизнеса. Каждый в отдельности положительный эффект применения схемы аутстаффинга будет конкретным примером сокращения экономических рисков. 
+        .article-header__pluso
+          script(type='text/javascript').
+            (function() {
+            if (window.pluso)if (typeof window.pluso.start == "function") return;
+            if (window.ifpluso==undefined) { window.ifpluso = 1;
+            var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+            s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+            s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+            var h=d[g]('body')[0];
+            h.appendChild(s);
+            }})();
+          .pluso(data-background='transparent', data-options='big,square,line,horizontal,nocounter,theme=04', data-services='vkontakte,odnoklassniki,facebook,twitter,google,moimir')
+
+    section.article-sec
+      .container
+        h3.article-sec__title Защита предприятия от должностных преступлений персонала при аутстаффинге
+
+        p Хотя законодательство Российской Федерации и не содержит универсального определения термина «Должностное преступление», мы рассматриваем это понятие в его широком смысле как экономическое преступление, в результате которых наносится ущерб клиенту. Уголовный кодекс РФ относит к ним «преступления в сфере экономической деятельности», а также «преступления против интересов службы в коммерческих и иных организациях».
+
+        p Основной целью схемы работы с персоналом, которую принято называть «аутстаффингом», является сокращение рисков бизнеса. Каждый в отдельности положительный эффект применения схемы аутстаффинга (снижение налоговой нагрузки, сокращение работы бухгалтерии, устранение штрафов и т.д.) будет конкретным примером сокращения экономических рисков. 
+
+        p Но как бы нам этого не хотелось, снижение экономических рисков не дает стопроцентной гарантии защиты от ущерба, который наносят должностные преступления или неосторожность/халатность. 
+
+        p Судебная практика также указывает на важные аспекты, которые следует учитывать всем участникам отношений аутстаффинга - компании-провайдеру, заказчику, работнику:
+
+        ul.article-sec__list
+          li.article-sec__item Заказчик не сможет привлечь к дисциплинарной ответственности работников на условиях аутстаффинга, это сможет сделать только компания-провайдер. 
+          li.article-sec__item За вред, причиненный предоставленными работниками, несет ответственность перед заказчиком компания-провайдер. 
+          li.article-sec__item Заказчик не сможет заключать договоры о полной материальной ответственности с предоставленными «в заем» работниками.
+
+        p Поэтому, с целью защиты бизнеса от возможного ущерба, как и при «традиционной» схеме работы с персоналом в штате следует уделять внимание мониторингу и контролю выполняемых работниками задач. И, безусловно, прописать в условиях договора с аутстаффером пункты о защите своих интересов.
+      
+
+    section.article-sec__news
+      .container
+        .article-sec__news-left
+          h3.article-sec__news-title Предыдущая новость
+          .article-sec__news-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-wr Посмотреть
+        .article-sec__news-right
+          h3.article-sec__news-title Следующая новость
+          .article-sec__news-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-wr Посмотреть
+
+
+        
+
+
+
+  //end   content
+  include ../sections/footer

@@ -78,6 +78,7 @@
   font-family: $font-medium;
   font-size: 45px;
   margin-bottom: 50px;
+  line-height: 1;
   color: #fff;
 
   @include max(480) {

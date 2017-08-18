@@ -1,0 +1,81 @@
+extends ../_template
+
+block variables
+  - var title = 'PRC'
+  - var pageHeaderTitle = 'Независимый аудит: что это такое?'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.article
+    header.article-header(style="background-image:url('assets/img/article-header-06.jpg')")
+      .container
+        include ../sections/page-header
+        .article-header__date
+          svg
+            use(xlink:href="assets/img/sprite.svg#clock")
+          span 12.07.2017
+        .article-header__text
+          p Это всесторонняя проверка процессов и документов кадрового отдела на соответствие нормам законодательства и делопроизводства. 
+        .article-header__pluso
+          script(type='text/javascript').
+            (function() {
+            if (window.pluso)if (typeof window.pluso.start == "function") return;
+            if (window.ifpluso==undefined) { window.ifpluso = 1;
+            var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+            s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+            s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+            var h=d[g]('body')[0];
+            h.appendChild(s);
+            }})();
+          .pluso(data-background='transparent', data-options='big,square,line,horizontal,nocounter,theme=04', data-services='vkontakte,odnoklassniki,facebook,twitter,google,moimir')
+
+    section.article-sec
+      .container
+        h3.article-sec__title Независимый аудит: что это такое?
+        p 
+          strong 
+          =" " 
+          |Независимый кадровый аудит – это всесторонняя проверка процессов и документов кадрового отдела на соответствие нормам законодательства и делопроизводства. В отличие от внутреннего аудита, на который уполномочивают сотрудника компании, внешний или независимый аудит поручается сторонним специалистам – кадровым аудиторам или профильным агентствам.
+
+        p Данная услуга по сути является «младшей сестрой» бухгалтерского аудита и не должна быть недооценена, т.к. независимый аудит поможет своевременно выявить дефекты и устранить риски возникновения претензий, трудовых споров и возможных штрафов.
+
+        p 
+          strong Что проверяет кадровый аудит? 
+
+        ul.article-sec__list
+          li.article-sec__item кадровые процессы компании (алгоритмы документооборота и архивации кадровой документации),
+          li.article-sec__item корректность оформления приема и увольнения сотрудников (заявления, трудовые книжки, договора и т.д.),
+          li.article-sec__item правильность документов учета кадров (приказы, штатные расписания, табели учета рабочего времени, должностные инструкции, личные карточки и т.п.)
+          li.article-sec__item порядок в локальном регулировании трудовых отношений в организации (коллективный договор, правильно оформленные испытательные сроки, положение о персональных данных, инструкции по безопасности, внутренний трудовой распорядок и пр.)
+
+        p В результате независимого аудита выявляются нарушения трудового законодательства, составляется экспертная оценка кадровых процессов и документооборота с указанием потенциальных рисков, и выдаются рекомендации по исправлению дефектов.
+
+      
+    section.article-sec__news
+      .container
+        .article-sec__news-left
+          h3.article-sec__news-title Предыдущая новость
+          .article-sec__news-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-wr Посмотреть
+        .article-sec__news-right
+          h3.article-sec__news-title Следующая новость
+          .article-sec__news-date
+            svg
+              use(xlink:href="assets/img/sprite.svg#clock")
+            span 12.07.2017
+          p Обеспечиваем контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений...
+          a(href="#").btn.btn-wr Посмотреть
+
+
+        
+
+
+
+  //end   content
+  include ../sections/footer

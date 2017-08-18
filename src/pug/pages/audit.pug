@@ -1,0 +1,365 @@
+extends ../_template
+
+block variables
+  - var title = 'PRC'
+  - var pageHeaderTitle = 'Аудит'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.audit(data-current="audit")
+    include ../sections/tab-blue
+
+    header.audit-header(style="background-image:url('assets/img/audit-header.jpg')")
+      .container
+        include ../sections/page-header
+        .audit-header__text
+          p Аутсорсинг (дословно «использование внешнего ресурса») – это услуга, направленная на подбор и оформление рабочего персонала, когда у организации отсутствует возможность содержать постоянный штат сотрудников для своей компании и руководить их деятельностью.
+
+    //begin audit__tab-btn-row
+    .audit__tab-btn-row
+      .container
+        .audit__tab-btn.active(data-tab="01") Охрана труда
+        .audit__tab-btn(data-tab="02") Миграционный учет
+        .audit__tab-btn(data-tab="03") Кадровый аудит
+    //end audit__tab-btn-row
+
+    section.audit-tab-section
+
+      // begin .audit-tab-01
+      .audit-tab.audit-tab-01.active
+        .audit-tab-01__text
+          .container
+            p В рамках комплексного аудита системы управления охраны труда наши специалисты оценят степень ее соответствия законодательству, а также выработают первоочередные задачи по устранению недостатков. Для Вас будут сформулированы индивидуальные рекомендации по оптимизации процессов в организации, повышению жизнеобеспечения и снижению рисков несчастных случаев на производстве.
+        
+        // begin .audit-tab-01__slider
+        .audit-tab-01__slider
+          .audit-tab-01__counter
+            span.audit-tab__counter-tab#audit-tab__counter-tab 01
+            span /
+            span.audit-tab__counter-all#audit-tab__counter-all
+
+          ul.audit-tab-01__slider-list
+            li.audit-tab-01__slider-item
+              .left(style="background-image:url('assets/img/audit-slider/slide-01.jpg')")
+              .right
+                .right-inn
+                  h3.audit-tab-01__title Разработка документов по охране труда
+                  ul.custom-ul
+                    li Разработка приказов руководства предприятия о назначении ответственных лиц, разработка и утверждении документации, проведение знаний по ОТ и ведении документации по охране труда;
+                    li Разработка программ обучения персонала, аттестации и переаттестации, инструктажа в области ОТ;
+                    li Разработка регламентов, положений, стандартов, которые будут применяться на предприятии;
+                    li Разработка инструкции по конкретным должностям, профессиям, видам работ;
+                    li Разработка других документов связанных с охраной труда.
+            li.audit-tab-01__slider-item
+              .left(style="background-image:url('assets/img/audit-slider/slide-01.jpg')")
+              .right
+                .right-inn
+                  h3.audit-tab-01__title Аудит охраны труда на предприятии
+                  ul.custom-ul
+                    li Проверка документации предприятия на соответствие всем нормам  и законам по охране труда;
+                    li Проверка рабочего процесса на соответствие нормам охраны труда;
+                    li Поиск оптимальных решений при обнаружении нарушений.
+            li.audit-tab-01__slider-item
+              .left(style="background-image:url('assets/img/audit-slider/slide-01.jpg')")
+              .right
+                .right-inn
+                  h3.audit-tab-01__title Организация охраны труда на предприятии 
+                  ul.custom-ul
+                    li Организация проведения инструктажей по охране труда;
+                    li Организация проведения первичной и повторной проверки знаний;
+                    li Помощь в оформлении и заполнении журналов;
+                    li Оптимизация управления охраной труда (формирование структуры и функционала службы по охране труда);
+                    li Представление интересов заказчика в контролирующих органах (в том числе Госинспекция по труду)
+            li.audit-tab-01__slider-item
+              .left(style="background-image:url('assets/img/audit-slider/slide-01.jpg')")
+              .right
+                .right-inn
+                  h3.audit-tab-01__title Сопровождение при проверках
+                  ul.custom-ul
+                    li Отстаивание интересов заказчика, в следствии чего сумма штрафов уменьшается в двое или пропадает вообще.
+        // end .audit-tab-01__slider
+
+        //begin audit-tab-01__include
+        section.audit-tab-01__include
+          .audit-tab-01__include-item
+            svg
+              use(xlink:href="assets/img/sprite.svg#tab-15")
+            span 
+              |Проведение
+              br
+              |медицинских осмотров
+
+          .audit-tab-01__include-item
+            svg
+              use(xlink:href="assets/img/sprite.svg#tab-16")
+            span Проведение СОУТ
+
+          .audit-tab-01__include-item
+            svg
+              use(xlink:href="assets/img/sprite.svg#tab-17")
+            span 
+              |Обучение по охране труда
+              br
+              |должностных и ответственных лиц
+
+          .audit-tab-01__include-item
+            svg
+              use(xlink:href="assets/img/sprite.svg#tab-18")
+            span 
+              |Расследование нечастных случаев
+              br
+              |любой сложности
+        //end audit-tab-01__include
+      // end .audit-tab-01
+
+      // begin .audit-tab-02
+      .audit-tab.audit-tab-02
+        .audit-tab-02__text
+          .container
+            p Проводится независимая оценка организации по привлечению и использованию иностранных работников. Миграционный аудит решает задачу заблаговременного выявления нарушений миграционного законодательства, наличия всех необходимых документов. Проверка позволяет легально устранить выявленные пробелы и предотвратить возможные санкции со стороны миграционной службы.
+        // begin .audit-tab-02__color-text
+        .audit-tab-02__color-text
+          .container
+            .audit-tab-02__color-text-item
+              span.audit-tab-02__numb.color-text 1
+              span Правила постановки и продления Миграционного учета - консультирование по вопросам начала данной деятельности
+            .audit-tab-02__color-text-item
+              span.audit-tab-02__numb.color-text 2
+              span Консультирование по вопросам особенностей постановки на МУ различных стран СНГ (в т.ч. безвизовый въезд)
+            .audit-tab-02__color-text-item
+              span.audit-tab-02__numb.color-text 3
+              span Аудит состояния дел - контроль сроков постановки, экспертная оценка документов, вынесение рекомендаций
+            .audit-tab-02__color-text-item
+              span.audit-tab-02__numb.color-text 4
+              span Подготовка компании к проверкам ФМС – ревизия документов и локальных актов с заключением о недостатках
+        // end .audit-tab-02__color-text
+
+        // begin .audit-tab-02__include
+        .audit-tab-02__include
+          .container
+            h3.audit-tab-02__include-title Что включает в себя миграционный учет
+          
+          .audit-tab-02__include-list
+            .audit-tab-02__include-item(style="background-image:url('assets/img/audit-include-01.jpg')")
+              h4.audit-tab-02__include-item-title Выезд специалиста на Ваше предприятие для работы с оригинальными документами и локальными актами организации
+            .audit-tab-02__include-item(style="background-image:url('assets/img/audit-include-02.jpg')")
+              h4.audit-tab-02__include-item-title Проверка всей кадровой документации, необходимой для оформления на работу иностранной рабочей силы
+            .audit-tab-02__include-item(style="background-image:url('assets/img/audit-include-03.jpg')")
+              h4.audit-tab-02__include-item-title Проверка документов и сроков оформления иностранных граждан (уведомлений о привлечении, о прибытии и др.)
+            .audit-tab-02__include-item(style="background-image:url('assets/img/audit-include-04.jpg')")
+              h4.audit-tab-02__include-item-title Анализ трудовых договоров и договоров ГПХ на предмет соответствия действующему российскому законодательству
+            .audit-tab-02__include-item(style="background-image:url('assets/img/audit-include-05.jpg')")
+              h4.audit-tab-02__include-item-title Проверка подлинности документов (миграционной карты, уведомления о прибытии в место временного пребывания)
+            .audit-tab-02__include-item(style="background-image:url('assets/img/audit-include-06.jpg')")
+              h4.audit-tab-02__include-item-title Консультационное сопровождение по вопросам приема на работу и оформления иностранных работников
+        // end .audit-tab-02__include
+
+        // begin audit-tab-02__result
+        .audit-tab-02__result
+          .container
+            span.audit-tab-02__result-text В результате проверки Вы получите заключение о выявленных нарушений, возможном наказании за него и список рекомендаций по исправлению ситуации
+            
+            .audit-tab-02__result-time
+              svg
+                use(xlink:href="assets/img/sprite.svg#clock-2")           
+              span
+                |Сроки выполнения проверки : 
+                =" "
+                strong 3-5 рабочих дней
+        // end audit-tab-02__result
+
+      // end .audit-tab-02
+
+      // begin .audit-tab-03
+      .audit-tab.audit-tab-03
+        .audit-tab-03__text
+          .container
+            p Проверке подлежит кадровое делопроизводство и документооборот на предмет соответствия нормам действующего трудового законодательства и локальным актам, а также политике и интересам компании. Наша методика оценки позволяет руководству компании-заказчика получить достоверные и своевременные сведения о возможных рисках. Мы составим официальное заключение, где отразим все имеющиеся недостатки кадрового делопроизводства, а также поможем в их устранении.
+        // begin .audit-tab-03__color-text
+        .audit-tab-03__color-text
+          .container
+            .audit-tab-03__color-text-item
+              span.audit-tab-03__numb.color-text 1
+              span Аудит кадровой документации; вынесение рекомендации. Проводится дистанционно и с выездом
+            .audit-tab-03__color-text-item
+              span.audit-tab-03__numb.color-text 2
+              span Аудит правоустанавливающих документов (адаптация ЛНА под деятельность компании-Заказчика)
+            .audit-tab-03__color-text-item
+              span.audit-tab-03__numb.color-text 3
+              span Разработка локальных нормативных актови подготовка шаблонов документов - КДС "с нуля"
+            .audit-tab-03__color-text-item
+              span.audit-tab-03__numb.color-text 4
+              span Восстановление и (или) внесение изменение кадровой документации, проверка актуальности
+            .audit-tab-03__color-text-item
+              span.audit-tab-03__numb.color-text 5
+              span Подготовка организации к плановым и внеплановым проверкам (ГИТ, Прокуратуры и пр.)
+            .audit-tab-03__color-text-item
+              span.audit-tab-03__numb.color-text 6
+              span Консультации по специальным вопросам: смена Генерального директора, проверки ГИТ и т.д.
+        // end .audit-tab-03__color-text
+
+        // begin .audit-tab-03__slider
+        .audit-tab-03__slider-title
+          .container
+            h3 Цели независимого кадрового аудита
+        .audit-tab-03__slider
+          .container
+            .audit-tab-03__counter
+              span.audit-tab-03__counter-tab#audit-tab-03__counter-tab-01 01
+              span /
+              span.audit-tab-03__counter-all#audit-tab-03__counter-all-01 
+
+            ul.audit-tab-03__list
+              li.audit-tab-03__item
+                p Объективная оценка текущей ситуации в части кадрового делопроизводства, наличия и соответствия документации нормам действующего законодательства;
+              li.audit-tab-03__item
+                p Возможность оперативного осуществления комплекса мероприятий по восстановлению делопроизводства путем внедрения рекомендаций аудитора
+              li.audit-tab-03__item
+                p Снижение трудовых и финансовых расходов организациина постановку и ведение правильного кадрового делопроизводства
+              li.audit-tab-03__item
+                p Обеспечение неукоснительного соблюдения требований законодательства, увеличение эффективности существующей кадровой политики
+              li.audit-tab-03__item
+                p Увеличение вероятности успешного прохождения возможных проверок со стороны контролирующих государственных органовбез наложения штрафных санкций
+              li.audit-tab-03__item
+                p Ликвидация материальных, репутационных и других возможных видов потерь организации при возникновении трудовых споров
+              li.audit-tab-03__item
+                p Соотнесение нарушений трудового законодательства, а также уровня ответственности за них в случае возможного выявления контролирующими органами.
+        // end .audit-tab-03__slider
+
+        // begin .audit-tab-03__type
+        .audit-tab-03__type
+          .container
+            h3.audit-tab-03__type-title Виды кадрового аудита
+          .audit-tab-03__type-list
+            .audit-tab-03__type-item
+              p Мы осуществим комплексную проверку всей документации, связанной с кадровым учетом, охраной труда. Помимо этого, осуществим анализ эффективности кадровых бизнес-процессов и выработаем рекомендации по их оптимизации.
+              .audit-tab-03__type-cover(style="background-image:url('assets/img/audit-type-01.jpg')")
+                h4.audit-tab-03__type-cover-title Полный
+
+            .audit-tab-03__type-item
+              p Проверке подлежит выбранный Заказчиком пакет документов (один или несколько). В выборку включаются сотрудники с различными графиками работы, оплатой труда, видами трудовых договоров. Подходит для крупных и средних компаний.
+              .audit-tab-03__type-cover(style="background-image:url('assets/img/audit-type-02.jpg')")
+                h4.audit-tab-03__type-cover-title Выборочный
+
+            .audit-tab-03__type-item
+              p Осуществляется непосредственно в офисе компании-Заказчика. Изучаются оригинальны документов. Для соблюдения условий конфиденциальности при проведении аудита требуется предоставление отдельного кабинета.
+              .audit-tab-03__type-cover(style="background-image:url('assets/img/audit-type-03.jpg')")
+                h4.audit-tab-03__type-cover-title Выездной
+
+            .audit-tab-03__type-item
+              p Осуществляется в офисе PRC. Специалисты проводят аудит по сканированным документам, предоставленных Заказчиком.
+              .audit-tab-03__type-cover(style="background-image:url('assets/img/audit-type-04.jpg')")
+                h4.audit-tab-03__type-cover-title Невыездной
+        // end .audit-tab-03__type
+
+        // begin .audit-tab-03__documents
+        .audit-tab-03__documents
+          .container
+            h3.audit-tab-03__documents-title Документы и процессы, подлежащие кадровому аудиту
+            .audit-tab-03__documents-list
+              .audit-tab-03__documents-item
+                svg
+                  use(xlink:href="assets/img/sprite.svg#tab-19")
+                .audit-tab-03__documents-item-inn
+                  h4.audit-tab-03__documents-item-title Защита персональных данных
+                  p Изучаются локальные акты компании, положения либо иные формы письменного закрепления работы с персональными данными
+              .audit-tab-03__documents-item
+                svg
+                  use(xlink:href="assets/img/sprite.svg#tab-20")
+                .audit-tab-03__documents-item-inn
+                  h4.audit-tab-03__documents-item-title Трудовые книжки (ТК)
+                  p Проверяется наличие и правильность ведения трудовых книжек, журнала учета выдачи ТК, бланков самих ТК и вкладышей
+              .audit-tab-03__documents-item
+                svg
+                  use(xlink:href="assets/img/sprite.svg#tab-21")
+                .audit-tab-03__documents-item-inn
+                  h4.audit-tab-03__documents-item-title Первичная учетная документация
+                  p Личные карточки Т-2, штатные расписания, трудовые договоры, графики отпусков, табели учета рабочего времени, приказы по л/с и основной деятельности
+              .audit-tab-03__documents-item
+                svg
+                  use(xlink:href="assets/img/sprite.svg#tab-22")
+                .audit-tab-03__documents-item-inn
+                  h4.audit-tab-03__documents-item-title Формы учетов
+                  p Корректное ведение журналов учета приказов, учета проверок и других необходимых в компании журналов, отсутствие пропусков сроков
+              .audit-tab-03__documents-item
+                svg
+                  use(xlink:href="assets/img/sprite.svg#tab-23")
+                .audit-tab-03__documents-item-inn
+                  h4.audit-tab-03__documents-item-title Фиксация оплаты труда и материального стимулирования
+                  p Оформление дисциплинарной и материальной ответственности, изменений условий трудового договора, премирования работников
+              .audit-tab-03__documents-item
+                svg
+                  use(xlink:href="assets/img/sprite.svg#tab-24")
+                .audit-tab-03__documents-item-inn
+                  h4.audit-tab-03__documents-item-title Помощь в проведении процедур
+                  p Услуга кадрового аудита будет необходима при создании и ликвидации подразделения, расширения либо сокращения штата сотрудников
+              .audit-tab-03__documents-item
+                svg
+                  use(xlink:href="assets/img/sprite.svg#tab-25")
+                .audit-tab-03__documents-item-inn
+                  h4.audit-tab-03__documents-item-title Оценка кадровой политики
+                  p Изучается эффективность существующих кадровых процессов и кадрового подразделения для решения стратегических задач компании в сфере управления персоналом
+              .audit-tab-03__documents-item
+                svg
+                  use(xlink:href="assets/img/sprite.svg#tab-26")
+                .audit-tab-03__documents-item-inn
+                  h4.audit-tab-03__documents-item-title Оценка кадровых резервов
+                  p Количественная оценка имеющихся трудовых ресурсов, будущей потребности в кадрах в соответствии с целями компании
+        // end .audit-tab-03__documents
+
+        // begin .audit-tab-03__result
+        section.audit-tab-03__result
+          .container
+            h3.audit-tab-03__result__title Результат кадрового аудита
+            .audit-tab-03__result__list
+              .audit-tab-03__result__row
+                .audit-tab-03__result__item(style="background-image:url('assets/img/audit-result-01.jpg')")
+                .audit-tab-03__result__item
+                  h4.audit-tab-03__result__item-title Подготовка отчета по итогам проведенного аудита
+                  p Отчет будет содержать оценку эффективности системы управления трудовыми ресурсами, ее соответствие стратегии компании, соразмерность человеческих ресурсов реальным потребностям организации.
+              .audit-tab-03__result__row
+                .audit-tab-03__result__item(style="background-image:url('assets/img/audit-result-02.jpg')")
+                .audit-tab-03__result__item
+                  h4.audit-tab-03__result__item-title Составление плана по устранению нарушений
+                  p Предусматривает поэтапное воплощение выводов и рекомендаций специалистов PRC по оптимизации, улучшению системы управления человеческими ресурсами с выделением приоритетности каждого мероприятия.
+              .audit-tab-03__result__row
+                .audit-tab-03__result__item(style="background-image:url('assets/img/audit-result-03.jpg')")
+                .audit-tab-03__result__item
+                  h4.audit-tab-03__result__item-title Рекомендации по устранению нарушений
+                  p Указываются наиболее типичные ошибки и серьезные недостатки ведения кадрового делопроизводства, также рекомендации позволяют восстановить правильный документооборот, внести изменения в существующие локальные акты. 
+              .audit-tab-03__result__row
+                .audit-tab-03__result__item(style="background-image:url('assets/img/audit-result-04.jpg')")
+                .audit-tab-03__result__item
+                  h4.audit-tab-03__result__item-title Консультации сотрудникам после завершения аудита
+                  p Сотрудники нашей компании окажут консультационное сопровождение организации по вопросам ведения кадрового документооборота, правильности оформления приема и перемещения работников, изменения системы оплаты труда и др.
+        // end .audit-tab-03__result
+
+      // end .audit-tab-03
+
+
+    //begin callback-section
+    .callback-sec(style="background-image: url('assets/img/audit-callback.jpg');")
+      .container
+        h3.callback-sec__title Оставьте заявку
+        span.callback-sec__subtitle
+          |Каждая ситуация особенная.
+          br
+          |Оставьте ваше имя и способ связи с вами — наш менеджер свяжется с вами, чтобы обсудить все детали.
+        form.callback-sec__form
+          .callback-sec__form-inn
+            .left
+              input(type="text" name="name" placeholder="Ваше имя")
+              input(type="text" name="phone" placeholder="Номер телефона")
+            .right
+              textarea(name="message" placeholder="Комментарий")
+          .callback-sec__checkbox
+            input(type="checkbox" id="agree")
+            label(for="agree")
+              |Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия 
+              a(href="#") Пользовательского соглашения
+          input(type="submit" value="Заказать звонок").btn.btn-rr
+    //end callback-section
+  //end   content
+  include ../sections/footer
