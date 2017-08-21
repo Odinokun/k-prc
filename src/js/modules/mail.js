@@ -7,11 +7,9 @@ module.exports = function() {
       url: "assets/php/mail.php",
       data: $(this).serialize()
     }).done(function() {
-      $('.popup').fadeOut();
-      $('.popup-success').fadeIn();
+      $('.popup').fadeOut(0);
       $('form')[0].reset();
-      // $('body').removeClass('no-scroll');
-      // alert("Мы с Вами свяжемся в ближайшее время.");
+      $('.popup-success').fadeIn();
     });
     return false;
   });

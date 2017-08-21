@@ -22,6 +22,7 @@
   }
 }
 .one-client__top-right {
+  position: relative;
   padding-left: 15px;
 
   @include max(750) {
@@ -33,6 +34,12 @@
   img {
     width: 100%;
   }
+}
+.one-client__top-right--logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 25%;
 }
 .one-client__title {
   font-family: $font-medium;
@@ -102,10 +109,10 @@
   }
 }
 
-
 //begin .one-client__director
 .one-client__director {
-  padding: 100px 0 40px 0;
+  display: none;  //////temp
+  padding: 100px 0 0 0;
   .container {
     display: flex;
     align-items: flex-start;
@@ -128,8 +135,7 @@
   }
 }
 .one-client__director-right {
-  // padding-left: 15px;
-  width: 100%;
+  padding-left: 15px;
 
   @include max(750) {
     padding-left: 0;
@@ -215,5 +221,6 @@
   font-family: $font-medium;
   font-size: 28px;
   margin-bottom: 50px;
+  padding-top: 40px;
   color: $title;
 }

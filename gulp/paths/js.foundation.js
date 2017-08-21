@@ -13,4 +13,7 @@ module.exports = [
 
   // include fancybox3
   './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
+
+  // include маска для телефона
+  './src/vendors/maskedinput/jquery.maskedinput.min.js',
 ];

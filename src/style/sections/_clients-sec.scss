@@ -10,7 +10,7 @@
   @include max(1360) {
     width: 33.3333%;
     &:last-child,
-    &:nth-last-child(-2n+2){
+    &:nth-last-child(-2n+2) {
       width: 50%;
     }
   }
@@ -25,6 +25,7 @@
   position: relative;
   min-height: 300px;
   padding: 50px;
+  cursor: pointer;
   background-color: $brand;
   &:hover {
     .clients-sec__cover {

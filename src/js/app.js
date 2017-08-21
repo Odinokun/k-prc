@@ -51,6 +51,10 @@ $(function() {
   // end   send mail
 
   // begin map in index.html
-  require('./modules/map')();
+  // require('./modules/map')();
   // end   map in index.html
+
+  // begin maskedinpt
+  require('./modules/masked')();
+  // end   maskedinpt
 });
