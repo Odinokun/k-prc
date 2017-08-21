@@ -35,14 +35,16 @@
   }
 }
 .map-select {
-    cursor: pointer;
   font-family: $font-medium;
   font-size: 17px;
   min-width: 400px;
   height: 60px;
   padding: 0 20px;
+  cursor: pointer;
   border: none;
   background-color: #fff;
+
+  -webkit-appearance: button;
   @include max(480) {
     min-width: 280px;
   }
@@ -54,9 +56,38 @@
   left: 0;
 }
 .map-banner {
+  display: none;
   padding: 40px;
   background-color: #fff;
-  box-shadow: 0 0 30px rgba(26, 26, 27, 0.1);
+  box-shadow: 0 0 30px rgba(26, 26, 27, .1);
+}
+.map-banner__close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  border: 1px solid $highlight;
+  border-radius: 50%;
+  background-color: #fff;
+  &::before,
+  &::after {
+    position: absolute;
+    top: 6px;
+    width: 1px;
+    height: 13px;
+    content: '';
+    background-color: $highlight;
+  }
+  &::before {
+    right: 12px;
+    transform: rotate(45deg);
+  }
+  &::after {
+    left: 12px;
+    transform: rotate(-45deg);
+  }
 }
 .map-banner__title {
   font-family: $font-medium;

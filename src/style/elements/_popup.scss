@@ -29,6 +29,28 @@
     padding: 45px 20px;
   }
 }
+.popup-success {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  display: none;
+  overflow-y: auto;
+  width: 90%;
+  max-width: 750px;
+  max-height: 95%;
+  padding: 100px 70px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #fff;
+
+  @include max(660) {
+    padding: 45px 45px;
+  }
+  @include max(425) {
+    padding: 45px 20px;
+  }
+}
 .popup-close {
   position: absolute;
   top: 0;
@@ -174,7 +196,7 @@
     max-width: 920px;
     margin-bottom: 50px;
     padding-left: 50px;
-    color: #b4b4b4;
+    color: $text;
 
     @include max(425) {
       margin-bottom: 10px;
@@ -192,6 +214,31 @@
     a {
       color: #fff;
     }
+  }
+}
+.popup-clip {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  svg {
+    flex: none;
+    fill: $brand;
+    width: 20px;
+    height: 22px;
+    margin-right: 20px;
+  }
+  a {
+    font-family: $font-light;
+    font-size: 18px;
+    text-decoration: underline;
+    color: $title;
+  }
+}
+.popup-ps {
+  width: 100%;
+  padding-top: 20px;
+  span {
+    font-size: 12px;
   }
 }
 //end callback popup

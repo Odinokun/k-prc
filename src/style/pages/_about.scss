@@ -102,29 +102,10 @@
     background-color: #f4f4f6;
   }
 }
-// .about-advantage-slider__item {
-//   &::before {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     content: '';
-//     transition: opacity .5s;
-//     opacity: .5;
-//     background-color: #f4f4f6;
-//   }
-//   &.slick-active {
-//     &::before {
-//       opacity: 0;
-//     }
-//   }
-// }
 .about-advantage-slider__slogan {
   font-family: $font-medium;
   font-size: 15px;
   display: none;
-  max-width: 350px;
   margin-top: 30px;
   padding-left: 25px;
   color: $title;
@@ -344,6 +325,7 @@
   flex: none;
   width: 47%;
   max-width: 280px;
+  outline: none;
 
   @include max(1000) {
     margin-right: 30px;

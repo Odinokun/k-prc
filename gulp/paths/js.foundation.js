@@ -12,5 +12,5 @@ module.exports = [
   './node_modules/masonry-layout/dist/masonry.pkgd.min.js',
 
   // include fancybox3
-  // './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
+  './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
 ];

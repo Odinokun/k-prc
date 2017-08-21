@@ -26,11 +26,46 @@ header.header
     //begin geolocation
     .geolocation
       .geolocation-phone
-        a(href="tel:8 800 350 50 49").geolocation-phone__link 8 (800) 350-50-49
+        a(href="tel:8 800 350 50 49").geolocation-phone__link.geolocation-phone__link-msk 8 (000) 000-00-00
+        a(href="tel:8 800 350 50 49").geolocation-phone__link.geolocation-phone__link-spb.active 8 (800) 350-50-49
+        a(href="tel:8 800 350 50 49").geolocation-phone__link.geolocation-phone__link-cheln 8 (000) 000-00-00
+        a(href="tel:8 800 350 50 49").geolocation-phone__link.geolocation-phone__link-ekb 8 (000) 000-00-00
+        a(href="tel:8 800 350 50 49").geolocation-phone__link.geolocation-phone__link-tumen 8 (000) 000-00-00
+        a(href="tel:8 800 350 50 49").geolocation-phone__link.geolocation-phone__link-rnd 8 (000) 000-00-00
+        a(href="tel:8 800 350 50 49").geolocation-phone__link.geolocation-phone__link-kirov 8 (000) 000-00-00
+        a(href="tel:8 800 350 50 49").geolocation-phone__link.geolocation-phone__link-iz 8 (000) 000-00-00
+        a(href="tel:8 800 350 50 49").geolocation-phone__link.geolocation-phone__link-novosib 8 (000) 000-00-00
       .geolocation-region
         span Ваш регион:
         =" "
-        a(href="#").geolocation-region__city Москва
+        a(href="#").geolocation-region__city.geolocation-region__city-msk Москва
+        a(href="#").geolocation-region__city.geolocation-region__city-spb.active Санкт-Петербург
+        a(href="#").geolocation-region__city.geolocation-region__city-cheln Набережные Челны
+        a(href="#").geolocation-region__city.geolocation-region__city-ekb Екатеринбург
+        a(href="#").geolocation-region__city.geolocation-region__city-tumen Тюмень
+        a(href="#").geolocation-region__city.geolocation-region__city-rnd Ростов на Дону
+        a(href="#").geolocation-region__city.geolocation-region__city-kirov Киров
+        a(href="#").geolocation-region__city.geolocation-region__city-iz Ижевск
+        a(href="#").geolocation-region__city.geolocation-region__city-novosib Новосибирск
+        .geolocation-region__popup
+          h3.geolocation-region__popup-title Ваш регион Санкт-Петербург?
+          .geolocation-region__btn-wrap
+            button.btn.btn-rr Да
+            button.btn.btn-no Нет, изменить регион
+        .geolocation-region__popup-city
+          //- form
+            input(type="search")
+            input(type="submit")
+          ul
+            li(data-city="msk") Москва
+            li(data-city="spb") Санкт-Петербург
+            li(data-city="cheln") Набережные Челны
+            li(data-city="ekb") Екатеринбург
+            li(data-city="tumen") Тюмень
+            li(data-city="rnd") Ростов на дону
+            li(data-city="kirov") Киров
+            li(data-city="iz") Ижевск
+            li(data-city="novosib") Новосибирск
     //end geolocation
 
     .header-callback

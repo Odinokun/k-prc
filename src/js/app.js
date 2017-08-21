@@ -46,6 +46,10 @@ $(function() {
   require('./modules/mobileMenu')();
   // end   mobile menu
 
+  // begin send mail
+  require('./modules/mail')();
+  // end   send mail
+
   // begin map in index.html
   require('./modules/map')();
   // end   map in index.html

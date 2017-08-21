@@ -1,6 +1,15 @@
 //begin popup section
 .popup__layer
 
+//begin success popup
+.popup-success#popup-success
+  .popup-close
+    svg
+      use(xlink:href="assets/img/sprite.svg#close")
+  h4.popup__title Ваше сообщение отправлено
+  h5.popup__subtitle Мы свяжемся с Вами в ближайшее время.
+//end success popup
+
 //begin callback popup
 .popup.popup-callback#popup-callback
   .popup-close
@@ -8,38 +17,79 @@
       use(xlink:href="assets/img/sprite.svg#close")
   h4.popup__title Заказать обратный звонок
   form.popup-callback__form#popup-callback__form
+    //- поле для выбора варианте сообщения
+    input(type="hidden" name="nameform" value="popup-callback__form")
+    //- поле для темы письма
+    input(type="hidden" name="theme" value="Заказ обратного звонка")
     .left
       input(type="text" name="name" placeholder="Ваше имя")
       input(type="text" name="phone" placeholder="Номер телефона")
     .right
       textarea(name="message" placeholder="Ваш Комментарий")
     .popup-checkbox
-      input(type="checkbox" id="agree-callback")
-      label(for="agree-callback")
+      input(type="checkbox" id="agree-callback-popup")
+      label(for="agree-callback-popup")
         |Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия 
         a(href="/agree.html") Пользовательского соглашения
     input(type="submit" value="Заказать звонок").btn.btn-rr
 //end callback popup
 
 //begin director popup
-.popup.popup-callback#popup-director
+.popup.popup-director#popup-director
   .popup-close
     svg
       use(xlink:href="assets/img/sprite.svg#close")
   h4.popup__title Задать вопрос управляющему директору
-  form.popup-callback__form#popup-callback__form
+  form.popup-callback__form
+    //- поле для выбора варианте сообщения
+    input(type="hidden" name="nameform" value="popup-director__form")
+    //- поле для темы письма
+    input(type="hidden" name="theme" value="Вопрос управляющему директору")
     .left
       input(type="text" name="name"   placeholder="Как к вам обращаться")
-      input(type="text" name="mail"   placeholder="Электронная почта")
+      input(type="text" name="email"  placeholder="Электронная почта")
       input(type="text" name="phone"  placeholder="Телефон")
     .right
       textarea(name="message" placeholder="Ваш вопрос")
     .popup-checkbox
-      input(type="checkbox" id="agree-director")
-      label(for="agree-director")
+      input(type="checkbox" id="agree-director-popup")
+      label(for="agree-director-popup")
         |Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия 
         a(href="/agree.html") Пользовательского соглашения
     input(type="submit" value="Узнать больше").btn.btn-rr
 //end director popup
+
+//begin vacancies popup
+.popup.popup-vacancies#popup-vacancies
+  .popup-close
+    svg
+      use(xlink:href="assets/img/sprite.svg#close")
+  h4.popup__title Задать вопрос управляющему директору
+  form.popup-callback__form
+    //- поле для выбора варианте сообщения
+    input(type="hidden" name="nameform" value="popup-vacancies__form")
+    //- поле для темы письма
+    input(type="hidden" name="theme" value="Заявка на вакансию")
+    .left
+      input(type="text" name="name"    placeholder="Имя*" required)
+      input(type="text" name="surname" placeholder="Фамилия*" required)
+      input(type="text" name="email"   placeholder="Электронная почта*" required)
+      input(type="text" name="phone"   placeholder="Телефон*" required)
+    .right
+      textarea(name="message" placeholder="Коментарии")
+    .popup-clip
+      svg
+        use(xlink:href="assets/img/sprite.svg#clip")
+      a(href="#") Прикрепить резюме
+
+    .popup-checkbox
+      input(type="checkbox" id="agree-vacancies-popup")
+      label(for="agree-vacancies-popup")
+        |Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия 
+        a(href="/agree.html") Пользовательского соглашения
+    input(type="submit" value="Отправить").btn.btn-rr
+    .popup-ps
+      span *Заполните все обязательные поля формы
+//end vacancies popup
 
 //end   popup section

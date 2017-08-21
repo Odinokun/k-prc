@@ -177,14 +177,13 @@ span.rouble {
 .btn {
   font-family: $font-medium;
   font-size: 14px;
-  height: 40px;
   line-height: 38px;
-
   display: inline-block;
+  height: 40px;
   margin: 0;
+  padding: 0 40px;
   transition: .5s;
   text-decoration: none;
-  padding: 0 40px;
 }
 .btn-wr {
   color: $highlight;
@@ -222,6 +221,17 @@ span.rouble {
     color: $brand;
     background-color: #fff;
   }
+}
+.popup-checkbox + .btn,
+.callback-sec__checkbox + .btn {
+  pointer-events: none;
+  opacity: .5;
+}
+.popup-checkbox.checked + .btn,
+.callback-sec__checkbox.checked + .btn {
+  pointer-events: auto;
+  opacity: 1;
+  cursor: pointer;
 }
 .color-text {
   color: transparent;

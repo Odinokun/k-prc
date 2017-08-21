@@ -4,15 +4,23 @@ section.map-advantage
   header.map__header
     .container
       h3.map__title Карта присутствия
-      .map-select__wrap
+      .map-select__wrap.control
         select.map-select
-          option(value="Города присутствия") Города присутствия
-          option(value="Санкт-Петербург" selected) Санкт-Петербург
-          option(value="Москва") Москва
-          option(value="Екатеринбург") Екатеринбург
+          option(value="all" selected) Города присутствия
+          option(value="spb") Санкт-Петербург
+          option(value="msk") Москва
+          option(value="cheln") Набережные Челны
+          option(value="ekb") Екатеринбург
+          option(value="tumen") Тюмень
+          option(value="rnd") Ростов на дону
+          option(value="kirov") Киров
+          option(value="iz") Ижевск
+          option(value="novosib") Новосибирск
   footer.map__footer
     .container
-      .map-banner
+      // begin Санкт Петербург баннер
+      .map-banner.map-banner-spb
+        .map-banner__close
         h4.map-banner__title Санкт Петербург
         .map-banner__adress
           svg
@@ -22,6 +30,118 @@ section.map-advantage
           svg
             use(xlink:href="assets/img/sprite.svg#phone")
           a(href="tel:8 812 490 70 36 ") 8 (812) 490-70-36 
+      // end Санкт Петербург баннер
+      
+      // begin Москва баннер
+      .map-banner.map-banner-msk
+        .map-banner__close
+        h4.map-banner__title Москва
+        .map-banner__adress
+          svg
+            use(xlink:href="assets/img/sprite.svg#marker-2")
+          a(href="#" target="_blank" rel="nofollow noopener noreferrer") Москва
+        .map-banner__phone
+          svg
+            use(xlink:href="assets/img/sprite.svg#phone")
+          a(href="tel:8 812 490 70 36 ") 8 (000) 000-00-00
+      // end Москва баннер
+      
+      // begin Набережные Челны баннер
+      .map-banner.map-banner-cheln
+        .map-banner__close
+        h4.map-banner__title Набережные Челны
+        .map-banner__adress
+          svg
+            use(xlink:href="assets/img/sprite.svg#marker-2")
+          a(href="#" target="_blank" rel="nofollow noopener noreferrer") Набережные Челны
+        .map-banner__phone
+          svg
+            use(xlink:href="assets/img/sprite.svg#phone")
+          a(href="tel:8 812 490 70 36 ") 8 (000) 000-00-00
+      // end Набережные Челны баннер
+      
+      // begin Екатеринбург баннер
+      .map-banner.map-banner-ekb
+        .map-banner__close
+        h4.map-banner__title Екатеринбург
+        .map-banner__adress
+          svg
+            use(xlink:href="assets/img/sprite.svg#marker-2")
+          a(href="#" target="_blank" rel="nofollow noopener noreferrer") Екатеринбург
+        .map-banner__phone
+          svg
+            use(xlink:href="assets/img/sprite.svg#phone")
+          a(href="tel:8 812 490 70 36 ") 8 (000) 000-00-00
+      // end Екатеринбург баннер
+      
+      // begin Тюмень баннер
+      .map-banner.map-banner-tumen
+        .map-banner__close
+        h4.map-banner__title Тюмень
+        .map-banner__adress
+          svg
+            use(xlink:href="assets/img/sprite.svg#marker-2")
+          a(href="#" target="_blank" rel="nofollow noopener noreferrer") Тюмень
+        .map-banner__phone
+          svg
+            use(xlink:href="assets/img/sprite.svg#phone")
+          a(href="tel:8 812 490 70 36 ") 8 (000) 000-00-00
+      // end Тюмень баннер
+      
+      // begin Ростов на Дону баннер
+      .map-banner.map-banner-rnd
+        .map-banner__close
+        h4.map-banner__title Ростов на Дону
+        .map-banner__adress
+          svg
+            use(xlink:href="assets/img/sprite.svg#marker-2")
+          a(href="#" target="_blank" rel="nofollow noopener noreferrer") Ростов на Дону
+        .map-banner__phone
+          svg
+            use(xlink:href="assets/img/sprite.svg#phone")
+          a(href="tel:8 812 490 70 36 ") 8 (000) 000-00-00
+      // end Ростов на Дону баннер
+      
+      // begin Киров баннер
+      .map-banner.map-banner-kirov
+        .map-banner__close
+        h4.map-banner__title Киров
+        .map-banner__adress
+          svg
+            use(xlink:href="assets/img/sprite.svg#marker-2")
+          a(href="#" target="_blank" rel="nofollow noopener noreferrer") Киров
+        .map-banner__phone
+          svg
+            use(xlink:href="assets/img/sprite.svg#phone")
+          a(href="tel:8 812 490 70 36 ") 8 (000) 000-00-00
+      // end Киров баннер
+      
+      // begin Ижевск баннер
+      .map-banner.map-banner-iz
+        .map-banner__close
+        h4.map-banner__title Ижевск
+        .map-banner__adress
+          svg
+            use(xlink:href="assets/img/sprite.svg#marker-2")
+          a(href="#" target="_blank" rel="nofollow noopener noreferrer") Ижевск
+        .map-banner__phone
+          svg
+            use(xlink:href="assets/img/sprite.svg#phone")
+          a(href="tel:8 812 490 70 36 ") 8 (000) 000-00-00
+      // end Ижевск баннер
+      
+      // begin Новосибирск баннер
+      .map-banner.map-banner-novosib
+        h4.map-banner__title Новосибирск
+        .map-banner__adress
+          svg
+            use(xlink:href="assets/img/sprite.svg#marker-2")
+          a(href="#" target="_blank" rel="nofollow noopener noreferrer") Новосибирск
+        .map-banner__phone
+          svg
+            use(xlink:href="assets/img/sprite.svg#phone")
+          a(href="tel:8 812 490 70 36 ") 8 (000) 000-00-00
+      // end Новосибирск баннер
 
 
 

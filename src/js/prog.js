@@ -140,6 +140,20 @@ $('.audit__tab-btn').on('click', function() {
 });
 // end   tab in audit page
 
+// BEGIN активная/неактивная кнопка в форме
+$(window).on('load', function() {
+  $("input:checkbox:checked").parent().addClass('checked');
+});
+
+$("input:checkbox").on('click', function() {
+  if ($(this).is(':checked')) {
+    $(this).parent().addClass('checked');
+  } else {
+    $(this).parent().removeClass('checked');
+  }
+});
+// END активная/неактивная кнопка в форме
+
 // BEGIN выбор активного элемента  !!!!!!!!! убрать при посадке на CMS
 $(window).on('load', function() {
   var currentPage = $('.main').data('current');

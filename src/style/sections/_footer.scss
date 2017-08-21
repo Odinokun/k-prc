@@ -1,6 +1,6 @@
 .footer {
+  background-color: #f4f4f6;
   padding: 80px 0;
-  background-color: $title;
   .container-lg {
     display: flex;
 
@@ -48,22 +48,19 @@
   font-family: $font-medium;
   font-size: 20px;
   margin-bottom: 30px;
-  color: #fff;
+    color: $title;
 }
 .footer-item__logo {
   margin-bottom: 10px;
   text-decoration: none;
   color: $title;
-  .footer-item__logo-colorful {
-    display: none;
-  }
 }
 .footer-item__logo-text {
+    color: #000;
   font-family: $font-light;
   font-size: 14px;
   display: block;
   margin-bottom: 30px;
-  color: #fff;
 }
 .footer-item__copyright {
   font-family: $font-light;
@@ -74,8 +71,8 @@
   font-family: $font;
   display: inline-block;
   margin-bottom: 10px;
+    color: $text;
   text-decoration: none;
-  color: #fff;
   &:hover {
     text-decoration: underline;
     color: $brand;
@@ -97,10 +94,10 @@
   line-height: 1.4;
   display: inline-block;
   text-decoration: none;
-  color: #fff;
+    color: $title;
   &:hover {
+      color: $title;
     text-decoration: underline;
-    color: #fff;
   }
 }
 .footer-item__phone {
@@ -115,12 +112,12 @@
     margin-right: 10px;
     white-space: nowrap;
     text-decoration: none;
-    color: #fff;
+      color: $title;
   }
   span {
     font-family: $font-light;
     font-size: 15px;
-    color: #fff;
+      color: $text;
 
     @include max(1510) {
       width: 100%;
@@ -133,58 +130,14 @@
   margin-top: 30px;
   & a:hover {
     svg {
-      fill: $text;
+        fill: $brand;
     }
   }
   svg {
-    fill: #fff;
     max-width: 23px;
     max-height: 20px;
     margin-right: 30px;
     transition: fill .5s;
-  }
-}
-
-// Стили для футера на главной странице
-.main + .footer {
-  background-color: #f4f4f6;
-  .footer-item__logo-colorful {
-    display: block;
-  }
-  .footer-item__logo-white {
-    display: none;
-  }
-  .footer-item__logo-text {
-    color: #000;
-  }
-  .footer-item__title {
-    color: $title;
-  }
-  .footer-item__link {
-    color: $text;
-  }
-  .footer-item__news-link {
-    color: $title;
-    &:hover {
-      color: $title;
-    }
-  }
-  .footer-item__phone {
-    a {
-      color: $title;
-    }
-    span {
-      color: $text;
-    }
-  }
-  .footer-item__social {
-    & a:hover {
-      svg {
-        fill: $brand;
-      }
-    }
-    svg {
       fill: #c8c8c8;
-    }
   }
 }

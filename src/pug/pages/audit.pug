@@ -341,25 +341,7 @@ block content
 
     //begin callback-section
     .callback-sec(style="background-image: url('assets/img/audit-callback.jpg');")
-      .container
-        h3.callback-sec__title Оставьте заявку
-        span.callback-sec__subtitle
-          |Каждая ситуация особенная.
-          br
-          |Оставьте ваше имя и способ связи с вами — наш менеджер свяжется с вами, чтобы обсудить все детали.
-        form.callback-sec__form
-          .callback-sec__form-inn
-            .left
-              input(type="text" name="name" placeholder="Ваше имя")
-              input(type="text" name="phone" placeholder="Номер телефона")
-            .right
-              textarea(name="message" placeholder="Комментарий")
-          .callback-sec__checkbox
-            input(type="checkbox" id="agree")
-            label(for="agree")
-              |Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия 
-              a(href="/agree.html") Пользовательского соглашения
-          input(type="submit" value="Заказать звонок").btn.btn-rr
+      include ../sections/callback
     //end callback-section
   //end   content
   include ../sections/footer
