@@ -31,12 +31,6 @@
   @include max(520) {
     flex-direction: column;
   }
-  &:hover {
-    .strategy-partners__cover {
-      pointer-events: auto;
-      opacity: 1;
-    }
-  }
 }
 .strategy-partners__pic {
   margin-bottom: 50px;
@@ -54,10 +48,10 @@
   font-family: $font-light;
   font-size: 23px;
   line-height: 1.2;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   color: $title;
   @include max(1000) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   }
   span {
@@ -70,6 +64,12 @@
   cursor: pointer;
   text-decoration: underline;
   color: $brand;
+  padding: 10px 0;
+  &:hover {
+    & + .strategy-partners__cover {
+      opacity: 1;
+    }
+  }
 }
 .strategy-partners__cover {
   position: absolute;

@@ -80,7 +80,9 @@
   font-family: $font-medium;
   font-weight: 600;
 }
-.contacts-info__adress {
+span.contacts-info__adress {
+      color: $title;
+      font-family: $font;
   display: inline-block;
   padding-bottom: 20px;
 }

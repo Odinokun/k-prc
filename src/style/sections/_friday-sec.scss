@@ -7,6 +7,7 @@
   width: 25%;
   min-height: 640px;
 
+
   @include max(1360) {
     width: 50%;
   }
@@ -16,6 +17,10 @@
 }
 .friday-sec__item-lg,
 .friday-sec__subitem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
   padding: 45px 50px;
   background-color: $brand;
   cursor:pointer;
