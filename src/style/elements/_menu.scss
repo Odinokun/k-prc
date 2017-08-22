@@ -37,6 +37,12 @@
   margin: 0;
   padding: 0 15px;
   list-style: none;
+  @include max(1420) {
+    padding: 0 10px;
+  }
+  @include max(1360) {
+    padding: 0 15px;
+  }
 }
 .header-nav__link {
   font-size: 15px;

@@ -11,6 +11,7 @@
   }
 }
 .podbor__left {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -18,6 +19,7 @@
   background-color: #f4f4f6;
 
   @include max(1000) {
+    position: static;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
@@ -27,36 +29,127 @@
     padding: 50px 0 0 0;
   }
   @include max(520) {
-  flex-direction: column;
+    flex-direction: column;
+  }
+  &:hover {
+    .strategy-partners__cover {
+      pointer-events: auto;
+      opacity: 1;
+    }
+  }
+}
+.strategy-partners__pic {
+  margin-bottom: 50px;
+  img {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
 
+    @include max(1000) {
+      max-width: 90%;
+    }
   }
 }
-.podbor__left-item {
-  @include max(1000) {
-    text-align: center;
-    padding: 0 10px;
-  }
-}
-.podbor__numb {
-  font-family: $font-medium;
-  font-size: 100px;
-  line-height: 1;
-  display: inline-block;
-  margin: 0;
-  @include max(660) {
-    font-size: 80px;
-  }
-}
-.podbor__text {
+.strategy-partners__title {
   font-family: $font-light;
   font-size: 23px;
-  display: block;
-  margin-bottom: 30px;
+  line-height: 1.2;
+  margin-bottom: 50px;
   color: $title;
-  @include max(660) {
-    font-size: 18px;
+  @include max(1000) {
+  margin-bottom: 20px;
+
+  }
+  span {
+    font-family: $font-medium;
   }
 }
+.strategy-partners__link {
+  font-size: 13px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: underline;
+  color: $brand;
+}
+.strategy-partners__cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 105px 20px 240px 0;
+  transition: opacity .5s;
+  pointer-events: none;
+  opacity: 0;
+  background-color: $brand;
+
+  @include max(1000) {
+    padding: 50px 50px 0 50px;
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 1000px;
+    content: '';
+    background-color: $brand;
+
+    @include max(1000) {
+      display: none;
+    }
+  }
+}
+.strategy-partners__cover-title {
+  font-family: $font-medium;
+  font-size: 23px;
+  line-height: 1.43;
+  position: relative;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.strategy-partners__cover-list {
+  position: relative;
+  li {
+    font-family: $font-light;
+    font-size: 16px;
+    line-height: 1.66;
+    margin-bottom: 20px;
+    padding: 0;
+    list-style-image: url('../img/ul-2.png');
+    color: #fff;
+    span {
+      font-family: $font-medium;
+    }
+  }
+}
+
+// .podbor__left-item {
+//   @include max(1000) {
+//     text-align: center;
+//     padding: 0 10px;
+//   }
+// }
+// .podbor__numb {
+//   font-family: $font-medium;
+//   font-size: 100px;
+//   line-height: 1;
+//   display: inline-block;
+//   margin: 0;
+//   @include max(660) {
+//     font-size: 80px;
+//   }
+// }
+// .podbor__text {
+//   font-family: $font-light;
+//   font-size: 23px;
+//   display: block;
+//   margin-bottom: 30px;
+//   color: $title;
+//   @include max(660) {
+//     font-size: 18px;
+//   }
+// }
 .podbor__right {
   width: 60%;
   padding: 105px 20px 240px 105px;
@@ -74,6 +167,7 @@
   font-size: 35px;
   margin-bottom: 40px;
   color: $title;
+
   @include max(840) {
     font-size: 30px;
     line-height: 1.1;

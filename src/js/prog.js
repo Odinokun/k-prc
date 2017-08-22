@@ -48,7 +48,7 @@ $('.article-sec__video-cover').on('click', function() {
 // end   start video in article
 
 
-// begin tab in family page
+// begin tab in migration page
 $('.migration-sec__btn-wrap .btn').on('click', function() {
   var tab = $(this).data('tab');
   $('.btn').removeClass('active');
@@ -56,7 +56,7 @@ $('.migration-sec__btn-wrap .btn').on('click', function() {
   $('.migration-sec__table').fadeOut(0);
   $('.migration-sec__table-' + tab).fadeIn();
 });
-// end   tab in family page
+// end   tab in migration page
 
 
 // begin tab in service page
