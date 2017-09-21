@@ -2,8 +2,8 @@ module.exports = function() {
 
   // begin scroll 2 ancor desctop menu
   $(function() {
-    $('nav a[href*=\\#]').on("click", function(e){
-       // e.preventDefault();
+    $('a.mouse-icon__wrap[href*=\\#]').on("click", function(e){
+       e.preventDefault();
        var anchor = $(this);
        $('html, body').stop().animate({
         scrollTop: $(anchor.attr('href')).offset().top - 0 + 'px'

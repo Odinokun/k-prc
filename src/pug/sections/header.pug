@@ -1,7 +1,7 @@
 // begin header
 header.header
   .container-lg
-    a(href="/index.html").header-logo
+    a(href="/").header-logo
       img(src="assets/img/logo.png", alt="company logo")
 
     // begin menu
@@ -12,15 +12,28 @@ header.header
         li.header-nav__item
           a(href="/about.html").header-nav__link.header-nav__link-about О компании
         li.header-nav__item
-          a(href="/service.html").header-nav__link.header-nav__link-service Услуги
+          a(href="/uslugi.html").header-nav__link.header-nav__link-service Услуги
+          .header-nav__sublist-open
+          .header-nav__sublist-wrap
+            ul.header-nav__sublist
+              li.header-nav__subitem
+                a(href="/autsorsing.html").header-nav__sublink Аутсорсинг
+              li.header-nav__subitem
+                a(href="/autstaffing.html").header-nav__sublink Аутстаффинг
+              li.header-nav__subitem
+                a(href="/migration.html").header-nav__sublink Миграционный учет
+              li.header-nav__subitem
+                a(href="/audit.html").header-nav__sublink Аудит
+              li.header-nav__subitem
+                a(href="/safety.html").header-nav__sublink Охрана труда
         li.header-nav__item
-          a(href="/clients.html").header-nav__link.header-nav__link-clients Наши клиенты
+          a(href="/otzyivyi.html").header-nav__link.header-nav__link-clients Наши клиенты
         li.header-nav__item
-          a(href="/vacancies.html").header-nav__link.header-nav__link-vacancies Вакансии
+          a(href="/vakansii1.html").header-nav__link.header-nav__link-vacancies Вакансии
         li.header-nav__item
-          a(href="/friday.html").header-nav__link.header-nav__link-friday Пятничный менеджер
+          a(href="/novosti.html").header-nav__link.header-nav__link-friday Пятничный менеджер
         li.header-nav__item
-          a(href="/contacts.html").header-nav__link.header-nav__link-contacts Контакты
+          a(href="/kontakty-prc.html").header-nav__link.header-nav__link-contacts Контакты
     // end menu
 
     //begin geolocation

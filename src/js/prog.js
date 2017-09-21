@@ -1,63 +1,41 @@
-// BEGIN Меню для навигации при разработке
-
-// закоментить перед prodaction
-// $(document).ready(function ($) {
-//   pageWidget([
-//     'about',
-//     'agree',
-//     'article',
-//     'audit',
-//     'autsorsing',
-//     'autstaffing',
-//     'clients',
-//     'contacts',
-//     'friday',
-//     'index',
-//     'migration',
-//     'one-client',
-//     'safety',
-//     'service',
-//     'vacancies',
-//     ]);
-// });
-
-// function pageWidget(pages) {
-//   var widgetWrap = $('<div class="widget_wrap"><ul class="widget_list"></ul></div>');
-//   widgetWrap.prependTo("body");
-//   for (var i = 0; i < pages.length; i++) {
-//     $('<li class="widget_item"><a class="widget_link" href="'
-//       + pages[i]
-//       + '.html'
-//       + '">'
-//       + pages[i]
-//       + '</a></li>').appendTo('.widget_list');
-//   }
-//   var widgetStilization = $('<style>body {position:relative} .widget_wrap{position:fixed;top:0;left:0;z-index:19999;padding:10px 20px;background:#222;border-bottom-right-radius:10px;-webkit-transition:all .3s ease;transition:all .3s ease;-webkit-transform:translate(-100%,0);-ms-transform:translate(-100%,0);transform:translate(-100%,0)}.widget_wrap:after{content:" ";position:absolute;top:0;left:100%;width:24px;height:24px;background:#222 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAABGdBTUEAALGPC/xhBQAAAAxQTFRF////////AAAA////BQBkwgAAAAN0Uk5TxMMAjAd+zwAAACNJREFUCNdjqP///y/DfyBg+LVq1Xoo8W8/CkFYAmwA0Kg/AFcANT5fe7l4AAAAAElFTkSuQmCC) no-repeat 50% 50%;cursor:pointer}.widget_wrap:hover{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0)}.widget_item{padding:0 0 10px}.widget_link{color:#fff;text-decoration:none;font-size:15px;}.widget_link:hover{text-decoration:underline} </style>');
-//   widgetStilization.prependTo(".widget_wrap");
-// }
-
-// END Меню для навигации при разработке
-
-
 //====== Begin Programmer code ======
-// begin friday filer
-$('.friday__filter .btn').on('click', function() {
-  $('.friday__filter .btn').removeClass('active');
-  $(this).addClass('active');
-});
+// begin popup open
+$('.popup-open').on('click', function() {
+  var popupName = $(this).data('open');
 
-$('.friday__filter .btn').on('click', function() {
-  var vis = $(this).data('tezis');
+  $('.popup-' + popupName).fadeIn();
+  $('.popup__layer').fadeIn();
+  $('body').addClass('no-scroll');
 
-  if (vis == 'all') {
-    $('.friday__item').fadeIn(100);
-  }
-  else {
-    $('.friday__item').fadeOut(100);
-    $('.friday__item--' + vis).fadeIn(100);
-  }
+  return false;
 });
-// end friday filer
+// end   popup open
+
+// begin popup close
+$('.popup__layer, .popup-close').on('click', function() {
+  $('.popup, .popup__layer, .popup-success').fadeOut();
+  $('body').removeClass('no-scroll');
+  
+  // закрываем попапы в шапке
+  $('.geolocation-region__popup-city, .geolocation-region__popup').fadeOut();
+  return false;
+});
+// end   popup close
+
+// begin отправка формы
+$("form").submit(function() {
+  $.ajax({
+    type: "POST",
+    url: "assets/php/mail.php",
+    data: $(this).serialize()
+  }).done(function() {
+    $('.popup').fadeOut(0);
+    $('form')[0].reset();
+    $('.popup-success, .popup__layer').fadeIn();
+  });
+  return false;
+});
+// end   отправка формы
 
 // BEGIN активная/неактивная кнопка в форме
 $(window).on('load', function() {
@@ -80,3 +58,42 @@ $(window).on('load', function() {
   $('#tab-blue .tab-blue__link-' + currentPage).addClass('active')
 });
 // END выбор активного элемента в меню и синих табах !!!!!!!!! убрать при посадке на CMS
+
+
+// BEGIN autsorsing vacancies loadmore
+$(function() {
+  $('.vacancies-section__item').slice(0, 8).show();
+  $('.vacancies-section__loadmore').on('click', function(e) {
+    e.preventDefault();
+    $('.vacancies-section__item').slice(0, 100).slideDown();
+    $('.vacancies-section__item-all').fadeOut(0);
+  });
+})
+// END autsorsing vacancies loadmore
+
+// begin friday filer
+$('.friday__filter .btn').on('click', function() {
+  $('.friday__filter .btn').removeClass('active');
+  $(this).addClass('active');
+});
+
+$('.friday__filter .btn').on('click', function() {
+  var vis = $(this).data('tezis');
+
+  if (vis == 'all') {
+    $('.friday__item').fadeIn(100);
+  }
+  else {
+    $('.friday__item').fadeOut(100);
+    $('.friday__item--' + vis).fadeIn(100);
+  }
+});
+// end friday filer
+
+// begin open submenu
+$('.header-nav__sublist-open').on('click', function() {
+  $(this).toggleClass('active');
+  $(this).siblings(".header-nav__sublist-wrap").slideToggle();
+});
+// end open submenu
+

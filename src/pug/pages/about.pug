@@ -1,7 +1,8 @@
 extends ../_template
 
 block variables
-  - var title = 'PRC'
+  - var title = 'О компании'
+  - var descr = 'PrivateRecruitingCompany (PRC) – ведущее российское аккредитованное частное агентство занятости.'
   - var pageHeaderTitle = 'О компании'
 
 block content
@@ -13,7 +14,7 @@ block content
       .container
         include ../sections/page-header
         .about-header__text
-          p PrivateRecruitingCompany (PRC) – ведущее российское аккредитованное частное агентство занятости. С 2012 года компания обеспечивает профессиональную работу по подбору, оформлению и предоставлению на объекты Заказчиков линейного квалифицированного и неквалифицированного персонала. С 2012 года, компания PRC работает как независимая юридическая и организационная структура. PRC стала одним из лидирующих провайдеров услуг по поиску и предоставлению сотрудников для нужд строительства, производства, розничной, оптовой торговли и других крупных отраслей экономики.
+          p PrivateRecruitingCompany (PRC) – ведущее российское аккредитованное частное агентство занятости. С 2012 года компания обеспечивает профессиональную работу по подбору, оформлению и предоставлению на объекты Заказчиков линейного квалифицированного и неквалифицированного персонала. Компания PRC работает как независимая юридическая и организационная структура. PRC стала одним из лидирующих провайдеров услуг по поиску и предоставлению сотрудников для нужд строительства, производства, розничной, оптовой торговли и других крупных отраслей экономики.
 
     // begin about advantage slider
     section.about-advantage
@@ -114,14 +115,14 @@ block content
       .about-history__right
         .about-history__right-inn
           h3.about-history__title История компании
-          h4.about-history__subtitle PRC является дочерней организацией одного из ведущих хэд-хантинговых агентств по подбору персонала ТОП-уровня*
+          h4.about-history__subtitle PRC является дочерней организацией одного из ведущих хэд-хантинговых агентств по подбору персонала ТОП-уровня
           p Идея создания компании отвечала запросам постоянных Клиентов, лидеров российского бизнеса, желающих передать надежным и качественным провайдерам все свои остальные вопросы в сфере персонала. Учитывая специфику работы в направлении массового рекрутинга, аутсорсинга и аутстаффинга, было принято решение разделить бизнес-процессы и создать в рамках HR-компании отдельную структуру, сосредоточенную только на линейных работниках.
           p Со времени сотрудничества с постоянными Заказчиками клиентская база стремительно расширялась. Опыт работы с руководителями ТОП-уровня позволил открыть новую страницу в сфере аутсорсинга. За несколько лет из небольшого дочернего предприятия компания выросла до масштабов крупного холдинга, работающего в Москве, Санкт-Петербурге и других регионах России.
           .about-history__slogan
             svg
               use(xlink:href="assets/img/sprite.svg#tab-14")
             span Мы ценим каждого Клиента и стремимся обеспечить для Вас максимальный комфорт и экономическую и юридическую безопасность.
-          span.about-history__footer *Информация носит конфиденциальный характер и будет разглашена при подписании контракта.
+          //- span.about-history__footer *Информация носит конфиденциальный характер и будет разглашена при подписании контракта.
     // end   about history
 
     // begin about map
@@ -151,7 +152,7 @@ block content
             .map-banner__adress
               svg
                 use(xlink:href="assets/img/sprite.svg#marker-2")
-              a(href="https://goo.gl/maps/KjAF4ouFTHr" target="_blank" rel="nofollow noopener noreferrer") Лиговский проспект, д. 200, 2й-3й этаж (б/ц «Лиговский 200»)
+              a(href="https://goo.gl/maps/KjAF4ouFTHr" target="_blank" rel="nofollow noopener noreferrer") БЦ Лиговский 200. Лиговский пр. д. 200
             .map-banner__phone
               svg
                 use(xlink:href="assets/img/sprite.svg#phone")
@@ -165,7 +166,7 @@ block content
             .map-banner__adress
               svg
                 use(xlink:href="assets/img/sprite.svg#marker-2")
-              a(href="https://goo.gl/maps/D4Q6tukcea22" target="_blank" rel="nofollow noopener noreferrer") 109147, г. Москва, ул. Марксистская, д. 3, стр. 3, 1 подъезд, 1 этаж.
+              a(href="https://goo.gl/maps/v52PjbWMT6B2" target="_blank" rel="nofollow noopener noreferrer") г. Москва, Петровско-Разумовский проезд, д. 29.
             .map-banner__phone
               svg
                 use(xlink:href="assets/img/sprite.svg#phone")
@@ -193,7 +194,7 @@ block content
             .map-banner__adress
               svg
                 use(xlink:href="assets/img/sprite.svg#marker-2")
-              a(href="#" target="_blank" rel="nofollow noopener noreferrer") Екатеринбург
+              a(href="https://goo.gl/maps/98j5nt2EW9s" target="_blank" rel="nofollow noopener noreferrer") Екатеринбург, ул.Черняховского, д.86 к.7
             .map-banner__phone
               svg
                 use(xlink:href="assets/img/sprite.svg#phone")
@@ -221,7 +222,7 @@ block content
             .map-banner__adress
               svg
                 use(xlink:href="assets/img/sprite.svg#marker-2")
-              a(href="#" target="_blank" rel="nofollow noopener noreferrer") Ростов на Дону
+              a(href="https://goo.gl/maps/T8FdmW89Rkq" target="_blank" rel="nofollow noopener noreferrer") Ростов на Дону, ул.Малиновского, д.3
             .map-banner__phone
               svg
                 use(xlink:href="assets/img/sprite.svg#phone")
@@ -263,7 +264,7 @@ block content
             .map-banner__adress
               svg
                 use(xlink:href="assets/img/sprite.svg#marker-2")
-              a(href="#" target="_blank" rel="nofollow noopener noreferrer") Новосибирск
+              a(href="https://goo.gl/maps/X7mfinoaUhL2" target="_blank" rel="nofollow noopener noreferrer") Новосибирск, пл.Карла Маркса, д.7 (БЦ «СанСити»)
             .map-banner__phone
               svg
                 use(xlink:href="assets/img/sprite.svg#phone")
@@ -284,7 +285,7 @@ block content
           h3.guarantees__title Гарантии управляющего директора
           p Любые работы ведутся намного быстрее, качественнее и без лишних хлопот, если доверить подбор линейного персонала профессионалам. Данный принцип лежит в основе деятельности компании PRC. Высокая эффективность и юридическая безопасность достигается за счет стабильного развития нашей компании. Мы фокусируемся на юридической чистоте соискателей и работе с проверяющими органами, что снимает основную проблему современного рынка линейного персонала – сложности с легальным статусом иностранных рабочих.
           p Мы сотрудничаем только с надежными банками, имеем собственный резервный фонд и гарантируем абсолютную прозрачность движения финансовых средств. Тщательное оформление документов и ведение клиентских баз данных позволяет Вам моментально получить необходимую отчетность за предыдущие годы для проверяющих структур.
-          a(href="#").btn.btn-wr.popup-open(data-open="director") Задать вопрос управляющему директору
+          a(href="#" data-open="director").btn.btn-wr.popup-open Задать вопрос управляющему директору
     // end   guarantees
 
     // begin about-personal
@@ -314,13 +315,15 @@ block content
             li Обеспечение безопасности труда
             li Собственная Служба безопасности
 
+          a(href="#" data-open="tender").btn.btn-wr.popup-open Пригласить в тендер
+
         .about-conformity__right
           a(href="assets/img/pdf-01.jpg" data-fancybox="gallery").about-conformity__pdf
             img(src="assets/img/about-conformity-pdf.jpg", alt="pdf")
             svg
               use(xlink:href="assets/img/sprite.svg#pdf")
 
-          a(href="assets/img/pdf-02.jpg" data-fancybox="gallery").about-conformity__pdf
+          //- a(href="assets/img/pdf-02.jpg" data-fancybox="gallery").about-conformity__pdf
             img(src="assets/img/about-conformity-pdf.jpg", alt="pdf")
             svg
               use(xlink:href="assets/img/sprite.svg#pdf")
@@ -373,7 +376,7 @@ block content
             img(src="assets/img/bank-04.jpg", alt="bank")
           .about-banks__item
             img(src="assets/img/bank-05.jpg", alt="bank")
-          .about-banks__item
+          //- .about-banks__item
             img(src="assets/img/bank-06.jpg", alt="bank")
           .about-banks__item
             img(src="assets/img/bank-07.jpg", alt="bank")

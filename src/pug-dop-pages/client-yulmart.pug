@@ -1,0 +1,77 @@
+extends ../_template
+
+block variables
+  - var title = 'Отзывы наших клиентов'
+  - var descr = 'Отзывы наших клиентов'
+  - var pageHeaderTitle = 'Отзыв компании "Юлмарт"'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.one-client
+    .one-client__top
+      .container
+        include ../sections/page-header
+
+        .one-client__top-inn
+          .one-client__top-left
+            h3.one-client__title Юлмарт
+            span.one-client__subtitle Кибермаркет электроники
+            .one-client__table
+              .one-client__table-row
+                svg
+                  use(xlink:href="assets/img/sprite.svg#clock")
+                span Постоянный партнер с 2012 года
+              .one-client__table-row
+                svg
+                  use(xlink:href="assets/img/sprite.svg#document")
+                span 380 трудовых контрактов
+              .one-client__table-row
+                svg
+                  use(xlink:href="assets/img/sprite.svg#people")
+                span Выход 260 человек в смену
+
+            h4.one-client__services-title Оказанные услуги:
+            .one-client__services
+              .one-client__services-item
+                svg
+                  use(xlink:href="assets/img/sprite.svg#check")
+                span Охрана труда
+              .one-client__services-item
+                svg
+                  use(xlink:href="assets/img/sprite.svg#check")
+                span Аутсорсинг
+
+          .one-client__top-right
+            img(src="assets/img/clients/yulmart.jpg", alt="client")
+            .one-client__top-right--logo
+              img(src="assets/img/clients/yulmart-logo.jpg", alt="yulmart-logo")
+
+    .one-client__director
+      .container
+        .one-client__director-left
+          .one-client__director-pic
+            img(src="assets/img/one-client-director.jpg", alt="director")
+            .one-client-scan
+              img(src="assets/img/one-client-scan.jpg", alt="scan copy")
+
+        .one-client__director-right
+          h3.one-client__director-title Полянская Елена
+          span.one-client__director-subtitle Руководитель отдела по работе с внешними партнёрами
+          .one-client__director-text
+            svg
+              use(xlink:href="assets/img/sprite.svg#quotes")
+            p Компания PRC является нашим постоянным партнером по предоставлению линейного персонала в наши рестораны более года.
+            p За прошедший год, ежедневный выход персонала, предоставленного компании PRC увеличился с 10 до 40 человек в смену, тем самым PRC значительно помог нам решить проблему постоянной нехватки собственного персонала в ресторанах, путем создания постоянно стабильного потока качественных кандидатов.
+            p Компания PRC проявила себя очень гибко и креативно в части адаптации под принятые в компании Чайная ложка процессов подбора и стажировки кандидатов. Так, например, менеджеры компании PRC присутствуют на собеседованиях и стажировке новых сотрудников. Это позволяет на месте оформлять отобранных кандидатов, что в значительной мере сокращает временной отрезок оформления, и делает процесс вывода в рестораны новых сотрудников максимально оперативным.
+            p Следует отметить особый профессионализм и экспертизу компании PRC в вопросах трудовой миграции, кропотливую работу ответственных лиц компании в части контроля окончания разрешительных документов, их своевременную и оперативную замену.
+            p Ответственные за проект сотрудники компании PRC готовы в любой момент помочь решить срочный вопрос, проконсультировать нас по сложным моментам. Мы планируем продолжить партнерство с компанией PRC и готовы рекомендовать эту компанию, как экспертов, готовых ответить на любые запросы по линейному персоналу! 
+ 
+    .container
+      h3.one-client__section-title Другие отзывы
+
+    include ../sections/one-client-clients
+
+  //end   content
+  include ../sections/footer

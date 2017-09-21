@@ -2,6 +2,7 @@ extends ../_template
 
 block variables
   - var title = 'PRC'
+  - var descr = 'PrivateRecruitingCompany (PRC) – ведущее российское аккредитованное частное агентство занятости.'
   - var pageHeaderTitle = 'Аудит'
 
 block content
@@ -15,7 +16,10 @@ block content
       .container
         include ../sections/page-header
         .audit-header__text
-          p Аутсорсинг (дословно «использование внешнего ресурса») – это услуга, направленная на подбор и оформление рабочего персонала, когда у организации отсутствует возможность содержать постоянный штат сотрудников для своей компании и руководить их деятельностью.
+          p 
+            |Независимый аудит организации позволяет своевременно выявить слабые стороны компании и устранить недостатки. 
+            br
+            |Профессионалы компании PRC не только проведут проверку соблюдения норм трудового законодательства, но и помогут Заказчику объективно взглянуть на ситуацию и подготовиться к проверкам со стороны контролирующих структур.
 
     //begin audit__tab-btn-row
     .audit__tab-btn-row
@@ -53,7 +57,7 @@ block content
                     li Разработка инструкции по конкретным должностям, профессиям, видам работ;
                     li Разработка других документов связанных с охраной труда.
             li.audit-tab-01__slider-item
-              .left(style="background-image:url('assets/img/audit-slider/slide-01.jpg')")
+              .left(style="background-image:url('assets/img/audit-slider/slide-02.jpg')")
               .right
                 .right-inn
                   h3.audit-tab-01__title Аудит охраны труда на предприятии
@@ -62,7 +66,7 @@ block content
                     li Проверка рабочего процесса на соответствие нормам охраны труда;
                     li Поиск оптимальных решений при обнаружении нарушений.
             li.audit-tab-01__slider-item
-              .left(style="background-image:url('assets/img/audit-slider/slide-01.jpg')")
+              .left(style="background-image:url('assets/img/audit-slider/slide-03.jpg')")
               .right
                 .right-inn
                   h3.audit-tab-01__title Организация охраны труда на предприятии 
@@ -73,7 +77,7 @@ block content
                     li Оптимизация управления охраной труда (формирование структуры и функционала службы по охране труда);
                     li Представление интересов заказчика в контролирующих органах (в том числе Госинспекция по труду)
             li.audit-tab-01__slider-item
-              .left(style="background-image:url('assets/img/audit-slider/slide-01.jpg')")
+              .left(style="background-image:url('assets/img/audit-slider/slide-04.jpg')")
               .right
                 .right-inn
                   h3.audit-tab-01__title Сопровождение при проверках
@@ -185,19 +189,43 @@ block content
               span Аудит кадровой документации; вынесение рекомендации. Проводится дистанционно и с выездом
             .audit-tab-03__color-text-item
               span.audit-tab-03__numb.color-text 2
-              span Аудит правоустанавливающих документов (адаптация ЛНА под деятельность компании-Заказчика)
+              span 
+                |Аудит правоустанавливающих документов (адаптация 
+                =" "
+                span.audit-tab-03__bubble-wrap ЛНА
+                  span.audit-tab-03__bubble Локальные нормативные акты
+                =" "
+                | под деятельность компании-Заказчика)
             .audit-tab-03__color-text-item
               span.audit-tab-03__numb.color-text 3
-              span Разработка локальных нормативных актови подготовка шаблонов документов - КДС "с нуля"
+              span 
+                |Разработка локальных нормативных актов и подготовка шаблонов документов - 
+                =" " 
+                span.audit-tab-03__bubble-wrap КДС
+                  span.audit-tab-03__bubble Кадровое делопроизводство
+                =" "
+                | "с нуля"
+
             .audit-tab-03__color-text-item
               span.audit-tab-03__numb.color-text 4
               span Восстановление и (или) внесение изменение кадровой документации, проверка актуальности
             .audit-tab-03__color-text-item
               span.audit-tab-03__numb.color-text 5
-              span Подготовка организации к плановым и внеплановым проверкам (ГИТ, Прокуратуры и пр.)
+              span 
+                |Подготовка организации к плановым и внеплановым проверкам (
+                =" "
+                span.audit-tab-03__bubble-wrap ГИТ
+                  span.audit-tab-03__bubble Государственная инспекция труда 
+                |, Прокуратуры и пр.)
             .audit-tab-03__color-text-item
               span.audit-tab-03__numb.color-text 6
-              span Консультации по специальным вопросам: смена Генерального директора, проверки ГИТ и т.д.
+              span 
+                |Консультации по специальным вопросам: смена Генерального директора, проверки 
+                =" "
+                span.audit-tab-03__bubble-wrap ГИТ
+                  span.audit-tab-03__bubble Государственная инспекция труда 
+                =" "
+                | и т.д.
         // end .audit-tab-03__color-text
 
         // begin .audit-tab-03__slider
@@ -341,7 +369,31 @@ block content
 
     //begin callback-section
     .callback-sec(style="background-image: url('assets/img/audit-callback.jpg');")
-      include ../sections/callback
+      //begin callback-inn
+      .container
+        h3.callback-sec__title Оставьте заявку
+        span.callback-sec__subtitle
+          |Каждая ситуация особенная.
+          br
+          |Оставьте ваше имя и способ связи с вами — наш менеджер свяжется с вами, чтобы обсудить все детали.
+        form.callback-sec__form
+          //- поле для выбора варианте сообщения
+          input(type="hidden" name="nameform" value="callback-sec__form")
+          //- поле для темы письма
+          input(type="hidden" name="theme" value="Заявка на аудит")
+          .callback-sec__form-inn
+            .left
+              input(type="text" name="name" placeholder="Ваше имя")
+              input(type="text" name="phone" placeholder="Номер телефона").phone-mask
+            .right
+              textarea(name="message" placeholder="Комментарий")
+          .callback-sec__checkbox
+            input(type="checkbox" id="agree-callback" class="agree")
+            label(for="agree-callback")
+              |Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия 
+              a(href="/agree.html") Пользовательского соглашения
+          input(type="submit" value="Заказать звонок").btn.btn-rr
+      //end callback-inn
     //end callback-section
   //end   content
   include ../sections/footer

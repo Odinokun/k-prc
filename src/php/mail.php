@@ -1,6 +1,5 @@
 ﻿<?php
-  $sendto = "viktor@kozyris.com";
-  $sendto2 = "odinokun@gmail.com";
+  $sendto = "info@prc-personal.ru";
   
   $subject = $_POST['theme'];
   $nameform = $_POST['nameform'];
@@ -38,5 +37,4 @@
   $headers = "From: PRC.ru\r\nContent-type: text/html; charset=utf-8 \r\n";
 
   mail ($sendto, $subject, $msg, $headers);
-  mail ($sendto2, $subject, $msg, $headers);
 ?>

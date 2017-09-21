@@ -1,13 +1,17 @@
 extends ../_template
 
 block variables
-  - var title = 'PRC'
+  - var title = 'PRC - аутсорсинговая компания. Подбор персонала в штат Заказчика'
+  - var descr = 'PRC (Private Recruiting Company) - подбор и оформлении в штат линейного квалифицированного и неквалифицированного персонала для нужд строительства, производства, торговли. PRC - аутсорсинговая компания'
 
 block content
   include ../sections/header
   
   //begin content
   section.main.index
+    span.mouse-icon__wrap--up
+      .mouse-icon--up
+        .wheel--up
     include ../sections/top-slider
     include ../sections/tab-blue
     include ../sections/podbor
@@ -21,6 +25,7 @@ block content
     include ../sections/friday-sec
   //end   content
   include ../sections/footer
+
   script(type='text/javascript').
     google.maps.event.addDomListener(window, "load", initialize);
     // $.getJSON("http://ip-api.com/json/?callback=?", function(data) {
@@ -79,11 +84,11 @@ block content
     function initialize() {
     var mapDiv = document.getElementById("map");
     map = new google.maps.Map(mapDiv, {
-    zoom: 4,
+    zoom: 5,
     disableDefaultUI: false,
     scrollwheel: false,
     draggable: isDraggable,
-    center: {lat: 55.486244, lng: 57.657120},
+    center: {lat: 60.486244, lng: 55.657120},
     styles: [{featureType: "water",elementType: "geometry",stylers: [{ color: "#e9e9e9" }, { lightness: 17 }]},{featureType: "landscape",elementType: "geometry",stylers: [{ color: "#f5f5f5" }, { lightness: 20 }]},{featureType: "road.highway",elementType: "geometry.fill",stylers: [{ color: "#ffffff" }, { lightness: 17 }]},{featureType: "road.highway",elementType: "geometry.stroke",stylers: [{ color: "#ffffff" }, { lightness: 29 }, { weight: 0.2 }]},{featureType: "road.arterial",elementType: "geometry",stylers: [{ color: "#ffffff" }, { lightness: 18 }]},{featureType: "road.local",elementType: "geometry",stylers: [{ color: "#ffffff" }, { lightness: 16 }]},{featureType: "poi",elementType: "geometry",stylers: [{ color: "#f5f5f5" }, { lightness: 21 }]},{featureType: "poi.park",elementType: "geometry",stylers: [{ color: "#dedede" }, { lightness: 21 }]},{elementType: "labels.text.stroke",stylers: [{ visibility: "on" }, { color: "#ffffff" }, { lightness: 16 }]},{elementType: "labels.text.fill",stylers: [{ saturation: 36 }, { color: "#333333" }, { lightness: 40 }]},{ elementType: "labels.icon", stylers: [{ visibility: "off" }] },{featureType: "transit",elementType: "geometry",stylers: [{ color: "#f2f2f2" }, { lightness: 19 }]},{featureType: "administrative",elementType: "geometry.fill",stylers: [{ color: "#fefefe" }, { lightness: 20 }]},{featureType: "administrative",elementType: "geometry.stroke",stylers: [{ color: "#fefefe" }, { lightness: 17 }, { weight: 1.2 }]}]
     });
     var image = "http://prc.odinokun.com/assets/img/map-marker.png";
@@ -126,8 +131,16 @@ block content
     var infowindow = new google.maps.InfoWindow({
     content: bubbleWrapStart + val[2] + bubbleWrapEnd
     });
-    marker.addListener("click", function() {
+    $(function() {
     infowindow.open(map, marker);
+    });
+    marker.addListener("mouseover", function() {
+    infowindow.open(map, marker);
+    var markerClick = val[3];
+    $('.map-banner').fadeOut(0);
+    $('.map-banner-' + markerClick).fadeIn();
+    });
+    marker.addListener("click", function() {
     map.panTo(this.getPosition());
     map.setZoom(12);
     var markerClick = val[3];

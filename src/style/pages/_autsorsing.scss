@@ -449,15 +449,8 @@
   flex-wrap: wrap;
 }
 .vacancies-section__item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: none;
   width: 25%;
-  min-height: 300px;
-  text-align: center;
-  background-color: $brand;
 
   @include max(1360) {
     width: 33.3333%;
@@ -474,6 +467,16 @@
       opacity: 0;
     }
   }
+}
+.vacancies-section__item-inn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  text-align: center;
+  background-color: $brand;
 }
 .vacancies-section__item-cover {
   position: absolute;
@@ -508,7 +511,9 @@
   }
 }
 .vacancies-section__item-all {
-  background-color: #fff;
+  .vacancies-section__item-inn {
+    background-color: #fff;
+  }
   .vacancies-section__item-title {
     margin-bottom: 20px;
     color: $title;

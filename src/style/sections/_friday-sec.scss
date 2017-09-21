@@ -7,7 +7,6 @@
   width: 25%;
   min-height: 640px;
 
-
   @include max(1360) {
     width: 50%;
   }
@@ -17,13 +16,14 @@
 }
 .friday-sec__item-lg,
 .friday-sec__subitem {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
   padding: 45px 50px;
+  cursor: pointer;
   background-color: $brand;
-  cursor:pointer;
   p {
     font-size: 15px;
     line-height: 1.66;
@@ -35,6 +35,10 @@
       pointer-events: none;
       opacity: 0;
     }
+    .friday-sec__item-link {
+      z-index: 10;
+      top: 0;
+    }
   }
 }
 .friday-sec__subitem {
@@ -42,9 +46,18 @@
   height: 50%;
   background-color: $brand;
 }
-.friday-sec__cover {
-  cursor:pointer;
+.friday-sec__item-link {
   position: absolute;
+  z-index: 0;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all .5s .5s;
+}
+.friday-sec__cover {
+  position: absolute;
+  z-index: 1;
   top: 0;
   right: 0;
   bottom: 0;
@@ -52,10 +65,10 @@
   display: flex;
   align-items: flex-end;
   padding: 55px;
+  cursor: pointer;
   transition: all .5s;
   pointer-events: auto;
   opacity: 1;
-  z-index: 1;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;

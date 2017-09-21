@@ -2,6 +2,7 @@ extends ../_template
 
 block variables
   - var title = 'PRC'
+  - var descr = 'PrivateRecruitingCompany (PRC) – ведущее российское аккредитованное частное агентство занятости.'
   - var pageHeaderTitle = 'Аутсорсинг'
 
 block content
@@ -24,11 +25,23 @@ block content
       .container
         .autsorsing-podbor__left
           .autsorsing-podbor__left-item
-            span.autsorsing-podbor__numb.color-text 7150
+            span.autsorsing-podbor__numb.color-text 7
             span.autsorsing-podbor__text 
-              |количество трудовых
+              |профильных отраслей
+
+          .autsorsing-podbor__left-item
+            span.autsorsing-podbor__numb.color-text 50
+            span.autsorsing-podbor__text 
+              |объектов в
               br
-              |договоров клиентов
+              |зоне обслуживания
+
+          .autsorsing-podbor__left-item
+            span.autsorsing-podbor__numb.color-text 4987
+            span.autsorsing-podbor__text 
+              |количество
+              br
+              |людей в базе
 
         .autsorsing-podbor__right
           h3.autsorsing-podbor__title 
@@ -128,85 +141,177 @@ block content
 
       .vacancies-section__list
         .vacancies-section__item
-          h3.vacancies-section__item-title Кассир
-          .vacancies-section__item-pay
-            span от 150
-            span.rouble у
-            span /час
-          button.btn.btn-bw Заказать
-          .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies-section-01.jpg')")
-            h3.vacancies-section__item-cover-title Кассир
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Кассир
+            //- .vacancies-section__item-pay
+              span от 150
+              span.rouble у
+              span /час
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-01.jpg')")
+              h3.vacancies-section__item-cover-title Кассир
 
         .vacancies-section__item
-          h3.vacancies-section__item-title Работник торгового зала
-          .vacancies-section__item-pay
-            span от 150
-            span.rouble у
-            span /час
-          button.btn.btn-bw Заказать
-          .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies-section-02.jpg')")
-            h3.vacancies-section__item-cover-title Работник торгового зала
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Работник торгового зала
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-02.jpg')")
+              h3.vacancies-section__item-cover-title Работник торгового зала
 
         .vacancies-section__item
-          h3.vacancies-section__item-title Грузчик
-          .vacancies-section__item-pay
-            span от 150
-            span.rouble у
-            span /час
-          button.btn.btn-bw Заказать
-          .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies-section-03.jpg')")
-            h3.vacancies-section__item-cover-title Грузчик
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Грузчик
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-03.jpg')")
+              h3.vacancies-section__item-cover-title Грузчик
 
         .vacancies-section__item
-          h3.vacancies-section__item-title Грузчик
-          .vacancies-section__item-pay
-            span от 150
-            span.rouble у
-            span /час
-          button.btn.btn-bw Заказать
-          .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies-section-04.jpg')")
-            h3.vacancies-section__item-cover-title Грузчик
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Упаковщик
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-04.jpg')")
+              h3.vacancies-section__item-cover-title Упаковщик
 
         .vacancies-section__item
-          h3.vacancies-section__item-title Упаковщик
-          .vacancies-section__item-pay
-            span от 150
-            span.rouble у
-            span /час
-          button.btn.btn-bw Заказать
-          .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies-section-05.jpg')")
-            h3.vacancies-section__item-cover-title Упаковщик
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Разнорабочий
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-05.jpg')")
+              h3.vacancies-section__item-cover-title Разнорабочий
 
         .vacancies-section__item
-          h3.vacancies-section__item-title Разнорабочий
-          .vacancies-section__item-pay
-            span от 150
-            span.rouble у
-            span /час
-          button.btn.btn-bw Заказать
-          .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies-section-06.jpg')")
-            h3.vacancies-section__item-cover-title Разнорабочий
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Уборщик
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-06.jpg')")
+              h3.vacancies-section__item-cover-title Уборщик
 
         .vacancies-section__item
-          h3.vacancies-section__item-title Уборщик
-          .vacancies-section__item-pay
-            span от 150
-            span.rouble у
-            span /час
-          button.btn.btn-bw Заказать
-          .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies-section-07.jpg')")
-            h3.vacancies-section__item-cover-title Уборщик
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Работник кухни
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-07.jpg')")
+              h3.vacancies-section__item-cover-title Работник кухни
 
         .vacancies-section__item.vacancies-section__item-all
-          h3.vacancies-section__item-title Все специалисты
-          button.btn.btn-wr Показать
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Все специалисты
+            button.btn.btn-wr.vacancies-section__loadmore Показать
+
+        .vacancies-section__item
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Работник конвеера
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-08.jpg')")
+              h3.vacancies-section__item-cover-title Работник конвеера
+
+        .vacancies-section__item
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Комплектовщик
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-09.jpg')")
+              h3.vacancies-section__item-cover-title Комплектовщик
+
+        .vacancies-section__item
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Подсобный рабочий
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-10.jpg')")
+              h3.vacancies-section__item-cover-title Подсобный рабочий
+
+        .vacancies-section__item
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Мойщик
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-11.jpg')")
+              h3.vacancies-section__item-cover-title Мойщик
+
+        .vacancies-section__item
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Заправщик
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-12.jpg')")
+              h3.vacancies-section__item-cover-title Заправщик
+
+        .vacancies-section__item
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Оператор колл-центра
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-13.jpg')")
+              h3.vacancies-section__item-cover-title Оператор колл-центра
+
+        .vacancies-section__item
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Специалист по документообороту
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-14.jpg')")
+              h3.vacancies-section__item-cover-title Специалист по документообороту
+
+        .vacancies-section__item
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Работник архива
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-15.jpg')")
+              h3.vacancies-section__item-cover-title Работник архива
+
+        .vacancies-section__item
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Экспедитор
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-16.jpg')")
+              h3.vacancies-section__item-cover-title Экспедитор
+
+        .vacancies-section__item
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Оператор баз данных
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-17.jpg')")
+              h3.vacancies-section__item-cover-title Оператор баз данных
+
+        .vacancies-section__item
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title Отделочник
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-18.jpg')")
+              h3.vacancies-section__item-cover-title Отделочник
+
+        .vacancies-section__item
+          .vacancies-section__item-inn
+            h3.vacancies-section__item-title И многие другие
+            button.btn.btn-bw.popup-open(data-open="personal") Заказать
+            .vacancies-section__item-cover(style="background-image:url('assets/img/vacancies/vac-all.jpg')")
+              h3.vacancies-section__item-cover-title И многие другие
 
     //end vacancies-section
 
 
     //begin callback-section
     .callback-sec(style="background-image: url('assets/img/autsorsing-callback.jpg');")
-      include ../sections/callback
+      //begin callback-inn
+      .container
+        h3.callback-sec__title Оставьте заявку
+        span.callback-sec__subtitle
+          |Каждая ситуация особенная.
+          br
+          |Оставьте ваше имя и способ связи с вами — наш менеджер свяжется с вами, чтобы обсудить все детали.
+        form.callback-sec__form
+          //- поле для выбора варианте сообщения
+          input(type="hidden" name="nameform" value="callback-sec__form")
+          //- поле для темы письма
+          input(type="hidden" name="theme" value="Заявка на аутсорсинг")
+          .callback-sec__form-inn
+            .left
+              input(type="text" name="name" placeholder="Ваше имя")
+              input(type="text" name="phone" placeholder="Номер телефона").phone-mask
+            .right
+              textarea(name="message" placeholder="Комментарий")
+          .callback-sec__checkbox
+            input(type="checkbox" id="agree-callback" class="agree")
+            label(for="agree-callback")
+              |Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия 
+              a(href="/agree.html") Пользовательского соглашения
+          input(type="submit" value="Заказать звонок").btn.btn-rr
+      //end callback-inn
     //end callback-section
   //end   content
   include ../sections/footer

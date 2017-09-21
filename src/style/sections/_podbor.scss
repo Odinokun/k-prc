@@ -14,6 +14,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
   width: 40%;
   padding: 105px 105px 240px 0;
   background-color: #f4f4f6;
@@ -28,15 +30,23 @@
   @include max(840) {
     padding: 50px 0 0 0;
   }
-  @include max(520) {
+  @include max(600) {
     flex-direction: column;
   }
 }
+.strategy-partners__text {
+  width: 50%;
+
+  @include max(600) {
+    width: 100%;
+  }
+}
 .strategy-partners__pic {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   img {
     display: block;
-    width: 100%;
+    // width: 100%;
+    width: auto;
     margin-top: 8px;
 
     @include max(1000) {
@@ -48,23 +58,54 @@
   font-family: $font-light;
   font-size: 23px;
   line-height: 1.2;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: $title;
-  @include max(1000) {
-  margin-bottom: 10px;
 
+  @include max(1000) {
+    margin-bottom: 10px;
   }
   span {
     font-family: $font-medium;
   }
 }
+.strategy-partners__pic-logo {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  @include max(1000) {
+    justify-content: center;
+    width: 50%;
+  }
+  @include max(600) {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  img {
+    display: block;
+    margin-right: 30px;
+
+    @include max(1000) {
+      margin: 0 15px;
+    }
+    @include max(600) {
+      margin: 0 30px 0 0;
+    }
+  }
+}
 .strategy-partners__link {
   font-size: 13px;
   display: inline-block;
+  min-width: 50%;
+  margin-top: 20px;
+  padding: 10px 0;
   cursor: pointer;
   text-decoration: underline;
   color: $brand;
-  padding: 10px 0;
+
+  @include max(600) {
+    width: 100%;
+  }
   &:hover {
     & + .strategy-partners__cover {
       opacity: 1;

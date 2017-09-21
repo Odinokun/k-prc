@@ -16,8 +16,12 @@
   @include max(1024) {
     flex-wrap: wrap;
   }
+  @include max(750) {
+    display: none;
+  }
 }
 .tab-blue__item {
+  display: flex;
   width: 20%;
   margin: 0;
   padding: 0;
@@ -152,27 +156,27 @@
 .service,
 .autsorsing,
 .autstaffing {
-.tab-blue__item {
-  @include max(425) {
-    width: 100%;
+  .tab-blue__item {
+    @include max(425) {
+      width: 100%;
+    }
   }
-}
   .tab-blue__link {
     font-size: 20px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 20px 40px 20px 10px;
+
     @include max(1360) {
       font-size: 16px;
     }
     @include max(1100) {
       font-size: 15px;
-
     }
-  @include max(425) {
-    font-size: 18px;
-  }
+    @include max(425) {
+      font-size: 18px;
+    }
     svg {
       max-width: 30px;
       max-height: 30px;
@@ -185,8 +189,8 @@
     }
     &::after {
       top: 50%;
-      transform: translateY(-50%);
       right: 22px;
+      transform: translateY(-50%);
     }
   }
 }

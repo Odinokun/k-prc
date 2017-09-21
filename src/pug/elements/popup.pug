@@ -59,12 +59,62 @@
     input(type="submit" value="Узнать больше").btn.btn-rr
 //end director popup
 
+//begin tender popup
+.popup.popup-tender#popup-tender
+  .popup-close
+    svg
+      use(xlink:href="assets/img/sprite.svg#close")
+  h4.popup__title Пригласить в тендер
+  form.popup-callback__form
+    //- поле для выбора варианте сообщения
+    input(type="hidden" name="nameform" value="popup-tender__form")
+    //- поле для темы письма
+    input(type="hidden" name="theme" value="Приглашение на тендер")
+    .left
+      input(type="text" name="name"   placeholder="Как к вам обращаться")
+      input(type="text" name="email"  placeholder="Электронная почта")
+      input(type="text" name="phone"  placeholder="Телефон").phone-mask
+    .right
+      textarea(name="message" placeholder="Описание тендера")
+    .popup-checkbox
+      input(type="checkbox" id="agree-tender-popup")
+      label(for="agree-tender-popup")
+        |Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия 
+        a(href="/agree.html") Пользовательского соглашения
+    input(type="submit" value="Узнать больше").btn.btn-rr
+//end tender popup
+
+//begin personal popup
+.popup.popup-personal#popup-personal
+  .popup-close
+    svg
+      use(xlink:href="assets/img/sprite.svg#close")
+  h4.popup__title Заказать персонал
+  form.popup-callback__form
+    //- поле для выбора варианте сообщения
+    input(type="hidden" name="nameform" value="popup-personal__form")
+    //- поле для темы письма
+    input(type="hidden" name="theme" value="Заказ персонала")
+    .left
+      input(type="text" name="name"   placeholder="Как к вам обращаться")
+      input(type="text" name="email"  placeholder="Электронная почта")
+      input(type="text" name="phone"  placeholder="Телефон").phone-mask
+    .right
+      textarea(name="message" placeholder="Описание вакансий")
+    .popup-checkbox
+      input(type="checkbox" id="agree-personal-popup")
+      label(for="agree-personal-popup")
+        |Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия 
+        a(href="/agree.html") Пользовательского соглашения
+    input(type="submit" value="Узнать больше").btn.btn-rr
+//end personal popup
+
 //begin vacancies popup
 .popup.popup-vacancies#popup-vacancies
   .popup-close
     svg
       use(xlink:href="assets/img/sprite.svg#close")
-  h4.popup__title Задать вопрос управляющему директору
+  h4.popup__title Оставить заявку
   form.popup-callback__form
     //- поле для выбора варианте сообщения
     input(type="hidden" name="nameform" value="popup-vacancies__form")

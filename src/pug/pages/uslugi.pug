@@ -1,0 +1,111 @@
+extends ../_template
+
+block variables
+  - var title = 'PRC - аутсорсинговая компания. Подбор персонала в штат Заказчика'
+  - var descr = 'PRC (Private Recruiting Company) - подбор и оформлении в штат линейного квалифицированного и неквалифицированного персонала для нужд строительства, производства, торговли. PRC - аутсорсинговая компания'
+  - var pageHeaderTitle = 'Услуги'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.service(data-current="service")
+    include ../sections/tab-blue
+    
+    header.service-header#service-header(style="background-image:url('assets/img/service-header-00.jpg')")
+      .service-header__cover.service-header__cover-01(style="background-image:url('assets/img/service-header-01.jpg')")
+      .service-header__cover.service-header__cover-02(style="background-image:url('assets/img/service-header-02.jpg')")
+      .service-header__cover.service-header__cover-03(style="background-image:url('assets/img/service-header-03.jpg')")
+      .service-header__cover.service-header__cover-04(style="background-image:url('assets/img/service-header-04.jpg')")
+      .service-header__cover.service-header__cover-05(style="background-image:url('assets/img/service-header-05.jpg')")
+      .container
+        include ../sections/page-header
+        .service-header__text
+          p В нашей базе контактов более 15 тысяч проверенных линейных специалистов, которые оперативно могут выйти на работу или подменить сотрудника в случае форс-мажора.
+          p Сотрудничество с УФМС, Фондом поддержки трудовой миграции, трудовой инспекцией и другими контролирующими органами дает нам возможность снизить риски простоев в работе и текучести кадров.
+    
+    //begin service-sec__tab
+    .service-sec__tab
+      .container
+        .service-sec__tab-item(data-tab="01") Складские работы
+        .service-sec__tab-item(data-tab="02") Торговля
+        .service-sec__tab-item.active(data-tab="03") Производство
+        .service-sec__tab-item(data-tab="04") Рестораны
+        .service-sec__tab-item(data-tab="05") Строительство
+    //end service-sec__tab
+    
+    // begin service-about
+    section.service-about
+      .container
+        .service-about__left
+          .service-about__left-item
+            span.service-about__numb.color-text 75
+            span.service-about__text сотрудников ежедневно оформляем в штат
+          .service-about__left-item
+            span.service-about__numb.color-text 4252
+            span.service-about__text человек в смену
+          .service-about__left-item
+            span.service-about__numb.color-text 7150
+            span.service-about__text количество трудовых договоров
+
+        .service-about__right
+          h3.service-about__title
+            |В PRC каждый проект
+            br
+            |разрабатывается «под ключ»,
+            br
+            |индивидуально и конфиденциально
+          p Мы не просто находим нужного специалиста, а проходим вместе с ним все этапы вплоть до сопровождения после приема на работу, его обучения и аттестации.
+          p Мы берем на себя все вопросы, связанные со зарплатами, страхованием, налогами, учетом рабочего времени, разработкой должностных инструкций и охраной труда. При необходимости, мы можем внедрить менеджера PRC на ваше производство. Это поможет уменьшить текучесть кадров и ускорит рабочие процессы.
+          p
+            strong Мы заинтересованы в долгосрочном сотрудничестве, поэтому за приобретение полного пакета услуг всегда предоставляем существенную скидку.
+    // end   service-about
+
+    // begin service-tab-blue
+    section.service-tab-blue
+      .container-lg
+        ul.service-tab-blue__list
+          li.service-tab-blue__item
+            .service-tab-blue__item-inn
+              svg
+                use(xlink:href="assets/img/sprite.svg#tab-01")
+              span Аутсорсинг
+              p Аутсорсинг (дословно «использование внешнего ресурса») – это услуга, направленная на подбор и оформление рабочего персонала, когда у организации отсутствует возможность содержать постоянный штат сотрудников для своей компании и руководить их деятельностью.
+              a(href="/autsorsing.html").btn.btn-bw Подробнее
+            a(href="/autsorsing.html").service-tab-blue__link
+          li.service-tab-blue__item
+            .service-tab-blue__item-inn
+              svg
+                use(xlink:href="assets/img/sprite.svg#tab-02")
+              span Аутстаффинг
+              p Аутстаффинг представляет собой технологию по использованию персонала вне штата. То есть организация-заказчик не вступает в трудовые  отношения с работниками агентства, оказывающего услуги аутстаффинга. Непосредственно нанятые сотрудники выполняют перечень работ, которые указаны в договоре.
+              a(href="/autstaffing.html").btn.btn-bw Подробнее
+            a(href="/autstaffing.html").service-tab-blue__link 
+          li.service-tab-blue__item
+            .service-tab-blue__item-inn
+              svg
+                use(xlink:href="assets/img/sprite.svg#tab-03")
+              span Миграционный аудит
+              p Сотрудничество с PRC избавит Вас от возможных санкций со стороны проверяющих органов и обеспечит эффективную работу Вашего бизнеса. Работаем в рамках законов РФ, оперативно информируем клиентов об изменениях.
+              a(href="/migration.html").btn.btn-bw Подробнее
+            a(href="/migration.html").service-tab-blue__link
+          li.service-tab-blue__item
+            .service-tab-blue__item-inn
+              svg
+                use(xlink:href="assets/img/sprite.svg#tab-04")
+              span Аудит
+              p Независимый аудит организации позволяет своевременно выявить и устранить недостатки. Профессионалы компании PRC не только проведут проверку соблюдения норм трудового законодательства, но и помогут Заказчику объективно взглянуть на ситуацию и подготовиться к проверкам.
+              a(href="/audit.html").btn.btn-bw Подробнее
+            a(href="/audit.html").service-tab-blue__link 
+          li.service-tab-blue__item
+            .service-tab-blue__item-inn
+              svg
+                use(xlink:href="assets/img/sprite.svg#tab-05")
+              span Охрана труда
+              p В основе политики любого предприятия, независимо от масштабов производства и объемов финансирования, подразумевается обеспечение комфортных и безопасных условий труда для своих работников.
+              a(href="/safety.html").btn.btn-bw Подробнее
+            a(href="/safety.html").service-tab-blue__link 
+    // end   service-tab-blue
+
+  //end   content
+  include ../sections/footer

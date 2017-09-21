@@ -26,7 +26,7 @@
   }
 }
 .audit-header__text {
-  max-width: 485px;
+  max-width: 500px;
   margin-bottom: 30px;
   p {
     font-size: 17px;
@@ -80,8 +80,8 @@
   box-shadow: 0 0 30px rgba(26, 26, 27, .1);
 
   @include max(1000) {
-  line-height: 60px;
     font-size: 20px;
+    line-height: 60px;
     width: 45%;
     height: 60px;
     margin-bottom: 20px;
@@ -508,6 +508,59 @@ span.audit-tab-03__numb {
     font-size: 80px;
   }
 }
+.audit-tab-03__bubble-wrap {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    content: '';
+    border-bottom: 1px dashed $text;
+  }
+  &:hover {
+    .audit-tab-03__bubble {
+      transform: scale(1);
+      pointer-events: auto;
+      opacity: 1;
+    }
+  }
+}
+.audit-tab-03__bubble {
+  position: absolute;
+  bottom: calc( 100% + 10px);
+  left: -85px;
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+  transition: .5s;
+  transform: scale(0);
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  color: #fff;
+  background-color: $brand;
+  &::before {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    content: '';
+    border-top: 10px solid $brand;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    background-color: transparent;
+  }
+}
 // end .audit-tab-03__color-text
 
 // begin audit-tab-03__slider
@@ -577,8 +630,8 @@ span.audit-tab-03__numb {
         background-position: 22px -408px;
         &.slick-active,
         &:hover {
-          background-position: -90px -408px;
           background-color: #fff;
+          background-position: -90px -408px;
         }
       }
       &:nth-child(2) {

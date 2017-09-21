@@ -6,6 +6,9 @@
   position: relative;
   width: 25%;
   min-height: 300px;
+  padding: 50px;
+  cursor: pointer;
+  background-color: $brand;
 
   @include max(1360) {
     width: 33.3333%;
@@ -20,19 +23,28 @@
   @include max(600) {
     width: 100% !important;
   }
-}
-.clients-sec__item {
-  position: relative;
-  min-height: 300px;
-  padding: 50px;
-  cursor: pointer;
-  background-color: $brand;
   &:hover {
     .clients-sec__cover {
       pointer-events: none;
       opacity: 0;
     }
+    .clients-sec__item-link {
+      z-index: 10;
+      top: 0;
+    }
   }
+}
+.clients-sec__item-last {
+  cursor: auto;
+}
+.clients-sec__item-link {
+  position: absolute;
+  z-index: 0;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all .5s .5s;
 }
 .clients-sec__cover {
   position: absolute;

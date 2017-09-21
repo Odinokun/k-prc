@@ -134,6 +134,8 @@
   }
 }
 .service-about__left-item {
+  margin-bottom: 30px;
+
   @include max(1000) {
     padding: 0 10px;
     text-align: center;
@@ -154,7 +156,6 @@
   font-family: $font-light;
   font-size: 23px;
   display: block;
-  margin-bottom: 30px;
   color: $title;
 
   @include max(660) {
@@ -212,6 +213,7 @@
   }
 }
 .service-tab-blue__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,6 +222,10 @@
   padding: 0 20px 20px 20px;
   list-style: none;
   text-align: center;
+
+  @include max(600) {
+    width: 100% !important;
+  }
   .btn-bw {
     margin-top: auto;
   }
@@ -229,9 +235,6 @@
     @include max(1024) {
       width: 33.3333%;
     }
-    @include max(600) {
-      width: 50%;
-    }
   }
   &:nth-child(2) {
     background-color: #125592;
@@ -239,18 +242,12 @@
     @include max(1024) {
       width: 33.3333%;
     }
-    @include max(600) {
-      width: 50%;
-    }
   }
   &:nth-child(3) {
     background-color: #084b87;
 
     @include max(1024) {
       width: 33.3333%;
-    }
-    @include max(600) {
-      width: 50%;
     }
   }
   &:nth-child(4) {
@@ -266,12 +263,16 @@
     @include max(1024) {
       width: 50%;
     }
-    @include max(600) {
-      width: 100%;
-    }
   }
 }
 .service-tab-blue__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.service-tab-blue__item-inn {
   font-family: $font-light;
   position: relative;
   display: flex;
@@ -283,6 +284,9 @@
   text-align: center;
   text-decoration: none;
   color: #fff;
+  .btn {
+    z-index: 10;
+  }
 
   @include max(1220) {
     font-size: 20px;
