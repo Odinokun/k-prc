@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>PRC</title>
+    <meta content="PrivateRecruitingCompany (PRC) – ведущее российское аккредитованное частное агентство занятости." name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+    <script src="assets/js/foundation.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdGbaaf94NCuCkoH98Ry12HA59U0eTqIA"></script>
+  </head>
+  <body>
+    <!-- begin header-->
+    <header class="header">
+      <div class="container-lg">
+        <a class="header-logo" href="/">
+          <img src="assets/img/logo.png" alt="company logo">
+        </a>
+        <!-- begin menu-->
+        <nav class="header-nav">
+          <!--begin burger-->
+          <div class="burger" id="burger">
+            <input id="burger__input" name="exit" type="checkbox">
+            <label for="burger__input">
+              <span class="burger__icon"></span>
+            </label>
+          </div>
+          <!--end   burger-->
+          <ul class="header-nav__list" id="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link-about" href="/about.html">О компании</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link-service" href="/uslugi.html">Услуги</a>
+              <div class="header-nav__sublist-open"></div>
+              <div class="header-nav__sublist-wrap">
+                <ul class="header-nav__sublist">
+                  <li class="header-nav__subitem">
+                    <a class="header-nav__sublink" href="/autsorsing.html">Аутсорсинг</a>
+                  </li>
+                  <li class="header-nav__subitem">
+                    <a class="header-nav__sublink" href="/autstaffing.html">Аутстаффинг</a>
+                  </li>
+                  <li class="header-nav__subitem">
+                    <a class="header-nav__sublink" href="/migration.html">Миграционный учет</a>
+                  </li>
+                  <li class="header-nav__subitem">
+                    <a class="header-nav__sublink" href="/audit.html">Аудит</a>
+                  </li>
+                  <li class="header-nav__subitem">
+                    <a class="header-nav__sublink" href="/safety.html">Охрана труда</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link-clients" href="/otzyivyi.html">Наши клиенты</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link-vacancies" href="/vakansii1.html">Вакансии</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link-friday" href="/novosti.html">Пятничный менеджер</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link-contacts" href="/kontakty-prc.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end menu-->
+        <!--begin geolocation-->
+        <div class="geolocation">
+          <div class="geolocation-phone">
+            <a class="geolocation-phone__link geolocation-phone__link-msk" href="tel:8 800 350-50-49">8 (800) 350-50-49</a>
+            <a class="geolocation-phone__link geolocation-phone__link-spb active" href="tel:8 800 100-98-94">8 (800) 100-98-94</a>
+            <a class="geolocation-phone__link geolocation-phone__link-cheln" href="tel:8 800 100-98-94">8 (800) 100-98-94</a>
+            <a class="geolocation-phone__link geolocation-phone__link-ekb" href="tel:8 800 100-98-94">8 (800) 100-98-94</a>
+            <a class="geolocation-phone__link geolocation-phone__link-tumen" href="tel:8 800 100-98-94">8 (800) 100-98-94</a>
+            <a class="geolocation-phone__link geolocation-phone__link-rnd" href="tel:8 800 100-98-94">8 (800) 100-98-94</a>
+            <a class="geolocation-phone__link geolocation-phone__link-kirov" href="tel:8 800 100-98-94">8 (800) 100-98-94</a>
+            <a class="geolocation-phone__link geolocation-phone__link-iz" href="tel:8 800 100-98-94">8 (800) 100-98-94</a>
+            <a class="geolocation-phone__link geolocation-phone__link-novosib" href="tel:8 800 100-98-94">8 (800) 100-98-94</a>
+          </div>
+          <div class="geolocation-region">
+            <span>Ваш регион:</span>
+            <a class="geolocation-region__city geolocation-region__city-msk" href="#">Москва</a>
+            <a class="geolocation-region__city geolocation-region__city-spb active" href="#">Санкт-Петербург</a>
+            <a class="geolocation-region__city geolocation-region__city-cheln" href="#">Набережные Челны</a>
+            <a class="geolocation-region__city geolocation-region__city-ekb" href="#">Екатеринбург</a>
+            <a class="geolocation-region__city geolocation-region__city-tumen" href="#">Тюмень</a>
+            <a class="geolocation-region__city geolocation-region__city-rnd" href="#">Ростов на Дону</a>
+            <a class="geolocation-region__city geolocation-region__city-kirov" href="#">Киров</a>
+            <a class="geolocation-region__city geolocation-region__city-iz" href="#">Ижевск</a>
+            <a class="geolocation-region__city geolocation-region__city-novosib" href="#">Новосибирск</a>
+            <div class="geolocation-region__popup">
+              <h3 class="geolocation-region__popup-title">Ваш регион Санкт-Петербург?</h3>
+              <div class="geolocation-region__btn-wrap">
+                <button class="btn btn-rr">Да</button>
+                <button class="btn btn-no">Нет, изменить регион</button>
+              </div>
+            </div>
+            <div class="geolocation-region__popup-city">
+              <ul>
+                <li data-city="msk">Москва</li>
+                <li data-city="spb">Санкт-Петербург</li>
+                <li data-city="cheln">Набережные Челны</li>
+                <li data-city="ekb">Екатеринбург</li>
+                <li data-city="tumen">Тюмень</li>
+                <li data-city="rnd">Ростов на дону</li>
+                <li data-city="kirov">Киров</li>
+                <li data-city="iz">Ижевск</li>
+                <li data-city="novosib">Новосибирск</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--end geolocation-->
+        <div class="header-callback">
+          <button class="btn btn-wr popup-open" data-open="callback">Заказать звонок
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#header-phone"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- end   header-->
+    <!--begin content-->
+    <section class="main safety" data-current="safety">
+      <!-- begin tab-blue-->
+      <section class="tab-blue" id="tab-blue">
+        <div class="container-lg">
+          <ul class="tab-blue__list">
+            <li class="tab-blue__item">
+              <a class="tab-blue__link tab-blue__link-autsorsing" href="/autsorsing.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#tab-01"></use>
+                </svg>
+                <span>Аутсорсинг</span>
+              </a>
+            </li>
+            <li class="tab-blue__item">
+              <a class="tab-blue__link tab-blue__link-autstaffing" href="/autstaffing.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#tab-02"></use>
+                </svg>
+                <span>Аутстаффинг</span>
+              </a>
+            </li>
+            <li class="tab-blue__item">
+              <a class="tab-blue__link tab-blue__link-migration" href="/migration.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#tab-03"></use>
+                </svg>
+                <span>Миграционный учет</span>
+              </a>
+            </li>
+            <li class="tab-blue__item">
+              <a class="tab-blue__link tab-blue__link-audit" href="/audit.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#tab-04"></use>
+                </svg>
+                <span>Аудит</span>
+              </a>
+            </li>
+            <li class="tab-blue__item">
+              <a class="tab-blue__link tab-blue__link-safety" href="/safety.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#tab-05"></use>
+                </svg>
+                <span>Охрана труда</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- end   tab-blue-->
+      <header class="safety-header" style="background-image:url('assets/img/safety-header.jpg');">
+        <div class="container">
+          <!--begin footer-->
+          <header class="page-header">
+            <!--begin breadcrumbs-->
+            <section class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">Охрана труда</a>
+                </li>
+              </ul>
+            </section>
+            <!--end   breadcrumbs-->
+            <h1 class="page-header__title">Охрана труда</h1>
+          </header>
+          <!--end   footer-->
+          <div class="safety-header__text">
+            <p>В основе политики любого предприятия, независимо от масштабов производства и объемов финансирования, подразумевается обеспечение комфортных и безопасных условий труда для своих работников.</p>
+          </div>
+        </div>
+      </header>
+      <!-- begin safety advantage slider-->
+      <section class="safety-advantage">
+        <div class="container">
+          <div class="safety-advantage__title">Услуга компании PRC по охране труда (ОТ) поможет Вам</div>
+          <div class="safety-advantage-slider">
+            <ul class="safety-advantage-slider__list">
+              <li class="safety-advantage-slider__item" style="background-image:url('assets/img/advantage-slider/advantage-16.jpg');">
+                <span>01</span>
+                <div class="safety-advantage-slider__text">Оптимизировать организационные
+                  <br>и финансовые расходы за счет приведения
+                  <br>ОТ в соответствие нормативным требованиям</div>
+              </li>
+              <li class="safety-advantage-slider__item" style="background-image:url('assets/img/advantage-slider/advantage-17.jpg');">
+                <span>02</span>
+                <div class="safety-advantage-slider__text">Наладить систему охраны труда либо
+                  <br>определить эффективность
+                  <br>функционирования действующей ОТ</div>
+              </li>
+              <li class="safety-advantage-slider__item" style="background-image:url('assets/img/advantage-slider/advantage-18.jpg');">
+                <span>03</span>
+                <div class="safety-advantage-slider__text">Разработать внутренние документы, приказы,
+                  <br>инструкции, соответствующие требованиям
+                  <br>законодательства</div>
+              </li>
+              <li class="safety-advantage-slider__item" style="background-image:url('assets/img/advantage-slider/advantage-19.jpg');">
+                <span>04</span>
+                <div class="safety-advantage-slider__text">Минимизировать риски привлечения
+                  <br>к ответственности при проведении проверки
+                  <br>либо несчастном случае</div>
+              </li>
+              <li class="safety-advantage-slider__item" style="background-image:url('assets/img/advantage-slider/advantage-20.jpg');">
+                <span>05</span>
+                <div class="safety-advantage-slider__text">Контролировать механизмы ОТ с выявлением
+                  <br>сильных и уязвимых сторон системы
+                  <br>управления ОТ предприятия</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- end   safety advantage slider-->
+      <!--begin safety-tabs-->
+      <section class="safety-tabs">
+        <div class="container">
+          <h3 class="safety-tabs__title">Что включает в себя охрана труда</h3>
+        </div>
+        <div class="container safety-tabs__counter-wrap">
+          <div class="safety-tabs__counter">
+            <span class="safety-tabs__counter-tab" id="safety-tabs__counter-tab">01</span>
+            <span>/</span>
+            <span class="safety-tabs__counter-all" id="safety-tabs__counter-all"> </span>
+          </div>
+          <ul class="safety-tabs__list">
+            <li class="safety-tabs__item">
+              <h5 class="safety-tabs__item-title">Проведение специальной оценки условий труда (СОУТ); разработка необходимой документации.</h5>
+              <p>В общем понимании СОУТ – комплекс реализуемых в несколько этапов мероприятий по определению вредных / опасных факторов, а также оценке степени их воздействия на персонал.</p>
+              <p>По итогам СОУТ готовится отчет и осуществляется работка предусмотренной законодательством документации: инструкций, приказов, нормативов и т.д.</p>
+            </li>
+            <li class="safety-tabs__item">
+              <h5 class="safety-tabs__item-title">Автоматизация системы медицинского контроля.</h5>
+              <p>Обеспечивается контроль за окончанием и сроками проведения повторных медицинских осмотров, получения психоневрологических заключений.</p>
+            </li>
+            <li class="safety-tabs__item">
+              <h5 class="safety-tabs__item-title">Обеспечение средствами индивидуальной защиты (СИЗ).</h5>
+              <p>Проводим закупку, хранение, плановую замену (по срокам эксплуатации) и выдачу СИЗ сотрудникам Вашей компании. При необходимости осуществляем тендерную работу по закупке СИЗ под конкретного Заказчика.</p>
+            </li>
+            <li class="safety-tabs__item">
+              <h5 class="safety-tabs__item-title">Проведение инструктажей.</h5>
+              <p>Организация проведения инструктажей по ОТ, электрической и пожарной безопасности. Ведение журналов инструктажа при приеме ина объектах Заказчика.</p>
+            </li>
+            <li class="safety-tabs__item">
+              <h5 class="safety-tabs__item-title">Обучение персонала оказанию первой медицинской помощи пострадавшим на производстве.</h5>
+            </li>
+            <li class="safety-tabs__item">
+              <h5 class="safety-tabs__item-title">Создание комиссии по расследованию несчастных случаев на предприятии Заказчика.</h5>
+            </li>
+            <li class="safety-tabs__item">
+              <h5 class="safety-tabs__item-title">Систематическая проверка знаний требований ОТ персонала организации, выдача удостоверений.</h5>
+            </li>
+            <li class="safety-tabs__item">
+              <h5 class="safety-tabs__item-title">Контроль и повышение квалификации сотрудников и ИТР.</h5>
+            </li>
+            <li class="safety-tabs__item">
+              <h5 class="safety-tabs__item-title">Обеспечение Заказчика автоматизированной системой учета выдачи, а также удержаний за униформу персонала.</h5>
+            </li>
+            <li class="safety-tabs__item">
+              <h5 class="safety-tabs__item-title">Выезды представителей PRC на объекты Заказчика для контроля организации ОТ.</h5>
+            </li>
+            <li class="safety-tabs__item">
+              <h5 class="safety-tabs__item-title">Дополнительно оказываются услуги по абонентскому обслуживанию по ОТ.</h5>
+            </li>
+            <li class="safety-tabs__item">
+              <h5 class="safety-tabs__item-title">Оптимизация системы управления ОТ за счет формирования структуры, положения и должностных инструкций службы по охране труда. </h5>
+            </li>
+            <li class="safety-tabs__item">
+              <h5 class="safety-tabs__item-title">Представление интересов заказчика в контролирующих органах (в том числе Госинспекция по труду)</h5>
+            </li>
+            <li class="safety-tabs__item">
+              <h5 class="safety-tabs__item-title">Разработка документации по охране труда, в том числе:</h5>
+              <ul>
+                <li>Приказов о возложении обязанностей по ОТ на ответственных должностных лиц; о создании комиссий по проверке знаний требований ОТ;</li>
+                <li>программ обучения персонала, проведения аттестации и переаттестации, инструктажа в области ОТ;</li>
+                <li>инструкций по конкретным профессиям, видам выполняемых работ, должностям;</li>
+                <li>иные регламенты, положения и стандарты в сфере ОТ на предприятии.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--end safety-tabs-->
+      <!--begin callback-section-->
+      <div class="callback-sec" style="background-image: url('assets/img/safety-callback.jpg');">
+        <!--begin callback-inn-->
+        <div class="container">
+          <h3 class="callback-sec__title">Оставьте заявку</h3>
+          <span class="callback-sec__subtitle">Каждая ситуация особенная.
+            <br>Оставьте ваше имя и способ связи с вами — наш менеджер свяжется с вами, чтобы обсудить все детали.</span>
+          <form class="callback-sec__form">
+            <input type="hidden" name="nameform" value="callback-sec__form">
+            <input type="hidden" name="theme" value="Заявка на охрану труда">
+            <div class="callback-sec__form-inn">
+              <div class="left">
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input class="phone-mask" type="text" name="phone" placeholder="Номер телефона">
+              </div>
+              <div class="right">
+                <textarea name="message" placeholder="Комментарий"></textarea>
+              </div>
+            </div>
+            <div class="callback-sec__checkbox">
+              <input class="agree" type="checkbox" id="agree-callback">
+              <label for="agree-callback">Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия
+                <a href="/agree.html">Пользовательского соглашения</a>
+              </label>
+            </div>
+            <input class="btn btn-rr" type="submit" value="Заказать звонок">
+          </form>
+        </div>
+        <!--end callback-inn-->
+      </div>
+      <!--end callback-section-->
+    </section>
+    <!--end   content-->
+    <!--begin footer-->
+    <footer class="footer">
+      <div class="container-lg">
+        <div class="footer-item">
+          <a class="footer-item__logo" href="/">
+            <img class="footer-item__logo-colorful" src="assets/img/logo.png" alt="company logo">
+          </a>
+          <span class="footer-item__logo-text">Группа компаний</span>
+          <span class="footer-item__copyright">&#169; 2017 Все права защищены</span>
+        </div>
+        <div class="footer-item">
+          <h4 class="footer-item__title">Услуги</h4>
+          <a class="footer-item__link" href="/autsorsing.html">Аутсорсинг</a>
+          <a class="footer-item__link" href="/autstaffing.html">Аутстаффинг</a>
+          <a class="footer-item__link" href="/audit.html">Аудит</a>
+          <a class="footer-item__link" href="/migration.html">Миграционный учет</a>
+          <a class="footer-item__link" href="/safety.html">Охрана труда</a>
+        </div>
+        <div class="footer-item">
+          <h4 class="footer-item__title">О компании</h4>
+          <a class="footer-item__link" href="/about.html#about-personal">Наши сотрудники</a>
+          <a class="footer-item__link" href="/about.html#about-director">Гарантии директора</a>
+          <a class="footer-item__link" href="/about.html#about-map">Города присутствия</a>
+          <a class="footer-item__link" href="/assets/pdf/ocenka.pdf" target="_blank">Оценка условий труда</a>
+        </div>
+        <div class="footer-item">
+          <h4 class="footer-item__title">Пятничный менеджер</h4>
+          <div class="footer-item__news">
+            <span class="footer-item__news-date">08.08.2017</span>
+            <a class="footer-item__news-link" href="/article-09.html">Основной целью схемы работы с персоналом, которую принято называть «аутстаффингом», является сокращение рисков бизнеса. Каждый в отдельности...</a>
+          </div>
+          <div class="footer-item__news">
+            <span class="footer-item__news-date">23.06.2017</span>
+            <a class="footer-item__news-link" href="/article-05.html">Аутстаффинг – эффективная кадровая технология вывода сотрудников за штат или привлечение штата извне... </a>
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-item__phone">
+            <a href="tel:+8 800 350 50 49">8 (800) 350-50-49</a>
+            <span>Москва</span>
+          </div>
+          <div class="footer-item__phone">
+            <a href="tel:+8 800 100 98 94">8 (800) 100-98-94</a>
+            <span>Санкт-Петербург</span>
+          </div>
+          <div class="footer-item__social">
+            <a href="#" style="pointer-events: none;">
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+            <a href="#" style="pointer-events: none;">
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+            <a href="#" style="pointer-events: none;">
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#tw"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--begin popup section-->
+      <div class="popup__layer"></div>
+      <!--begin success popup-->
+      <div class="popup-success" id="popup-success">
+        <div class="popup-close">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <h4 class="popup__title">Ваше сообщение отправлено</h4>
+        <h5 class="popup__subtitle">Мы свяжемся с Вами в ближайшее время.</h5>
+      </div>
+      <!--end success popup-->
+      <!--begin callback popup-->
+      <div class="popup popup-callback" id="popup-callback">
+        <div class="popup-close">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <h4 class="popup__title">Заказать обратный звонок</h4>
+        <form class="popup-callback__form" id="popup-callback__form">
+          <input type="hidden" name="nameform" value="popup-callback__form">
+          <input type="hidden" name="theme" value="Заказ обратного звонка">
+          <div class="left">
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input class="phone-mask" type="text" name="phone" placeholder="Номер телефона">
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Ваш Комментарий"></textarea>
+          </div>
+          <div class="popup-checkbox">
+            <input type="checkbox" id="agree-callback-popup">
+            <label for="agree-callback-popup">Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия
+              <a href="/agree.html">Пользовательского соглашения</a>
+            </label>
+          </div>
+          <input class="btn btn-rr" type="submit" value="Заказать звонок">
+        </form>
+      </div>
+      <!--end callback popup-->
+      <!--begin director popup-->
+      <div class="popup popup-director" id="popup-director">
+        <div class="popup-close">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <h4 class="popup__title">Задать вопрос управляющему директору</h4>
+        <form class="popup-callback__form">
+          <input type="hidden" name="nameform" value="popup-director__form">
+          <input type="hidden" name="theme" value="Вопрос управляющему директору">
+          <div class="left">
+            <input type="text" name="name" placeholder="Как к вам обращаться">
+            <input type="text" name="email" placeholder="Электронная почта">
+            <input class="phone-mask" type="text" name="phone" placeholder="Телефон">
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Ваш вопрос"></textarea>
+          </div>
+          <div class="popup-checkbox">
+            <input type="checkbox" id="agree-director-popup">
+            <label for="agree-director-popup">Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия
+              <a href="/agree.html">Пользовательского соглашения</a>
+            </label>
+          </div>
+          <input class="btn btn-rr" type="submit" value="Узнать больше">
+        </form>
+      </div>
+      <!--end director popup-->
+      <!--begin tender popup-->
+      <div class="popup popup-tender" id="popup-tender">
+        <div class="popup-close">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <h4 class="popup__title">Пригласить в тендер</h4>
+        <form class="popup-callback__form">
+          <input type="hidden" name="nameform" value="popup-tender__form">
+          <input type="hidden" name="theme" value="Приглашение на тендер">
+          <div class="left">
+            <input type="text" name="name" placeholder="Как к вам обращаться">
+            <input type="text" name="email" placeholder="Электронная почта">
+            <input class="phone-mask" type="text" name="phone" placeholder="Телефон">
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Описание тендера"></textarea>
+          </div>
+          <div class="popup-checkbox">
+            <input type="checkbox" id="agree-tender-popup">
+            <label for="agree-tender-popup">Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия
+              <a href="/agree.html">Пользовательского соглашения</a>
+            </label>
+          </div>
+          <input class="btn btn-rr" type="submit" value="Узнать больше">
+        </form>
+      </div>
+      <!--end tender popup-->
+      <!--begin personal popup-->
+      <div class="popup popup-personal" id="popup-personal">
+        <div class="popup-close">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <h4 class="popup__title">Заказать персонал</h4>
+        <form class="popup-callback__form">
+          <input type="hidden" name="nameform" value="popup-personal__form">
+          <input type="hidden" name="theme" value="Заказ персонала">
+          <div class="left">
+            <input type="text" name="name" placeholder="Как к вам обращаться">
+            <input type="text" name="email" placeholder="Электронная почта">
+            <input class="phone-mask" type="text" name="phone" placeholder="Телефон">
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Описание вакансий"></textarea>
+          </div>
+          <div class="popup-checkbox">
+            <input type="checkbox" id="agree-personal-popup">
+            <label for="agree-personal-popup">Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия
+              <a href="/agree.html">Пользовательского соглашения</a>
+            </label>
+          </div>
+          <input class="btn btn-rr" type="submit" value="Узнать больше">
+        </form>
+      </div>
+      <!--end personal popup-->
+      <!--begin vacancies popup-->
+      <div class="popup popup-vacancies" id="popup-vacancies">
+        <div class="popup-close">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <h4 class="popup__title">Оставить заявку</h4>
+        <form class="popup-callback__form">
+          <input type="hidden" name="nameform" value="popup-vacancies__form">
+          <input type="hidden" name="theme" value="Заявка на вакансию">
+          <div class="left">
+            <input type="text" name="name" placeholder="Имя*" required>
+            <input type="text" name="surname" placeholder="Фамилия*" required>
+            <input type="text" name="email" placeholder="Электронная почта*" required>
+            <input class="phone-mask" type="text" name="phone" placeholder="Телефон*" required>
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Коментарии"></textarea>
+          </div>
+          <div class="popup-clip">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#clip"></use>
+            </svg>
+            <a href="#">Прикрепить резюме</a>
+          </div>
+          <div class="popup-checkbox">
+            <input type="checkbox" id="agree-vacancies-popup">
+            <label for="agree-vacancies-popup">Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия
+              <a href="/agree.html">Пользовательского соглашения</a>
+            </label>
+          </div>
+          <input class="btn btn-rr" type="submit" value="Отправить">
+          <div class="popup-ps">
+            <span>*Заполните все обязательные поля формы</span>
+          </div>
+        </form>
+      </div>
+      <!--end vacancies popup-->
+      <!--end   popup section-->
+    </footer>
+    <!--end   footer-->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/prog.js"></script>
+  </body>
+</html>

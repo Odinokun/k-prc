@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>PRC</title>
+    <meta content="PrivateRecruitingCompany (PRC) – ведущее российское аккредитованное частное агентство занятости." name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+    <script src="assets/js/foundation.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdGbaaf94NCuCkoH98Ry12HA59U0eTqIA"></script>
+  </head>
+  <body>
+    <!-- begin header-->
+    <header class="header">
+      <div class="container-lg">
+        <a class="header-logo" href="/">
+          <img src="assets/img/logo.png" alt="company logo">
+        </a>
+        <!-- begin menu-->
+        <nav class="header-nav">
+          <!--begin burger-->
+          <div class="burger" id="burger">
+            <input id="burger__input" name="exit" type="checkbox">
+            <label for="burger__input">
+              <span class="burger__icon"></span>
+            </label>
+          </div>
+          <!--end   burger-->
+          <ul class="header-nav__list" id="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link-about" href="/about.html">О компании</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link-service" href="/uslugi.html">Услуги</a>
+              <div class="header-nav__sublist-open"></div>
+              <div class="header-nav__sublist-wrap">
+                <ul class="header-nav__sublist">
+                  <li class="header-nav__subitem">
+                    <a class="header-nav__sublink" href="/autsorsing.html">Аутсорсинг</a>
+                  </li>
+                  <li class="header-nav__subitem">
+                    <a class="header-nav__sublink" href="/autstaffing.html">Аутстаффинг</a>
+                  </li>
+                  <li class="header-nav__subitem">
+                    <a class="header-nav__sublink" href="/migration.html">Миграционный учет</a>
+                  </li>
+                  <li class="header-nav__subitem">
+                    <a class="header-nav__sublink" href="/audit.html">Аудит</a>
+                  </li>
+                  <li class="header-nav__subitem">
+                    <a class="header-nav__sublink" href="/safety.html">Охрана труда</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link-clients" href="/otzyivyi.html">Наши клиенты</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link-vacancies" href="/vakansii1.html">Вакансии</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link-friday" href="/novosti.html">Пятничный менеджер</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link-contacts" href="/kontakty-prc.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end menu-->
+        <!--begin geolocation-->
+        <div class="geolocation">
+          <div class="geolocation-phone">
+            <a class="geolocation-phone__link geolocation-phone__link-msk" href="tel:8 800 350-50-49">8 (800) 350-50-49</a>
+            <a class="geolocation-phone__link geolocation-phone__link-spb active" href="tel:8 800 100-98-94">8 (800) 100-98-94</a>
+            <a class="geolocation-phone__link geolocation-phone__link-cheln" href="tel:8 800 100-98-94">8 (800) 100-98-94</a>
+            <a class="geolocation-phone__link geolocation-phone__link-ekb" href="tel:8 800 100-98-94">8 (800) 100-98-94</a>
+            <a class="geolocation-phone__link geolocation-phone__link-tumen" href="tel:8 800 100-98-94">8 (800) 100-98-94</a>
+            <a class="geolocation-phone__link geolocation-phone__link-rnd" href="tel:8 800 100-98-94">8 (800) 100-98-94</a>
+            <a class="geolocation-phone__link geolocation-phone__link-kirov" href="tel:8 800 100-98-94">8 (800) 100-98-94</a>
+            <a class="geolocation-phone__link geolocation-phone__link-iz" href="tel:8 800 100-98-94">8 (800) 100-98-94</a>
+            <a class="geolocation-phone__link geolocation-phone__link-novosib" href="tel:8 800 100-98-94">8 (800) 100-98-94</a>
+          </div>
+          <div class="geolocation-region">
+            <span>Ваш регион:</span>
+            <a class="geolocation-region__city geolocation-region__city-msk" href="#">Москва</a>
+            <a class="geolocation-region__city geolocation-region__city-spb active" href="#">Санкт-Петербург</a>
+            <a class="geolocation-region__city geolocation-region__city-cheln" href="#">Набережные Челны</a>
+            <a class="geolocation-region__city geolocation-region__city-ekb" href="#">Екатеринбург</a>
+            <a class="geolocation-region__city geolocation-region__city-tumen" href="#">Тюмень</a>
+            <a class="geolocation-region__city geolocation-region__city-rnd" href="#">Ростов на Дону</a>
+            <a class="geolocation-region__city geolocation-region__city-kirov" href="#">Киров</a>
+            <a class="geolocation-region__city geolocation-region__city-iz" href="#">Ижевск</a>
+            <a class="geolocation-region__city geolocation-region__city-novosib" href="#">Новосибирск</a>
+            <div class="geolocation-region__popup">
+              <h3 class="geolocation-region__popup-title">Ваш регион Санкт-Петербург?</h3>
+              <div class="geolocation-region__btn-wrap">
+                <button class="btn btn-rr">Да</button>
+                <button class="btn btn-no">Нет, изменить регион</button>
+              </div>
+            </div>
+            <div class="geolocation-region__popup-city">
+              <ul>
+                <li data-city="msk">Москва</li>
+                <li data-city="spb">Санкт-Петербург</li>
+                <li data-city="cheln">Набережные Челны</li>
+                <li data-city="ekb">Екатеринбург</li>
+                <li data-city="tumen">Тюмень</li>
+                <li data-city="rnd">Ростов на дону</li>
+                <li data-city="kirov">Киров</li>
+                <li data-city="iz">Ижевск</li>
+                <li data-city="novosib">Новосибирск</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--end geolocation-->
+        <div class="header-callback">
+          <button class="btn btn-wr popup-open" data-open="callback">Заказать звонок
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#header-phone"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- end   header-->
+    <!--begin content-->
+    <section class="main autsorsing" data-current="autsorsing">
+      <!-- begin tab-blue-->
+      <section class="tab-blue" id="tab-blue">
+        <div class="container-lg">
+          <ul class="tab-blue__list">
+            <li class="tab-blue__item">
+              <a class="tab-blue__link tab-blue__link-autsorsing" href="/autsorsing.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#tab-01"></use>
+                </svg>
+                <span>Аутсорсинг</span>
+              </a>
+            </li>
+            <li class="tab-blue__item">
+              <a class="tab-blue__link tab-blue__link-autstaffing" href="/autstaffing.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#tab-02"></use>
+                </svg>
+                <span>Аутстаффинг</span>
+              </a>
+            </li>
+            <li class="tab-blue__item">
+              <a class="tab-blue__link tab-blue__link-migration" href="/migration.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#tab-03"></use>
+                </svg>
+                <span>Миграционный учет</span>
+              </a>
+            </li>
+            <li class="tab-blue__item">
+              <a class="tab-blue__link tab-blue__link-audit" href="/audit.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#tab-04"></use>
+                </svg>
+                <span>Аудит</span>
+              </a>
+            </li>
+            <li class="tab-blue__item">
+              <a class="tab-blue__link tab-blue__link-safety" href="/safety.html">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#tab-05"></use>
+                </svg>
+                <span>Охрана труда</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- end   tab-blue-->
+      <header class="autsorsing-header" style="background-image:url('assets/img/autsorsing-header.jpg');">
+        <div class="container">
+          <!--begin footer-->
+          <header class="page-header">
+            <!--begin breadcrumbs-->
+            <section class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">Аутсорсинг</a>
+                </li>
+              </ul>
+            </section>
+            <!--end   breadcrumbs-->
+            <h1 class="page-header__title">Аутсорсинг</h1>
+          </header>
+          <!--end   footer-->
+          <div class="autsorsing-header__text">
+            <p>Аутсорсинг (дословно «использование внешнего ресурса») – это услуга, направленная на подбор и оформление рабочего персонала, когда у организации отсутствует возможность содержать постоянный штат сотрудников для своей компании и руководить
+              их деятельностью.</p>
+          </div>
+        </div>
+      </header>
+      <!-- begin autsorsing-podbor-->
+      <section class="autsorsing-podbor">
+        <div class="container">
+          <div class="autsorsing-podbor__left">
+            <div class="autsorsing-podbor__left-item">
+              <span class="autsorsing-podbor__numb color-text">7</span>
+              <span class="autsorsing-podbor__text">
+                профильных отраслей</span>
+            </div>
+            <div class="autsorsing-podbor__left-item">
+              <span class="autsorsing-podbor__numb color-text">50</span>
+              <span class="autsorsing-podbor__text">
+                объектов в
+                <br>зоне обслуживания</span>
+            </div>
+            <div class="autsorsing-podbor__left-item">
+              <span class="autsorsing-podbor__numb color-text">4987</span>
+              <span class="autsorsing-podbor__text">
+                количество
+                <br>людей в базе</span>
+            </div>
+          </div>
+          <div class="autsorsing-podbor__right">
+            <h3 class="autsorsing-podbor__title">
+              Основная информация
+              <br>о профессиональном аутсорсинге</h3>
+            <p>На сегодняшний день аутсорсинг, распространенный на Западе, является одним из новых эффективных методов найма персонала в России. Данная услуга обладает существенными преимуществами: позволяет оптимизировать ресурсные процессы и направить
+              Вашу компанию к благополучию и успеху. Ведь Вы получаете долговременную профессиональную поддержку работоспособности отдельных звеньев бизнеса. В свою очередь, это позволяет уменьшить Ваши организационные и финансовые затраты, направить
+              освободившиеся ресурсы на развитие предприятия.</p>
+            <p>Кадровый аутсорсинг предполагает непосредственную работу с персоналом: подбор, расстановка; оформление и контроль сроков действия разрешительных документов; обучение, аттестация; расчет и уплата налогов; обслуживание зарплатного договора;
+              правовое сопровождение; формирование норм поведения в коллективе и многое другое.</p>
+          </div>
+        </div>
+      </section>
+      <!-- end   autsorsing-podbor-->
+      <!-- begin autsorsing advantage-->
+      <section class="autsorsing-advantage">
+        <div class="container">
+          <div class="autsorsing-advantage__title">Наши преимущества</div>
+          <div class="autsorsing-advantage-slider">
+            <ul class="autsorsing-advantage-slider__list">
+              <li class="autsorsing-advantage-slider__item" style="background-image:url('assets/img/advantage-slider/advantage-21.jpg');">
+                <span>В считанные дни и на выгодных
+                  <br>условиях для Вас будет подобран
+                  <br>квалифицированный персонал</span>
+              </li>
+              <li class="autsorsing-advantage-slider__item" style="background-image:url('assets/img/advantage-slider/advantage-22.jpg');">
+                <span>Вы можете
+                  <br>оптимизировать затраты
+                  <br>на налоги до 40%</span>
+              </li>
+              <li class="autsorsing-advantage-slider__item" style="background-image:url('assets/img/advantage-slider/advantage-23.jpg');">
+                <span>Вы забудете о дополнительной
+                  <br>кадровой и бухгалтерской
+                  <br>нагрузке</span>
+              </li>
+              <li class="autsorsing-advantage-slider__item" style="background-image:url('assets/img/advantage-slider/advantage-24.jpg');">
+                <span>Вы спокойны за свой бизнес:
+                  <br>персонал работает в соответствии с
+                  <br>нормами трудового законодательства</span>
+              </li>
+              <li class="autsorsing-advantage-slider__item" style="background-image:url('assets/img/advantage-slider/advantage-25.jpg');">
+                <span>Вы не беспокоитесь
+                  <br>о возможных проблемах
+                  <br>с УФМС</span>
+              </li>
+            </ul>
+          </div>
+          <div class="autsorsing-advantage__banner">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#folder"></use>
+            </svg>
+            <span>От поиска и легализации до оформления и налоговых отчислений – все проблемы с персоналом компании PRC берет на себя, а Вы спокойно занимаетесь развитием бизнеса.</span>
+          </div>
+        </div>
+      </section>
+      <!-- end   autsorsing advantage-->
+      <!--begin autsorsing-tabs-->
+      <section class="autsorsing-tabs">
+        <div class="container">
+          <h3 class="autsorsing-tabs__title">Особенности аутсорсинга от компании PRC</h3>
+        </div>
+        <div class="container autsorsing-tabs__counter-wrap">
+          <div class="autsorsing-tabs__counter">
+            <span class="autsorsing-tabs__counter-tab" id="autsorsing-tabs__counter-tab">01</span>
+            <span>/</span>
+            <span class="autsorsing-tabs__counter-all" id="autsorsing-tabs__counter-all"> </span>
+          </div>
+          <ul class="autsorsing-tabs__list">
+            <li class="autsorsing-tabs__item">
+              <h5 class="autsorsing-tabs__item-title">Проверка соответствия сотрудников</h5>
+              <p>При отборе персонала в Вашу компанию мы проверяем квалификацию персонала, проводим тестирование, аттестацию кандидатов. Также проверяем документы.</p>
+              <p>Отбор осуществляется исходя из требований Заказчика и опыта кандидата. При комплектовании бригад нами учитываются национальные особенности персонала.</p>
+            </li>
+            <li class="autsorsing-tabs__item">
+              <h5 class="autsorsing-tabs__item-title">Авансирование персонала</h5>
+              <p>Стабильные выплаты позволяют достичь высокой мотивации сотрудников и, соответственно, максимальной эффективности их труда.</p>
+            </li>
+            <li class="autsorsing-tabs__item">
+              <h5 class="autsorsing-tabs__item-title">Безопасность аутсорсинга</h5>
+              <p>Каждый сотрудник проверяется на наличие нарушений законодательства. Для обеспечения постоянного контроля за персоналом компания PRC может предоставить в Ваше распоряжение собственную Службу безопасности.</p>
+            </li>
+            <li class="autsorsing-tabs__item">
+              <h5 class="autsorsing-tabs__item-title">Отработаны технологии массового подбора персонала</h5>
+              <p>Мы имеем опыт подбора от 100 человек на одну вакансию единовременно. Поэтому готовы оказать качественные услуги по оперативному оформлению нового персонала (в том числе иностранных граждан).</p>
+            </li>
+            <li class="autsorsing-tabs__item">
+              <h5 class="autsorsing-tabs__item-title">Организация вахтового метода работы</h5>
+              <p>Организация трудового процесса вахтовым методом позволяет снизить затраты на персонал для Заказчика: внимание сосредоточено на оптимизации сроков строительства, ремонта либо реконструкции, а также на заработке, а не трате сил и времени на
+                организацию жизнедеятельности сотрудников</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--end autsorsing-tabs-->
+      <!--begin vacancies-section-->
+      <section class="vacancies-section">
+        <div class="container">
+          <h3 class="vacancies-section__title">Закрываем следующие вакансии</h3>
+        </div>
+        <div class="vacancies-section__list">
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Кассир</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-01.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Кассир</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Работник торгового зала</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-02.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Работник торгового зала</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Грузчик</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-03.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Грузчик</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Упаковщик</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-04.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Упаковщик</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Разнорабочий</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-05.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Разнорабочий</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Уборщик</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-06.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Уборщик</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Работник кухни</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-07.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Работник кухни</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item vacancies-section__item-all">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Все специалисты</h3>
+              <button class="btn btn-wr vacancies-section__loadmore">Показать</button>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Работник конвеера</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-08.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Работник конвеера</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Комплектовщик</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-09.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Комплектовщик</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Подсобный рабочий</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-10.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Подсобный рабочий</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Мойщик</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-11.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Мойщик</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Заправщик</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-12.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Заправщик</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Оператор колл-центра</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-13.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Оператор колл-центра</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Специалист по документообороту</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-14.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Специалист по документообороту</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Работник архива</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-15.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Работник архива</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Экспедитор</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-16.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Экспедитор</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Оператор баз данных</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-17.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Оператор баз данных</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">Отделочник</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-18.jpg');">
+                <h3 class="vacancies-section__item-cover-title">Отделочник</h3>
+              </div>
+            </div>
+          </div>
+          <div class="vacancies-section__item">
+            <div class="vacancies-section__item-inn">
+              <h3 class="vacancies-section__item-title">И многие другие</h3>
+              <button class="btn btn-bw popup-open" data-open="personal">Заказать</button>
+              <div class="vacancies-section__item-cover" style="background-image:url('assets/img/vacancies/vac-all.jpg');">
+                <h3 class="vacancies-section__item-cover-title">И многие другие</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end vacancies-section-->
+      <!--begin callback-section-->
+      <div class="callback-sec" style="background-image: url('assets/img/autsorsing-callback.jpg');">
+        <!--begin callback-inn-->
+        <div class="container">
+          <h3 class="callback-sec__title">Оставьте заявку</h3>
+          <span class="callback-sec__subtitle">Каждая ситуация особенная.
+            <br>Оставьте ваше имя и способ связи с вами — наш менеджер свяжется с вами, чтобы обсудить все детали.</span>
+          <form class="callback-sec__form">
+            <input type="hidden" name="nameform" value="callback-sec__form">
+            <input type="hidden" name="theme" value="Заявка на аутсорсинг">
+            <div class="callback-sec__form-inn">
+              <div class="left">
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input class="phone-mask" type="text" name="phone" placeholder="Номер телефона">
+              </div>
+              <div class="right">
+                <textarea name="message" placeholder="Комментарий"></textarea>
+              </div>
+            </div>
+            <div class="callback-sec__checkbox">
+              <input class="agree" type="checkbox" id="agree-callback">
+              <label for="agree-callback">Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия
+                <a href="/agree.html">Пользовательского соглашения</a>
+              </label>
+            </div>
+            <input class="btn btn-rr" type="submit" value="Заказать звонок">
+          </form>
+        </div>
+        <!--end callback-inn-->
+      </div>
+      <!--end callback-section-->
+    </section>
+    <!--end   content-->
+    <!--begin footer-->
+    <footer class="footer">
+      <div class="container-lg">
+        <div class="footer-item">
+          <a class="footer-item__logo" href="/">
+            <img class="footer-item__logo-colorful" src="assets/img/logo.png" alt="company logo">
+          </a>
+          <span class="footer-item__logo-text">Группа компаний</span>
+          <span class="footer-item__copyright">&#169; 2017 Все права защищены</span>
+        </div>
+        <div class="footer-item">
+          <h4 class="footer-item__title">Услуги</h4>
+          <a class="footer-item__link" href="/autsorsing.html">Аутсорсинг</a>
+          <a class="footer-item__link" href="/autstaffing.html">Аутстаффинг</a>
+          <a class="footer-item__link" href="/audit.html">Аудит</a>
+          <a class="footer-item__link" href="/migration.html">Миграционный учет</a>
+          <a class="footer-item__link" href="/safety.html">Охрана труда</a>
+        </div>
+        <div class="footer-item">
+          <h4 class="footer-item__title">О компании</h4>
+          <a class="footer-item__link" href="/about.html#about-personal">Наши сотрудники</a>
+          <a class="footer-item__link" href="/about.html#about-director">Гарантии директора</a>
+          <a class="footer-item__link" href="/about.html#about-map">Города присутствия</a>
+          <a class="footer-item__link" href="/assets/pdf/ocenka.pdf" target="_blank">Оценка условий труда</a>
+        </div>
+        <div class="footer-item">
+          <h4 class="footer-item__title">Пятничный менеджер</h4>
+          <div class="footer-item__news">
+            <span class="footer-item__news-date">08.08.2017</span>
+            <a class="footer-item__news-link" href="/article-09.html">Основной целью схемы работы с персоналом, которую принято называть «аутстаффингом», является сокращение рисков бизнеса. Каждый в отдельности...</a>
+          </div>
+          <div class="footer-item__news">
+            <span class="footer-item__news-date">23.06.2017</span>
+            <a class="footer-item__news-link" href="/article-05.html">Аутстаффинг – эффективная кадровая технология вывода сотрудников за штат или привлечение штата извне... </a>
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-item__phone">
+            <a href="tel:+8 800 350 50 49">8 (800) 350-50-49</a>
+            <span>Москва</span>
+          </div>
+          <div class="footer-item__phone">
+            <a href="tel:+8 800 100 98 94">8 (800) 100-98-94</a>
+            <span>Санкт-Петербург</span>
+          </div>
+          <div class="footer-item__social">
+            <a href="#" style="pointer-events: none;">
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+            <a href="#" style="pointer-events: none;">
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+            <a href="#" style="pointer-events: none;">
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#tw"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--begin popup section-->
+      <div class="popup__layer"></div>
+      <!--begin success popup-->
+      <div class="popup-success" id="popup-success">
+        <div class="popup-close">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <h4 class="popup__title">Ваше сообщение отправлено</h4>
+        <h5 class="popup__subtitle">Мы свяжемся с Вами в ближайшее время.</h5>
+      </div>
+      <!--end success popup-->
+      <!--begin callback popup-->
+      <div class="popup popup-callback" id="popup-callback">
+        <div class="popup-close">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <h4 class="popup__title">Заказать обратный звонок</h4>
+        <form class="popup-callback__form" id="popup-callback__form">
+          <input type="hidden" name="nameform" value="popup-callback__form">
+          <input type="hidden" name="theme" value="Заказ обратного звонка">
+          <div class="left">
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input class="phone-mask" type="text" name="phone" placeholder="Номер телефона">
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Ваш Комментарий"></textarea>
+          </div>
+          <div class="popup-checkbox">
+            <input type="checkbox" id="agree-callback-popup">
+            <label for="agree-callback-popup">Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия
+              <a href="/agree.html">Пользовательского соглашения</a>
+            </label>
+          </div>
+          <input class="btn btn-rr" type="submit" value="Заказать звонок">
+        </form>
+      </div>
+      <!--end callback popup-->
+      <!--begin director popup-->
+      <div class="popup popup-director" id="popup-director">
+        <div class="popup-close">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <h4 class="popup__title">Задать вопрос управляющему директору</h4>
+        <form class="popup-callback__form">
+          <input type="hidden" name="nameform" value="popup-director__form">
+          <input type="hidden" name="theme" value="Вопрос управляющему директору">
+          <div class="left">
+            <input type="text" name="name" placeholder="Как к вам обращаться">
+            <input type="text" name="email" placeholder="Электронная почта">
+            <input class="phone-mask" type="text" name="phone" placeholder="Телефон">
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Ваш вопрос"></textarea>
+          </div>
+          <div class="popup-checkbox">
+            <input type="checkbox" id="agree-director-popup">
+            <label for="agree-director-popup">Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия
+              <a href="/agree.html">Пользовательского соглашения</a>
+            </label>
+          </div>
+          <input class="btn btn-rr" type="submit" value="Узнать больше">
+        </form>
+      </div>
+      <!--end director popup-->
+      <!--begin tender popup-->
+      <div class="popup popup-tender" id="popup-tender">
+        <div class="popup-close">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <h4 class="popup__title">Пригласить в тендер</h4>
+        <form class="popup-callback__form">
+          <input type="hidden" name="nameform" value="popup-tender__form">
+          <input type="hidden" name="theme" value="Приглашение на тендер">
+          <div class="left">
+            <input type="text" name="name" placeholder="Как к вам обращаться">
+            <input type="text" name="email" placeholder="Электронная почта">
+            <input class="phone-mask" type="text" name="phone" placeholder="Телефон">
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Описание тендера"></textarea>
+          </div>
+          <div class="popup-checkbox">
+            <input type="checkbox" id="agree-tender-popup">
+            <label for="agree-tender-popup">Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия
+              <a href="/agree.html">Пользовательского соглашения</a>
+            </label>
+          </div>
+          <input class="btn btn-rr" type="submit" value="Узнать больше">
+        </form>
+      </div>
+      <!--end tender popup-->
+      <!--begin personal popup-->
+      <div class="popup popup-personal" id="popup-personal">
+        <div class="popup-close">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <h4 class="popup__title">Заказать персонал</h4>
+        <form class="popup-callback__form">
+          <input type="hidden" name="nameform" value="popup-personal__form">
+          <input type="hidden" name="theme" value="Заказ персонала">
+          <div class="left">
+            <input type="text" name="name" placeholder="Как к вам обращаться">
+            <input type="text" name="email" placeholder="Электронная почта">
+            <input class="phone-mask" type="text" name="phone" placeholder="Телефон">
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Описание вакансий"></textarea>
+          </div>
+          <div class="popup-checkbox">
+            <input type="checkbox" id="agree-personal-popup">
+            <label for="agree-personal-popup">Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия
+              <a href="/agree.html">Пользовательского соглашения</a>
+            </label>
+          </div>
+          <input class="btn btn-rr" type="submit" value="Узнать больше">
+        </form>
+      </div>
+      <!--end personal popup-->
+      <!--begin vacancies popup-->
+      <div class="popup popup-vacancies" id="popup-vacancies">
+        <div class="popup-close">
+          <svg>
+            <use xlink:href="assets/img/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <h4 class="popup__title">Оставить заявку</h4>
+        <form class="popup-callback__form">
+          <input type="hidden" name="nameform" value="popup-vacancies__form">
+          <input type="hidden" name="theme" value="Заявка на вакансию">
+          <div class="left">
+            <input type="text" name="name" placeholder="Имя*" required>
+            <input type="text" name="surname" placeholder="Фамилия*" required>
+            <input type="text" name="email" placeholder="Электронная почта*" required>
+            <input class="phone-mask" type="text" name="phone" placeholder="Телефон*" required>
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Коментарии"></textarea>
+          </div>
+          <div class="popup-clip">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#clip"></use>
+            </svg>
+            <a href="#">Прикрепить резюме</a>
+          </div>
+          <div class="popup-checkbox">
+            <input type="checkbox" id="agree-vacancies-popup">
+            <label for="agree-vacancies-popup">Ставя отметку, я даю своё согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ "О персональных данных" от 27.07.2006 и принимаю условия
+              <a href="/agree.html">Пользовательского соглашения</a>
+            </label>
+          </div>
+          <input class="btn btn-rr" type="submit" value="Отправить">
+          <div class="popup-ps">
+            <span>*Заполните все обязательные поля формы</span>
+          </div>
+        </form>
+      </div>
+      <!--end vacancies popup-->
+      <!--end   popup section-->
+    </footer>
+    <!--end   footer-->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/prog.js"></script>
+  </body>
+</html>

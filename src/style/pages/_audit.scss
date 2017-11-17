@@ -36,6 +36,59 @@
     color: #fff;
   }
 }
+.audit-header__quote {
+  display: flex;
+  margin-bottom: 70px;
+  margin-top: -20px;
+  align-items: flex-start;
+}
+.audit-header__quote-pic {
+  border-radius: 50%;
+  overflow: hidden;
+  flex:none;
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+.audit-header__quote-text {
+  padding-left: 50px;
+  position: relative;
+  &::before {
+    content: '';
+    width: 15px;
+    height: 13px;
+    position: absolute;
+    top: 4px;
+    left: 18px;
+    background-image: url('../img/quote.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #fff;
+    opacity: .7;
+  }
+}
+.audit-header__quote-signature{
+  font-size: 14px;
+  font-family:$font-medium;
+  color: #fff;
+  opacity: .7;
+  font-style: italic;
+}
+.audit-header__quote-position{
+  font-size: 14px;
+  font-family:$font-light;
+  color: #fff;
+  opacity: .7;
+  font-style: italic;
+}
 // end audit header
 
 

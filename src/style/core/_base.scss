@@ -137,6 +137,7 @@ span.rouble {
 }
 .main {
   position: relative;
+
   flex: 1 0 auto;
 }
 .container {
@@ -182,6 +183,7 @@ span.rouble {
   height: 40px;
   margin: 0;
   padding: 0 40px;
+  cursor: pointer;
   transition: .5s;
   text-decoration: none;
 }
@@ -222,6 +224,15 @@ span.rouble {
     background-color: #fff;
   }
 }
+.btn-ww {
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: transparent;
+  &:hover {
+    color: $brand;
+    background-color: #fff !important;
+  }
+}
 .popup-checkbox + .btn,
 .callback-sec__checkbox + .btn {
   pointer-events: none;
@@ -229,9 +240,9 @@ span.rouble {
 }
 .popup-checkbox.checked + .btn,
 .callback-sec__checkbox.checked + .btn {
+  cursor: pointer;
   pointer-events: auto;
   opacity: 1;
-  cursor: pointer;
 }
 .color-text {
   color: transparent;
