@@ -16,10 +16,6 @@ $(function() {
   require('./modules/slick')();
   // end   Slick slider
 
-  // begin Popup
-  // require('./modules/popup')();
-  // end   Popup
-
   // begin tabs
   require('./modules/tabs')();
   // end   tabs
@@ -32,13 +28,6 @@ $(function() {
   require('./modules/mouse-up')();
   // end   mobile mouse-up
 
-  // begin send mail
-  // require('./modules/mail')();
-  // end   send mail
-
-  // begin map in index.html
-  // require('./modules/map')();
-  // end   map in index.html
 
   // begin maskedinpt
   require('./modules/masked')();
